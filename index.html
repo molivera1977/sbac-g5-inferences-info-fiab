@@ -6,13 +6,26 @@
 <title>SBAC Practice: Make &amp; Support Inferences (Informational)</title>
 <!-- tab icon: a plain open book (no name, no initials) -->
 <link rel="icon" type="image/svg+xml" href="icons/favicon.svg?v=1">
-<link rel="stylesheet" href="style.css?v=n1118">
+<link rel="stylesheet" href="style.css?v=t1118">
 </head>
 <body>
 <div class="container">
 
   <!-- shown only while no score sheet is connected (sheet.js SHEET_URL is empty) -->
   <p id="preview-banner" class="preview-banner" hidden>Preview — nothing is saved</p>
+
+  <!-- 👀 Try it as a student (teacher only, 11/18): shown only while a teacher walks through a set; students never see it -->
+  <div id="try-bar" class="try-bar" hidden>
+    <button type="button" id="try-back" class="btn small">← Teacher screen</button>
+    <span id="try-what" class="try-what"></span>
+    <span class="try-nav">
+      <button type="button" id="try-prev" class="btn small ghost" aria-label="Back one">◀</button>
+      <label class="sr-only" for="try-jump">Go to</label>
+      <select id="try-jump" class="try-jump"></select>
+      <button type="button" id="try-next" class="btn small ghost" aria-label="Next one">▶</button>
+    </span>
+    <button type="button" id="try-skip" class="btn small ghost">⏩ Skip the wait</button>
+  </div>
 
   <!-- PAGE 1: COVER -->
   <section id="home" class="screen">
@@ -177,9 +190,15 @@
       <h2 id="t-title">Class Scores</h2>
       <div class="key-actions">
         <button type="button" id="t-refresh" class="btn small ghost">Refresh</button>
+        <button type="button" id="t-try" class="btn small ghost" aria-expanded="false" aria-controls="t-try-box">👀 Try it as a student</button>
         <button type="button" id="t-key" class="btn small ghost">✅ Answer key</button>
         <button type="button" id="t-home" class="btn small">Back</button>
       </div>
+    </div>
+    <!-- 👀 Try it as a student (11/18): pick a set, see it as a student does; nothing is saved -->
+    <div id="t-try-box" class="t-try-box" hidden>
+      <p class="t-try-note">Pick a set. You see it as a student does: the directions, each passage, each question, the feedback and the score. Nothing is saved. The bar on top skips the wait, goes to any question, and comes back here.</p>
+      <div id="t-try-sets" class="key-tabs" role="group" aria-label="Set to try"></div>
     </div>
     <p id="t-sample" class="t-sample" hidden>Sample data · invented students, not a real class · nothing here is saved</p>
     <div id="t-body"></div>
@@ -222,7 +241,7 @@
 <script src="kokoro/lines.js?v=9f38b67a"></script>
 <script src="kokoro-voice.js?v=ks1116"></script>
 <script src="speech.js?v=g5a"></script>
-<script src="app.js?v=n1118"></script>
-<script src="teacher.js?v=n1118"></script>
+<script src="app.js?v=t1118"></script>
+<script src="teacher.js?v=t1118"></script>
 </body>
 </html>

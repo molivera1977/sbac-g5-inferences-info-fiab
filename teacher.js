@@ -577,6 +577,21 @@
     const q = e.target.closest('.h-qbtn');
     if (q) toggleQ(Number(q.dataset.q));
   });
+  /* 👀 Try it as a student (asked 11/18, as on the other SBAC practice sites): pick a set and walk through it as a student
+     sees it, with nothing saved (app.js tryIt). The screen's own updating rests meanwhile (nothing goes to the sheet);
+     ← Teacher screen comes back here with no PIN: Try it never leaves this page, and tPin is still in memory. */
+  $('#t-try-sets').innerHTML = ALL_SETS.map(s => `<button type="button" class="key-tab" data-try="${s}">${setLabel(s)}</button>`).join('');
+  $('#t-try').addEventListener('click', () => {
+    const open = $('#t-try-box').hidden;
+    $('#t-try-box').hidden = !open;
+    $('#t-try').setAttribute('aria-expanded', String(open));
+  });
+  $('#t-try-sets').addEventListener('click', e => {
+    const b = e.target.closest('[data-try]');
+    if (!b) return;
+    clearTimeout(autoTimer);
+    A.tryIt(b.dataset.try, tTeacher, () => { show('teacher'); autoRefresh(); });
+  });
   $('#t-key').addEventListener('click', () => { renderKey('W'); show('key'); });
   $('#t-home').addEventListener('click', () => { tPin = ''; students = []; clearTimeout(autoTimer); A.renderHome(); });
   document.querySelectorAll('#key .key-tab').forEach(t => t.addEventListener('click', () => renderKey(t.dataset.set)));

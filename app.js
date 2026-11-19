@@ -62,11 +62,15 @@
   const ordFor = it => (part, n) => choiceOrder(state, it, part, n);  // the student on the page
   const $ = sel => document.querySelector(sel);
 
+  /* 👀 Try it as a student (a teacher's preview, 11/18): set while a teacher walks through a set from the teacher
+     screen. Every save checks it: store.set keeps nothing on this computer and toSheet sends nothing. */
+  let trying = null;   // { set, back, st, ready } while a teacher tries a set; null for every student
   const store = {
     get(key, fallback) {
       try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; }
     },
     set(key, value) {
+      if (trying) return;   // Try it: a student's places, scores and "heard" stay exactly as they were
       try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* private window: nothing is kept */ }
     }
   };
@@ -104,6 +108,7 @@
     stopReading();
     document.querySelectorAll('.screen').forEach(s => { s.hidden = s.id !== id; });
     document.body.dataset.screen = id;
+    if (trying) syncTry(id);   // Try it: the teacher's bar follows the screen
     window.scrollTo(0, 0);
   }
   $('#preview-banner').hidden = Sheet.connected;
@@ -292,8 +297,7 @@
     if (state.idx >= itemsOf(state.set).length) recordFinish(state);
     else {
       savePlace(state);
-      Sheet.queue(attemptRecord(state, false));
-      Sheet.flush();
+      toSheet(attemptRecord(state, false));
     }
     showFeedback(it, ok, picked);
   }
@@ -401,6 +405,12 @@
 
   function sendToTeacher(st) {
     const note = $('#r-sent');
+    if (trying) {   // Try it: nothing was sent or kept, and the teacher is told so (not read aloud)
+      note.hidden = false;
+      note.className = 'sent-note sent-wait';
+      note.textContent = '👀 Try it: this score was not saved.';
+      return;
+    }
     note.hidden = !Sheet.connected;
     if (note.hidden) return;
     const who = TEACHERS[st.teacher];
@@ -461,6 +471,13 @@
     return unfinished(st) && Object.keys(results).length === idx ? st : null;
   }
 
+  // every update for the score sheet goes out here: into the outbox, then sent. Try it sends nothing.
+  function toSheet(rec) {
+    if (trying) return;
+    Sheet.queue(rec);
+    Sheet.flush();
+  }
+
   // what goes to the score sheet: the attempt so far, or finished
   function attemptRecord(st, finished) {
     const items = itemsFor(st);
@@ -485,8 +502,7 @@
     scores.push({ teacher: st.teacher, name: st.name, set: st.set, pts: rec.pts, tot: rec.tot, pct: rec.pct, at: rec.finishedAt });
     store.set(SCORES_KEY, scores);
     dropPlace(st);
-    Sheet.queue(rec);
-    Sheet.flush();
+    toSheet(rec);
   }
 
   function localDone(teacher, name) {
@@ -532,8 +548,7 @@
     const old = choosePlaces[level];
     if (!old || !(await teacherSays(`let ${chooseName} start ${setLabel(old.set)} over`))) return;
     dropPlace(old);
-    Sheet.queue({ saveId: old.saveId, teacher: old.teacher, status: 'Restarted' });
-    Sheet.flush();
+    toSheet({ saveId: old.saveId, teacher: old.teacher, status: 'Restarted' });
     delete choosePlaces[level];
     beginSet(old.set);
   }
@@ -564,6 +579,7 @@
   ['#home-lead', '.name-row', '.teacher-row', '#home-class'].forEach(sel => { $(sel).hidden = !CLASS; });
   $('#home-nolink').hidden = Boolean(CLASS);
   function renderHome() {
+    if (trying) { endTry(); return; }   // Try it: every way out of the set goes back to the teacher screen
     $('#student-name').value = '';
     $('#student-last').value = '';
     $('#name-check').hidden = true;
@@ -710,6 +726,7 @@
       $('#dir-note').hidden = false;
       return;
     }
+    if (trying) { trying.ready = true; tryGo(0); return; }   // Try it: straight into the set the teacher picked
     renderChoose();
   });
   $('#dir-back').addEventListener('click', e => { e.preventDefault(); renderHome(); });
@@ -718,6 +735,7 @@
   const CHOOSE_SAY = 'Go in order. Start with the Warm Up. Then do the Review. Then Test A, then Test B. They are just like the real test. Each one opens when you finish the one before it. You get 2 takes of the Warm Up and the Review, and 1 take of each test.';
   let lookupSeq = 0;
   function renderChoose() {
+    if (trying) { endTry(); return; }   // Try it: no choose page (it would look up a student's saved work)
     $('#hello').textContent = `Hi, ${chooseFirst || chooseName.split(' ')[0]}!`;
     $('#choose-class').textContent = `${TEACHERS[chooseTeacher]}'s class`;
     choosePlaces = localPlaces(chooseTeacher, chooseName);
@@ -791,6 +809,84 @@
   $('#exit-btn').addEventListener('click', () => { state = null; renderHome(); });
   $('#home-btn').addEventListener('click', () => (chooseName ? renderChoose() : renderHome()));
 
+  /* ------------------------------------------------------------ 👀 Try it as a student (teacher only, asked 11/18)
+     From the teacher screen (after the PIN), as on the other SBAC practice sites: the real student screens for one set (the
+     directions, each passage, each question, the feedback and Why, the score) with NOTHING saved. `trying` stops every
+     write to this computer (store.set: no place, no score, no "heard", so no take is counted) and every send to the score
+     sheet (toSheet); the run lives in memory only, under the name "Teacher preview", so it never meets a student's saved
+     work. The directions start locked, as for a new student. A bar only the teacher sees: ← Teacher screen (no PIN
+     again: the page never leaves, and teacher.js keeps the PIN in memory), ◀ a menu of every question ▶, and ⏩ Skip
+     the wait (stops the voice and opens "I'm ready"). Nothing new is said aloud. */
+  const TRY_NAME = 'Teacher preview';
+  let tryAt = 'dir';   // where the teacher is: 'dir' (the directions), a question's place in the run, or 'end' (the score)
+  const tryItems = () => itemsFor(trying.st);
+  function tryIt(set, teacher, back) {
+    if (!SETS[set] || !TEACHERS[teacher]) return;
+    state = null;
+    trying = { set, back, ready: false,
+      st: { name: TRY_NAME, teacher, set, idx: 0, results: {}, started: Date.now(), saveId: Sheet.newSaveId() } };
+    chooseName = TRY_NAME;
+    chooseFirst = '';
+    chooseTeacher = teacher;
+    choosePlaces = {};
+    chooseDone = {};
+    shownPassage = '';
+    const items = tryItems(), order = passageOrder(trying.st);
+    $('#try-what').textContent = `👀 Try it · ${setLabel(set)}`;
+    $('#try-jump').innerHTML = '<option value="dir">Directions</option>' + items.map((it, i) =>
+      `<option value="${i}">Question ${i + 1} of ${items.length} · Passage ${order.indexOf(it.p) + 1} · key Q${it.n}</option>`).join('') +
+      '<option value="end">Score</option>';
+    $('#try-bar').hidden = false;
+    $('#preview-banner').hidden = false;   // "Preview — nothing is saved", even with the score sheet connected
+    tryGo('dir');
+  }
+  // go to the directions, a question (its place in this run), or the score screen
+  function tryGo(at) {
+    if (at === 'dir') {
+      state = null;
+      renderDirections(TRY_NAME);
+      setReady(trying.ready);   // locked until heard or skipped, then open for the rest of the run
+      return;
+    }
+    state = trying.st;
+    state.idx = at === 'end' ? tryItems().length : Number(at);
+    renderItem();   // past the last question it shows the score
+  }
+  function tryStep(d) {
+    const stops = ['dir', ...tryItems().map((it, i) => String(i)), 'end'];
+    const k = stops.indexOf(tryAt) + d;
+    if (k >= 0 && k < stops.length) tryGo(stops[k]);
+  }
+  // show() calls this: the bar follows the screen showing
+  function syncTry(id) {
+    tryAt = id === 'directions' ? 'dir' : id === 'results' ? 'end' : state ? String(state.idx) : tryAt;
+    $('#try-jump').value = tryAt;
+    $('#try-prev').disabled = tryAt === 'dir';
+    $('#try-next').disabled = tryAt === 'end';
+  }
+  // ⏩ Skip the wait: the voice stops, and the directions' "I'm ready" opens (the one screen here that waits for the voice)
+  function skipWait() {
+    stopReading();
+    if (document.body.dataset.screen === 'directions') { trying.ready = true; setReady(true); }
+  }
+  // ← Teacher screen, and every student way out of the set (Exit, ← Back, Return to Menu): back to the teacher screen
+  function endTry() {
+    const back = trying.back;
+    stopReading();
+    trying = null;
+    state = null;
+    chooseName = '';
+    chooseTeacher = '';
+    $('#try-bar').hidden = true;
+    $('#preview-banner').hidden = Boolean(Sheet.connected);   // as for a student again
+    back();
+  }
+  $('#try-back').addEventListener('click', () => { if (trying) endTry(); });
+  $('#try-skip').addEventListener('click', () => { if (trying) skipWait(); });
+  $('#try-prev').addEventListener('click', () => { if (trying) tryStep(-1); });
+  $('#try-next').addEventListener('click', () => { if (trying) tryStep(1); });
+  $('#try-jump').addEventListener('change', e => { if (trying) tryGo(e.target.value); });
+
   /* Every line this site can hand the voice, built by the same code that draws and reads the screens: the list the
      Ava recordings are made from (tools/ava-lines.json), and what the site test checks has a recording. A 🔊 reads
      its box a sentence at a time (spokenLines), so a line is a sentence; the directions are read a step at a time.
@@ -834,7 +930,7 @@
 
   // the teacher screens (teacher.js) use these
   window.G5App = { CLASS, SETS, TEACHERS, SET_NAMES, ALL_SETS, levelOf, takeNo, setLabel, itemsOf, itemsFor, passageOrder, choiceOrder, typeLabel, questionText, multi,
-    answerText, isRight, gradeFor, normName, show, renderHome, passageHTML };
+    answerText, isRight, gradeFor, normName, show, renderHome, passageHTML, tryIt };
 
   // Anything a lost connection left in this device's outbox goes now, or when the internet comes back
   window.addEventListener('online', () => Sheet.flush());
