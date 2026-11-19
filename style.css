@@ -116,6 +116,7 @@ button { font: inherit; }
 .set-btn.set-TB { background: linear-gradient(135deg, #059669, var(--set-TB)); }
 .set-btn:disabled { opacity: 0.55; cursor: wait; }
 .set-btn.locked { background: #94a3b8 !important; opacity: 1; cursor: not-allowed; box-shadow: none; }
+.set-btn.locked:hover { transform: none; }   /* still taps (the teacher's PIN can open it), but does not lift */
 .place-badge { margin-top: 4px; padding: 4px 12px; border-radius: 999px; background: #fff; color: var(--pd); font-size: 0.75rem; white-space: nowrap; }
 .set-btn.locked .place-badge { color: #475569; }
 
@@ -278,6 +279,9 @@ button { font: inherit; }
 .t-table td b { display: block; font-size: 1rem; }
 .t-table td span { display: block; font-size: 0.7rem; color: var(--tm); }
 .t-table td .t-none { color: #cbd5e1; font-size: 1rem; }
+/* Finished: 1st try → latest try on one line, each score in its grade color */
+.t-table td b span { display: inline; font-size: inherit; }
+.t-table td b .g-a { color: var(--ok); } .t-table td b .g-b { color: var(--p); } .t-table td b .g-c { color: var(--wa); } .t-table td b .g-d { color: var(--er); }
 .t-now { font-weight: 800; color: var(--wa) !important; }
 .t-working { margin: 0; padding: 0; list-style: none; }
 .t-working li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; padding: 8px 12px; margin-bottom: 6px;
@@ -291,6 +295,8 @@ button { font: inherit; }
 .t-heat tbody th, .t-heat tfoot th { text-align: left; white-space: nowrap; padding-right: 8px; }
 .t-heat td { min-width: 28px; padding: 6px 0; border-radius: 4px; text-align: center; font-weight: 800; }
 .t-heat td.h-score { padding-left: 6px; text-align: right; }
+.t-heat td.h-time { padding-left: 8px; text-align: right; white-space: nowrap; font-size: 0.75rem; font-weight: 700; color: var(--tm); }
+.t-note { font-size: 0.75rem; color: var(--tm); margin: 4px 0 10px; }
 .t-take { font-size: 0.65rem; font-weight: 700; color: var(--tm); }
 .h-ok { background: #dcfce7; color: #166534; }
 .h-miss { background: #fee2e2; color: #b91c1c; }
@@ -438,6 +444,10 @@ button { font: inherit; }
 /* the skill heat map (11/18): skills, then the standards */
 .t-skill th .sk-sub { display: block; font-weight: 400; font-size: 11px; color: #555; }
 .t-skill th.sk-std { border-left: 3px solid #94a3b8; }
+.t-skill th .sk-name { display: block; font-weight: 700; font-size: 11px; color: var(--pd); }   /* a standard's short name */
+.t-stds { list-style: none; margin: 6px 0 14px; padding: 0; font-size: 0.75rem; color: var(--tm); line-height: 1.4; }
+.t-stds li { margin: 3px 0; }
+.t-stds b { color: var(--pd); }
 .t-skill td { text-align: center; font-weight: 600; }
 
 /* Is this your name? (11/18) */

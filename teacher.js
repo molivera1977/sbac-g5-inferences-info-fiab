@@ -2,9 +2,10 @@
    and sees only her own class's rows. The PIN goes to the score sheet's script and is checked THERE (it
    is never in a page file); the script locks a computer out after 5 wrong PINs in 10 minutes.
 
-   The class screen: a set picker; a heat map (student × Q1–14, each student's LATEST try of that set,
+   The class screen: a set picker; a heat map (student × Q1–14, each student's 1st try or latest try of that set (a switch),
    ✓/✗, bottom row % right, colored at 80 / 60 / 40); ⭐ Top 3 and 🔁 Bottom 3 questions with their text;
-   the in-progress and finished lists; and an answer key (each passage plus every question, all choices,
+   the in-progress list; the finished list (each set: 1st try → latest try, how many tries, the best); ⏱ the time each
+   try took; and an answer key (each passage plus every question, all choices,
    the right one green, every Why).
 
    Preview (no score sheet yet): the PIN screen offers "See sample data": invented students, labeled
@@ -22,10 +23,11 @@
   let tPin = '';       // kept in memory only, for Refresh
   let tSample = false;
   let heatSet = 'W';
+  let heatMode = 'latest';   // the switch: each student's 'first' or 'latest' finished try (the heat maps, picks, Top 3)
   let students = [];
   let heatStats = [];  // the showing heat map's per-question numbers, for the question box
   let heatTotal = 0;   // how many students finished the showing set
-  let heatDone = [];   // the showing heat map's students (latest try each) with what they picked, for the box
+  let heatDone = [];   // the showing heat map's students (the try the switch shows) with what they picked, for the box
 
   /* ------------------------------------------------------------ the PIN screen */
   function pickClass(code) {
@@ -45,6 +47,7 @@
   function openPin() {
     pickClass(A.CLASS || '');
     tPin = '';
+    heatMode = 'latest';   // each visit starts on the latest try
     $('#tpin-input').value = '';
     note('');
     $('#tpin-sample').hidden = Sheet.connected;
@@ -85,8 +88,13 @@
       ['Eli Sample', 0.64, ['W', 'W2', 'R', 'TA:7']],
       ['Fay Sample', 0.56, ['W', 'R']],
       ['Gus Sample', 0.48, ['W', 'W2', 'R:4']],
-      ['Hana Sample', 0.4, ['W', 'W2', 'W']]
+      ['Hana Sample', 0.4, ['W', 'W2', 'W']],
+      // a teacher let these take a set again (Class Scores: 1st try → latest try)
+      ['Dev Sample', 0.9, ['W']],
+      ['Gus Sample', 0.25, ['W']],
+      ['Fay Sample', 0.75, ['R']]
     ];
+    const TOOK = [14, 22, 9, 31, 18, 0.5, 26, 12, 85, 7, 41];   // ⏱ minutes each sample try took (85: stopped and came back)
     const harder = { W: 0, W2: 0.02, R: 0.08, R2: 0.1, TA: 0.16, TB: 0.16 };
     const spot = [0, 0.1, 0.04, 0, 0.14, 0.12, 0.16, 0.06, 0.22, 0.04, 0, 0.2, 0.04, 0.18];   // one per question
     let seed = 20261117;
@@ -128,7 +136,7 @@
         savedAt: at, saveId: `S-sample-${rows.length + 1}`, name, set, pts, tot: items.length,
         pct: Math.round((pts / (finished ? items.length : answered)) * 100), grade: '', missed: missed.join(', '),
         finishedAt: finished ? at : '', status: finished ? 'Finished' : 'In progress', answered,
-        answers: JSON.stringify(answers), startedAt: at, updatedAt: at
+        answers: JSON.stringify(answers), startedAt: new Date(Date.parse(at) - TOOK[tick % TOOK.length] * 60000).toISOString(), updatedAt: at
       });
     }));
     return rows;
@@ -136,9 +144,11 @@
 
   /* ------------------------------------------------------------ the class screen */
   const rowTime = r => Date.parse(r.updatedAt || r.finishedAt || r.savedAt) || 0;
+  const pctOf = r => Math.round(Number(r.pct)) || 0;   // a score from the sheet, as a number only
   const tidyName = n => String(n).trim().replace(/\s+/g, ' ').replace(/(^|\s)(\S)/g, (m, sp, c) => sp + c.toUpperCase());
 
-  // One entry per student; per set: every finished try (latest = the newest), and a try still in progress
+  // One entry per student; per set: every finished try (first = the oldest, latest = the newest, best = the highest),
+  // and a try still in progress
   function groupStudents(rows) {
     const out = {};
     rows.forEach(r => {
@@ -146,11 +156,13 @@
       if (!key || !SETS[r.set]) return;
       const st = out[key] || (out[key] = { name: '', sets: {} });
       st.name = tidyName(r.name);
-      const c = st.sets[r.set] || (st.sets[r.set] = { tries: [], latest: null, now: null });
+      const c = st.sets[r.set] || (st.sets[r.set] = { tries: [], first: null, latest: null, best: null, now: null });
       if (r.status === 'In progress') { if (!c.now || rowTime(r) > rowTime(c.now)) c.now = r; return; }
       if (r.status !== 'Finished') return;
       c.tries.push(r);
+      if (!c.first || rowTime(r) < rowTime(c.first)) c.first = r;
       if (!c.latest || rowTime(r) >= rowTime(c.latest)) c.latest = r;
+      if (!c.best || pctOf(r) > pctOf(c.best)) c.best = r;
     });
     Object.values(out).forEach(st => Object.keys(st.sets).forEach(s => {
       const c = st.sets[s];
@@ -199,6 +211,12 @@
     { name: 'Conclusions + proof', std: 'RI.5.1', qs: [3, 7, 8, 14] }
   ];
   const STANDARDS = [...new Set(SKILL_GROUPS.map(g => g.std))].sort();
+  /* What each standard says (asked 11/18: "the standards should say what they are"): a short plain name, and the
+     official wording from thecorestandards.org (on hover over a standard column, and in a list under the map). */
+  const STD_WORDS = {
+    'RI.5.1': { short: "Quote the text to explain and infer", full: "Quote accurately from a text when explaining what the text says explicitly and when drawing inferences from the text." },
+    'RI.5.2': { short: "Main ideas and summary", full: "Determine two or more main ideas of a text and explain how they are supported by key details; summarize the text." }
+  };
   function skillHTML(set, done, items) {
     const byN = Object.fromEntries(items.map((it, i) => [i + 1, it]));
     const cols = [...SKILL_GROUPS.map(g => ({ label: g.name, sub: `${g.std} · Q${g.qs.join(', ')}`, qs: g.qs })),
@@ -214,11 +232,33 @@
       const pct = Math.round((right / (done.length * c.qs.length)) * 100);
       return `<td class="${heatClass(pct)}">${pct}</td>`;
     }).join('');
-    return `<h3 class="t-sub">Skill heat map <span>(${esc(setLabel(set))} · each student's latest try · right out of the questions in that skill)</span></h3>
-      <div class="t-wrap"><table class="t-heat t-skill"><thead><tr><th scope="col">Student</th>${cols.map(c => `<th scope="col" class="${c.std ? 'sk-std' : ''}">${esc(c.label)}<span class="sk-sub">${esc(c.sub)}</span></th>`).join('')}</tr></thead>
-      <tbody>${body}</tbody><tfoot><tr><th scope="row">% right</th>${foot}</tr></tfoot></table></div>`;
+    return `<h3 class="t-sub">Skill heat map <span>(${esc(setLabel(set))} · each student's ${tryWord()} · right out of the questions in that skill)</span></h3>
+      <div class="t-wrap"><table class="t-heat t-skill"><thead><tr><th scope="col">Student</th>${cols.map(c => (c.std
+        ? `<th scope="col" class="sk-std" title="${esc(STD_WORDS[c.label].full)}">${esc(c.label)}<span class="sk-name">${esc(STD_WORDS[c.label].short)}</span><span class="sk-sub">${esc(c.sub)}</span></th>`
+        : `<th scope="col" class="">${esc(c.label)}<span class="sk-sub">${esc(c.sub)}</span></th>`)).join('')}</tr></thead>
+      <tbody>${body}</tbody><tfoot><tr><th scope="row">% right</th>${foot}</tr></tfoot></table></div>
+      <ul class="t-stds" aria-label="What each standard says">${[...new Set(SKILL_GROUPS.map(g => g.std))].sort().map(std => `<li><b>${esc(std)} · ${esc(STD_WORDS[std].short)}:</b> ${esc(STD_WORDS[std].full)}</li>`).join('')}</ul>`;
   }
-  const pctHTML = r => `<span class="${gradeFor(r.pct).c}">${r.pct}%</span>`;
+  const pctHTML = r => `<span class="${gradeFor(pctOf(r)).c}">${pctOf(r)}%</span>`;
+  const tryWord = () => (heatMode === 'first' ? '1st try' : 'latest try');
+
+  /* ⏱ Time on a try (asked 11/18): its "Finished at" minus its "Started at". Clock time, so a student who stopped and
+     came back later shows the whole span. Numbers only: each time is read as a date (the ISO text the site saves, or a
+     date the sheet gave back), and no sheet text is ever shown; "—" when a time is missing, can't be read, or comes out
+     backwards. */
+  const timeOf = v => {
+    const s = String(v == null ? '' : v).trim();
+    const readable = /^\d{4}-\d\d-\d\dT\d\d:\d\d/.test(s) || /^[A-Z][a-z]{2} [A-Z][a-z]{2} \d{1,2} \d{4} \d\d:\d\d:\d\d GMT[+-]\d{4}/.test(s);
+    return readable ? Date.parse(s) : NaN;
+  };
+  function tookText(r) {
+    const ms = timeOf(r.finishedAt) - timeOf(r.startedAt);
+    if (!Number.isFinite(ms) || ms < 0) return '—';
+    const mins = Math.floor(ms / 60000);
+    if (mins < 1) return 'under 1 min';
+    if (mins < 60) return `${mins} min`;
+    return `${Math.floor(mins / 60)} hr ${mins % 60} min`;
+  }
 
   function classHTML() {
     const working = students.flatMap(st => ALL_SETS.filter(s => st.sets[s] && st.sets[s].now).map(s => ({ name: st.name, r: st.sets[s].now })))
@@ -226,7 +266,10 @@
     const finished = students.reduce((n, st) => n + Object.values(st.sets).reduce((k, c) => k + c.tries.length, 0), 0);
     const cell = c => {
       if (!c) return '<span class="t-none">—</span>';
-      const done = c.latest ? `<b>${pctHTML(c.latest)}</b><span>${c.tries.length > 1 ? `latest of ${c.tries.length} tries` : 'finished'}</span>` : '';
+      // 1st try → latest try, how many tries and the best (one try: its score and "1 try")
+      const n = c.tries.length;
+      const done = !n ? '' : n === 1 ? `<b>${pctHTML(c.first)}</b><span>1 try</span>`
+        : `<b>${pctHTML(c.first)} → ${pctHTML(c.latest)}</b><span>${n} tries · best ${pctOf(c.best)}%</span>`;
       const now = c.now ? `<span class="t-now">▶ ${liveText(c.now)}</span>` : '';
       return done + now;
     };
@@ -235,23 +278,27 @@
       ${tSample ? '' : `<p id="t-updated" class="t-updated">Updated ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', second: '2-digit' })}</p>`}
       ${working.length ? `<ul class="t-working">${working.map(w => `<li><b>${esc(w.name)}</b> · ${setLabel(w.r.set)} · ${liveText(w.r)}
         <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
-      <h3 class="t-sub">Finished <span>(each student's latest try · ▶ = working on it now)</span></h3>
+      <h3 class="t-sub">Finished <span>(1st try → latest try · ▶ = working on it now)</span></h3>
       <div class="t-wrap"><table class="t-table"><thead><tr><th>Student</th>${ALL_SETS.map(s => `<th>${setLabel(s)}</th>`).join('')}</tr></thead>
         <tbody>${students.map(st => `<tr><td>${esc(st.name)}</td>${ALL_SETS.map(s => `<td>${cell(st.sets[s])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
-      <h3 class="t-sub">Question heat map <span>(pick a set)</span></h3>
+      <h3 class="t-sub">Question heat map <span>(pick a try and a set)</span></h3>
+      <div class="key-tabs t-tabs t-modes" role="group" aria-label="Which try">${[['first', '1st try'], ['latest', 'Latest try']].map(([m, w]) => `<button type="button" class="key-tab" data-mode="${m}" aria-pressed="false">${w}</button>`).join('')}</div>
       <div class="key-tabs t-tabs" role="tablist" aria-label="Set">${ALL_SETS.map(s => `<button type="button" class="key-tab" data-heat="${s}">${setLabel(s)}</button>`).join('')}</div>
       <div id="t-heat"></div>
       <div id="t-skillmap"></div>`;
   }
 
-  // One row per student who has finished this set (their LATEST try), one column per question
+  // The students who finished a set, one row each: their 1st or latest finished try (mode 'first' | 'latest')
+  const doneOf = (set, mode) => students.filter(st => st.sets[set] && st.sets[set][mode]).map(st => {
+    const r = st.sets[set][mode];
+    return { name: st.name, pct: pctOf(r), tries: st.sets[set].tries.length, took: tookText(r), answers: answersOf(r),
+      missed: new Set(String(r.missed).split(',').map(x => x.trim()).filter(Boolean)) };
+  });
+
+  // One row per student who has finished this set (the try the switch shows: 1st or latest), one column per question
   function heatHTML(set) {
     const items = itemsOf(set);
-    const done = students.filter(st => st.sets[set] && st.sets[set].latest).map(st => {
-      const r = st.sets[set].latest;
-      return { name: st.name, pct: r.pct, tries: st.sets[set].tries.length, answers: answersOf(r),
-        missed: new Set(String(r.missed).split(',').map(x => x.trim()).filter(Boolean)) };
-    });
+    const done = doneOf(set, heatMode);
     if (!done.length) { heatDone = []; return `<p class="t-msg">No one has finished ${setLabel(set)} yet.</p>`; }
     const stats = items.map((it, i) => {
       const right = done.filter(d => !d.missed.has(it.id)).length;
@@ -263,7 +310,7 @@
       const what = `${esc(d.name)} · question ${i + 1}: ${miss ? 'missed' : 'right'}`;
       return `<td class="${miss ? 'h-miss' : 'h-ok'}"><button type="button" class="h-cell" data-s="${si}" data-q="${i}" aria-expanded="false" aria-controls="t-qbox" aria-label="${what}. Show the answer picked." title="${what} · tap to see the answer picked">${miss ? '✗' : '✓'}</button></td>`;
     };
-    const body = done.map((d, si) => `<tr><th scope="row">${esc(d.name)}${d.tries > 1 ? ` <span class="t-take">latest of ${d.tries}</span>` : ''}</th>${items.map((it, i) => cell(d, si, it, i)).join('')}<td class="h-score ${gradeFor(d.pct).c}">${d.pct}%</td></tr>`).join('');
+    const body = done.map((d, si) => `<tr><th scope="row">${esc(d.name)}${d.tries > 1 ? ` <span class="t-take">${heatMode === 'first' ? '1st' : 'latest'} of ${d.tries}</span>` : ''}</th>${items.map((it, i) => cell(d, si, it, i)).join('')}<td class="h-score ${gradeFor(d.pct).c}">${d.pct}%</td><td class="h-time">${d.took}</td></tr>`).join('');
     // most right first for the top 3, fewest right first for the bottom 3; ties go to the earlier question
     const top = stats.slice().sort((a, b) => b.right - a.right || a.i - b.i).slice(0, 3);
     const bottom = stats.slice().sort((a, b) => a.right - b.right || a.i - b.i).slice(0, 3);
@@ -273,13 +320,14 @@
     const rankHTML = list => `<ol class="t-rank">${list.map(s => `<li><div class="t-rank-head"><b>Question ${s.i + 1}</b>
       <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${done.length} right · ${s.pct}%</span></div>
       <div class="t-q"><i>${esc(s.it.skill)}:</i> ${esc(questionText(s.it))}</div></li>`).join('')}</ol>`;
-    return `<p class="t-legend">${esc(setLabel(set))} · each student's <b>latest try</b> · <span class="h-ok">✓</span> right · <span class="h-miss">✗</span> missed · bottom row = % of the ${done.length} ${done.length === 1 ? 'student' : 'students'} who got that question right · <b>tap a question number</b> to see that question and what students picked · <b>tap a ✓ or ✗</b> to see that student's answer</p>
-      <div class="t-wrap"><table class="t-heat"><thead><tr><th scope="col">Student</th>${items.map((it, i) => `<th scope="col"><button type="button" class="h-qbtn" data-q="${i}" aria-expanded="false" aria-controls="t-qbox" title="${esc(it.skill)}">${i + 1}</button></th>`).join('')}<th scope="col">Score</th></tr></thead>
-      <tbody>${body}</tbody><tfoot><tr><th scope="row">% right</th>${stats.map(s => `<td class="${heatClass(s.pct)}">${s.pct}</td>`).join('')}<td></td></tr></tfoot></table></div>
+    return `<p class="t-legend">${esc(setLabel(set))} · each student's <b>${tryWord()}</b> · <span class="h-ok">✓</span> right · <span class="h-miss">✗</span> missed · bottom row = % of the ${done.length} ${done.length === 1 ? 'student' : 'students'} who got that question right · <b>tap a question number</b> to see that question and what students picked · <b>tap a ✓ or ✗</b> to see that student's answer</p>
+      <div class="t-wrap"><table class="t-heat"><thead><tr><th scope="col">Student</th>${items.map((it, i) => `<th scope="col"><button type="button" class="h-qbtn" data-q="${i}" aria-expanded="false" aria-controls="t-qbox" title="${esc(it.skill)}">${i + 1}</button></th>`).join('')}<th scope="col">Score</th><th scope="col" title="Clock time, start to finish, for that try">Time</th></tr></thead>
+      <tbody>${body}</tbody><tfoot><tr><th scope="row">% right</th>${stats.map(s => `<td class="${heatClass(s.pct)}">${s.pct}</td>`).join('')}<td></td><td></td></tr></tfoot></table></div>
+      <p class="t-note">⏱ Time = clock time, start to finish, for that try. If a student stopped and came back later, the time in between counts too. — means a time is missing.</p>
       <div id="t-qbox" class="t-qbox" role="region" aria-live="polite" hidden></div>
       <div class="t-rank-grid">
-        <div class="t-rank-box t-top"><h4>⭐ Top 3 questions <span>most students right</span></h4>${rankHTML(top)}</div>
-        <div class="t-rank-box t-bottom"><h4>🔁 Bottom 3 questions <span>reteach these first</span></h4>${rankHTML(bottom)}</div>
+        <div class="t-rank-box t-top"><h4>⭐ Top 3 questions <span>most students right · ${tryWord()}</span></h4>${rankHTML(top)}</div>
+        <div class="t-rank-box t-bottom"><h4>🔁 Bottom 3 questions <span>reteach these first · ${tryWord()}</span></h4>${rankHTML(bottom)}</div>
       </div>`;
   }
 
@@ -333,7 +381,7 @@
     const row = (r, tops) => `<li class="pk-row${r.right ? ' pk-right' : ''}${tops.includes(r) ? ' pk-top' : ''}">
         <span class="pk-label">${r.right ? '✓ ' : ''}${esc(r.label)}${tops.includes(r) ? ` <em>${tops.length > 1 ? 'tied for most-picked wrong answer' : 'most-picked wrong answer'}</em>` : ''}</span>
         <span class="pk-bar" aria-hidden="true"><i style="width:${Math.round((r.n / saved) * 100)}%"></i></span><b class="pk-n">${r.n}</b></li>`;
-    return `<div class="t-picks"><h5>What students picked <span>(${saved} ${saved === 1 ? 'student' : 'students'}, latest try)</span></h5>
+    return `<div class="t-picks"><h5>What students picked <span>(${saved} ${saved === 1 ? 'student' : 'students'}, ${tryWord()})</span></h5>
       ${groups.map(g => {
         // the wrong answer(s) picked most (every one on a tie), when any wrong answer was picked
         const most = Math.max(0, ...g.rows.filter(r => !r.right).map(r => r.n));
@@ -347,8 +395,8 @@
     const picked = a ? a[1] : null;
     const text = pickedText(it, picked);
     const right = !d.missed.has(it.id);
-    if (text == null) return `<div class="t-student"><p><b>${esc(d.name)}</b>: ${right ? '✓ right' : '✗ missed'} · no answer saved for this question.</p></div>`;
-    return `<div class="t-student ${right ? 'ok' : 'no'}"><p><b>${esc(d.name)}</b> picked ${right ? '✓' : '✗'}</p>
+    if (text == null) return `<div class="t-student"><p><b>${esc(d.name)}</b> <span class="t-take">(${tryWord()})</span>: ${right ? '✓ right' : '✗ missed'} · no answer saved for this question.</p></div>`;
+    return `<div class="t-student ${right ? 'ok' : 'no'}"><p><b>${esc(d.name)}</b> picked ${right ? '✓' : '✗'} <span class="t-take">(${tryWord()})</span></p>
       <p class="t-student-pick">${esc(text)}</p>
       <p class="t-student-why"><b>What ${esc(d.name.split(' ')[0])} heard:</b> ${pickedWhys(it, picked).map(esc).join(' ')}</p></div>`;
   }
@@ -397,6 +445,11 @@
   function showHeat(set) {
     heatSet = set;
     document.querySelectorAll('[data-heat]').forEach(t => t.classList.toggle('on', t.dataset.heat === set));
+    document.querySelectorAll('[data-mode]').forEach(t => {   // the 1st try / Latest try switch
+      const on = t.dataset.mode === heatMode;
+      t.classList.toggle('on', on);
+      t.setAttribute('aria-pressed', String(on));
+    });
     $('#t-heat').innerHTML = heatHTML(set);
     // the skill heat map, right under the question heat map (which stays as it is)
     $('#t-skillmap').innerHTML = heatDone.length ? skillHTML(set, heatDone, itemsOf(set)) : '';
@@ -565,6 +618,8 @@
   $('#t-body').addEventListener('click', e => {
     const t = e.target.closest('[data-heat]');
     if (t) { showHeat(t.dataset.heat); return; }
+    const m = e.target.closest('[data-mode]');
+    if (m) { heatMode = m.dataset.mode === 'first' ? 'first' : 'latest'; showHeat(heatSet); return; }
     // the box's own buttons first: the open box also carries data-q (which question it shows)
     if (e.target.closest('[data-qclose]')) {
       const box = $('#t-qbox');

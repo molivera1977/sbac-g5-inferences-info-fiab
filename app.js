@@ -536,12 +536,27 @@
   }
 
   async function startSet(level) {
-    if (!isOpen(level)) return;
+    if (looking) return;   // still looking for saved work: nothing starts yet
+    if (!isOpen(level)) { skipAhead(level); return; }
     if (choosePlaces[level]) { beginSet(choosePlaces[level].set); return; }
     const takes = TAKES[level];
     const tries = (chooseDone[level] || {}).tries || 0;
     if (tries >= takes.length && !(await teacherSays(`let ${chooseName} take ${SET_NAMES[level]} again`))) return;
     beginSet(takes[tries % takes.length]);
+  }
+
+  /* Skip ahead (asked 11/18: "as many teacher access options as possible", as on Mrs. Wright's Base Ten site): a level
+     that is not open yet looks locked but can still be tapped. The class teacher's PIN lets THIS student start it now
+     (take 1). Nothing is kept: no one else's order changes, and without the PIN nothing opens. */
+  async function skipAhead(level) {
+    if (trying) return;   // Try it never shows the choose page
+    const me = who(chooseTeacher, chooseName);
+    if (!(await teacherSays(`let ${chooseName} start ${SET_NAMES[level]} now`))) return;
+    if (who(chooseTeacher, chooseName) !== me || document.body.dataset.screen !== 'choose') return;   // another student, or the page moved on
+    const place = choosePlaces[level];
+    if (place) { beginSet(place.set); return; }   // saved work found meanwhile: keep going
+    const tries = (chooseDone[level] || {}).tries || 0;
+    beginSet(TAKES[level][tries % TAKES[level].length]);
   }
 
   async function startOver(level) {
@@ -774,7 +789,8 @@
     document.querySelectorAll('#choose .set-btn').forEach(b => {
       const level = b.dataset.set;
       const open = isOpen(level);
-      b.disabled = looking || !open;
+      b.disabled = looking;   // nothing taps while saved work is looked up
+      b.setAttribute('aria-disabled', String(!open));   // a locked level still taps: the teacher's PIN can open it (skipAhead)
       b.classList.toggle('locked', !open);
       const prev = ORDER[ORDER.indexOf(level) - 1];
       const place = choosePlaces[level], done = chooseDone[level];
