@@ -13,6 +13,11 @@
 
   const READ_RATE = 0.82;
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // The real test's cue words (round 4, 11/21): **best**, and **two** after Select or Choose, in a question's own words
+  // only. Shown bold; the stars are never shown or said, so the voice, its recording and the highlight are the same
+  // as before (tools/check_drafts.py says which words, and where).
+  const CUE = /\*\*([^*\s]+)\*\*/;
+  const cue = s => esc(s).replace(new RegExp(CUE.source, 'g'), '<strong class="cue">$1</strong>');
 
   const SIGN_SAY = { '🔊': 'the speaker button', '·': '', '—': '', '💡': '' };
   const wordSpan = (show, say, stop) => `<span class="w" data-say="${esc(say)}"${stop ? ' data-stop' : ''}>${show}</span>`;
@@ -21,6 +26,8 @@
     const pieces = [];   // [show, say]; say null = a space
     let ital = false;    // *a word* in a passage (a word talked about as a word) shows in italics; the * is never said
     const shown = chunk => {
+      const c = chunk.split(CUE);   // a **cue** word first: bold (its stars never reach the italics below)
+      if (c.length > 1) return c.map((part, i) => (i % 2 ? `<strong class="cue">${shown(part)}</strong>` : shown(part))).join('');
       let out = '', seg = '';
       const flush = () => { if (seg) out += ital ? `<i>${esc(seg)}</i>` : esc(seg); seg = ''; };
       for (const ch of chunk) { if (ch === '*') { flush(); ital = !ital; } else seg += ch; }
@@ -171,5 +178,5 @@
   if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => {};
   window.addEventListener('pagehide', stopReading);
 
-  window.G5Speech = { READ_RATE, esc, sayHTML, wordSpan, spokenOf, spokenLines, readLines, readBox, stopReading, isSpeaking, wasStopped, sayBtn };
+  window.G5Speech = { READ_RATE, esc, cue, sayHTML, wordSpan, spokenOf, spokenLines, readLines, readBox, stopReading, isSpeaking, wasStopped, sayBtn };
 })();

@@ -17,7 +17,7 @@
   'use strict';
 
   const S = window.G5Speech;
-  const { esc, sayHTML, wordSpan, sayBtn, readBox, readLines, spokenOf, stopReading } = S;
+  const { esc, cue, sayHTML, wordSpan, sayBtn, readBox, readLines, spokenOf, stopReading } = S;
   const Sheet = window.G5Sheet;
   const SETS = window.SETS;
   /* GUEST VIEW (Marcos 11/19: an admin page with every SBAC site, "so they can see all of them in one place"): share.js,
@@ -412,7 +412,7 @@
     $('#reward').hidden = pct < 80;
     const missed = items.filter(it => !(state.results[it.id] || {}).ok);
     $('#missed').innerHTML = missed.length ? `<h3 class="missed-title">Questions to look at again</h3>${missed.map(it => `
-      <div class="miss"><div class="miss-q"><b>Question ${items.indexOf(it) + 1}:</b> ${esc(questionText(it))}</div>
+      <div class="miss"><div class="miss-q"><b>Question ${items.indexOf(it) + 1}:</b> ${cue(questionText(it))}</div>
         <div class="miss-row"><span class="miss-label key">Answer</span><span>${esc(answerText(it, ordFor(it)))}</span></div></div>`).join('')}`
       : '<p class="all-right">You got every question right! 🎉</p>';
     $('#progress-fill').style.width = '100%';
