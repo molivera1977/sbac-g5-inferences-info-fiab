@@ -164,7 +164,7 @@
   function stemHTML(it) {
     if (it.type === 'ebsr') {
       const ex = it.excerpt ? ' Read these paragraphs from the passage.' : '';
-      return `<p class="ask">${sayHTML(`This question has two parts. Answer Part A and Part B.${ex}`)}</p>`;
+      return `<p class="ask">${sayHTML(`This question has two parts. First, answer part A. Then, answer part B.${ex}`)}</p>`;   // the real test's words (Grade 5 map, AVA 11/21)
     }
     const tip = it.type === 'ms' ? 'Tap 2 answers. Tap one again to take it back.'
       : it.type === 'hottext' ? (it.pick === 2 ? 'Tap 2 sentences. Tap one again to take it back.' : 'Tap 1 sentence.') : '';

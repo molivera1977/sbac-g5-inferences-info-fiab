@@ -1,7 +1,7 @@
 /* Grade 5 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 tools/check_drafts.py).
-   drafts fingerprint: 435a070128ef */
+   drafts fingerprint: 79d8837a9775 */
 window.SETS = {
  "W": {
   "passages": [
@@ -251,7 +251,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "Scientists have studied the rocks since the 1940s.",
@@ -279,24 +279,24 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that the owlet's flight in June was a special accomplishment?",
+    "stem": "Which sentence from the passage best supports the conclusion that the owlet's flight in June was a turning point for her?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
       "t": "By May, the owlet had traded most of her fluffy down for sleek brown flight feathers.",
-      "why": "This tells how the owlet's feathers changed. It does not prove the flight was special."
+      "why": "This tells how the owlet's feathers changed. It does not prove the flight in June was a turning point for her."
      },
      {
       "t": "Dr. Lee moved her into a flight cage, a long building with mesh walls where young birds practice flying.",
-      "why": "This tells where the owlet practiced. It does not prove the flight was special."
+      "why": "This tells where the owlet practiced. It does not prove the flight in June was a turning point for her."
      },
      {
       "t": "Great horned owls are nocturnal, so they hunt mostly at night.",
-      "why": "This tells when great horned owls hunt. It does not prove the flight was special."
+      "why": "This tells when great horned owls hunt. It does not prove the flight in June was a turning point for her."
      },
      {
       "t": "Then, one evening in June, she flew the whole length of the cage for the first time.",
-      "why": "Yes! The owlet did something she had never done before. Doing something for the first time is a special accomplishment."
+      "why": "Yes! At first, the owlet only hopped from perch to perch. In June she flew the whole cage for the first time. Things changed for her after that, so it was a turning point."
      }
     ],
     "answer": 3
@@ -307,26 +307,26 @@ window.SETS = {
     "p": 1,
     "type": "hottext",
     "skill": "Click the proof: why it happens or matters",
-    "stem": "Select the sentence that best supports why it is harmful for a young wild owl to get used to people.",
+    "stem": "Select the sentence that best supports why a young owl should learn to fear people.",
     "pick": 1,
     "layout": "list",
     "hint": "Read the idea in the question. Then read each sentence. Click the one that proves it the most.",
     "pieces": [
      {
       "t": "The hospital had an adult great horned owl that could not survive in the wild because of an old wing injury.",
-      "why": "This tells about the foster mother's old injury. It does not tell why getting used to people is harmful."
+      "why": "This tells about the foster mother's old injury. It does not tell why a young owl should fear people."
      },
      {
       "t": "She became the owlet's foster mother, and the two shared a quiet enclosure.",
-      "why": "This tells who raised the owlet. It does not tell why getting used to people is harmful."
+      "why": "This tells who raised the owlet. It does not tell why a young owl should fear people."
      },
      {
       "t": "When caretakers brought chopped mice, they wore masks and never spoke.",
-      "why": "This tells what the caretakers did. It does not tell why getting used to people is harmful."
+      "why": "This tells what the caretakers did. It does not tell why a young owl should fear people."
      },
      {
       "t": "An owlet that gets used to people may never learn to fear them, and an owl without that fear can easily be harmed by people, cars, or dogs.",
-      "why": "Yes! An owl that does not fear people can be hurt by people, cars, or dogs. That is why getting used to people is harmful."
+      "why": "Yes! An owl that does not fear people can be hurt by people, cars, or dogs. That is why a young owl should learn to fear people."
      }
     ],
     "answer": [
@@ -391,7 +391,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quote from Dr. Lee best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"An owl that imprints on people can never be released,\" she explained.",
@@ -443,7 +443,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which quote from Dr. Lee best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"At that age, an owlet still depends on its parents for every meal.\"",
@@ -527,34 +527,34 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select two sentences that best support the inference that Jada is tired after the speed event.",
+    "stem": "Select two sentences that best support the inference that Jada is worn out after the speed event.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two sentences. Each one must prove the idea by itself.",
     "pieces": [
      {
       "t": "When the two minutes ended, Jada stepped out of the ropes.",
-      "why": "This tells what Jada did when the time was up. It does not prove she is tired."
+      "why": "This tells what Jada did when the time was up. It does not prove she is worn out."
      },
      {
       "t": "Her legs felt as heavy as bricks.",
-      "why": "Yes! Legs that feel as heavy as bricks are a clue that Jada is tired."
+      "why": "Yes! Legs that feel as heavy as bricks are a clue that Jada is worn out."
      },
      {
       "t": "She bent over and gasped for air.",
-      "why": "Yes! Gasping for air is a clue that Jada is tired."
+      "why": "Yes! Gasping for air is a clue that Jada is worn out."
      },
      {
       "t": "Her coach gave her a high five.",
-      "why": "This tells what the coach did. It does not prove Jada is tired."
+      "why": "This tells what the coach did. It does not prove Jada is worn out."
      },
      {
       "t": "A judge jotted down her count.",
-      "why": "This tells what the judge did. It does not prove Jada is tired."
+      "why": "This tells what the judge did. It does not prove Jada is worn out."
      },
      {
       "t": "Then the team lined up for the Fusion event.",
-      "why": "This tells what the team did next. It does not prove Jada is tired."
+      "why": "This tells what the team did next. It does not prove Jada is worn out."
      }
     ],
     "answer": [
@@ -597,7 +597,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "For generations, kids in New York jumped Double Dutch on sidewalks and playgrounds. In 1973 and 1974, two police detectives turned the game into a sport with rules and a first tournament. Every December, teams from many places jump in the Holiday Classic in New York City. In the compulsory event, every team must do the same tricks, and in the Fusion event, teams jump to music. At the end of the day, Jada's team wins a third-place trophy.",
+    "box": "Kids in New York jumped Double Dutch for generations, and in 1974 two police detectives made it a sport. Every December, teams jump in the Holiday Classic in New York City. In the compulsory event, every team does the same tricks, and in the Fusion event, teams jump to music.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "hint": "A summary tells the most important parts. Leave out small details.",
     "choices": [
@@ -650,7 +650,7 @@ window.SETS = {
      "answer": 3
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "No one knows for sure how the game got its name.",
@@ -937,7 +937,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "\"It was the first time scientists could watch a volcano from its birth to its end,\" says Dr. Lucía Herrera.",
@@ -965,24 +965,24 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that climbing the tallest tree was a special accomplishment for Clover?",
+    "stem": "Which sentence from the passage best supports the conclusion that climbing the tallest tree was a big victory for Clover?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
       "t": "At the edge of the trail, a black bear cub was huddled against a mossy log.",
-      "why": "This tells where the hiker found Clover. It does not prove that climbing the tree was special."
+      "why": "This tells where the hiker found Clover. It does not prove that climbing the tree was a big victory."
      },
      {
       "t": "In August, she climbed the tallest tree in the enclosure for the first time.",
-      "why": "Yes! \"For the first time\" is a clue. Clover's hurt paw had kept her on low rocks and stumps. Now she did something she had never done before. That proves it was a special accomplishment."
+      "why": "Yes! \"For the first time\" is a clue. Clover's hurt paw had kept her on low rocks and stumps. Now she did something she had never done before. That proves it was a big victory."
      },
      {
       "t": "Then she joined three other orphaned cubs in a wooded enclosure.",
-      "why": "This tells where Clover lived at the rescue center. It does not prove that climbing the tree was special."
+      "why": "This tells where Clover lived at the rescue center. It does not prove that climbing the tree was a big victory."
      },
      {
       "t": "The team drove her back to the ridge where she had been found.",
-      "why": "This is true, but it tells where Clover was set free. It does not prove that climbing the tree was special."
+      "why": "This is true, but it tells where Clover was set free. It does not prove that climbing the tree was a big victory."
      }
     ],
     "answer": 1
@@ -1077,7 +1077,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quote from Dr. Harlan best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"Her paw was so sore that she could not grip a branch.\"",
@@ -1118,7 +1118,7 @@ window.SETS = {
        "why": "The passage never says this. The rescue center's goal is to set bears free."
       },
       {
-       "t": "They will likely stay there if their forests are protected.",
+       "t": "They will stay there if their forests are protected.",
        "why": "Yes! Dr. Harlan says that if people protect the forests, bears will live there for a long time. Answer first. Then find the proof."
       },
       {
@@ -1129,7 +1129,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which quote from Dr. Harlan best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"If we protect these forests, bears will roam them for a long, long time.\"",
@@ -1283,7 +1283,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1989, National Geographic started a geography bee for kids after a survey showed that young Americans did not know the world well. That bee ended in 2021, but other groups still hold bees. Priya, who is 12, studies an atlas every night and passed a test to get into a bee. At the bee, she listened to the clues and buzzed in when she knew the answer. In the final round, she named the Amazon River.",
+    "box": "In 1989, National Geographic started a contest called the National Geography Bee. That bee ended in 2021, but other groups still hold geography bees for kids. Priya passed a test to enter a bee near her home, and she named the Amazon River in the final round.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "hint": "A summary tells the most important parts. Leave out small details.",
     "choices": [
@@ -1336,7 +1336,7 @@ window.SETS = {
      "answer": 0
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "The word geography comes from two ancient Greek words.",
@@ -1620,7 +1620,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "It starts high in the mountains, in a giant field of ice and snow.",
@@ -1648,23 +1648,23 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that saving this turtle was a special accomplishment?",
+    "stem": "Which sentence from the passage best supports the conclusion that saving this turtle was an important success?",
     "choices": [
      {
       "t": "Soon another volunteer arrived to drive the turtle to a sea turtle hospital near Boston.",
-      "why": "This tells how the turtle got to the hospital. It does not prove that saving it was special."
+      "why": "This tells how the turtle got to the hospital. It does not prove that saving it was an important success."
      },
      {
       "t": "Sadly, not every cold-stunned turtle survives.",
-      "why": "Yes! Some cold-stunned turtles do not make it. That makes saving this one a special accomplishment."
+      "why": "Yes! Some cold-stunned turtles do not make it. That makes saving this one an important success."
      },
      {
       "t": "Cape Cod curls out into the ocean like a bent arm, and when the water cools in the fall, many turtles cannot find their way around it to warmer seas.",
-      "why": "This is true, but it tells why turtles get trapped. It does not prove that saving this one was special."
+      "why": "This is true, but it tells why turtles get trapped. It does not prove that saving this one was an important success."
      },
      {
-      "t": "By late June, the ocean off Cape Cod was warm again, and the turtle was healthy enough to go home.",
-      "why": "This tells when the turtle was ready to go home. It does not prove that saving it was special."
+      "t": "Then she marked the spot and called the rescue hotline.",
+      "why": "This tells what Ellen did on the beach. It does not prove that saving the turtle was an important success."
      }
     ],
     "answer": 1
@@ -1756,7 +1756,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quotation from Dr. Castillo best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"This one couldn't swim, couldn't eat, and could barely lift its head.\"",
@@ -1771,8 +1771,8 @@ window.SETS = {
        "why": "This tells about turtle eggs. It does not show how the turtle was when it arrived."
       },
       {
-       "t": "\"That is how a species that was almost gone can recover.\"",
-       "why": "This tells about the future of the turtles. It does not show how this turtle was when it arrived."
+       "t": "By late June, the ocean off Cape Cod was warm again, and the turtle was healthy enough to go home.",
+       "why": "This tells about late June, months after the rescue. It does not show how the turtle was when it arrived."
       }
      ],
      "answer": 0
@@ -1792,8 +1792,8 @@ window.SETS = {
        "why": "The passage says the turtles are set free in the ocean."
       },
       {
-       "t": "Their numbers may keep growing.",
-       "why": "Yes! Each turtle that goes home could have young of its own someday. Answer first. Then find the proof."
+       "t": "They will become more common over time.",
+       "why": "Yes! Each turtle that goes home could have young of its own someday. More young turtles means these turtles will become more common over time. Answer first. Then find the proof."
       },
       {
        "t": "They will stop swimming north in the summer.",
@@ -1807,7 +1807,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quotation from Dr. Castillo best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"Cold-stunned turtles can look lifeless when they arrive, but many of them are still alive.\"",
@@ -1823,7 +1823,7 @@ window.SETS = {
       },
       {
        "t": "\"Each turtle we return to the ocean could grow up and have young of its own.\"",
-       "why": "Yes! More young turtles means the number of Kemp's ridleys can grow. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! More young turtles means Kemp's ridleys can become more common. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -1835,23 +1835,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text best supports the conclusion that kids can do important jobs?",
+    "stem": "Which sentence from the text best supports the conclusion that kids can help adults solve a real problem?",
     "choices": [
      {
       "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
-      "why": "This tells what Stotz wanted for the boys. It does not show the boys doing a job."
+      "why": "This tells what Stotz wanted for the boys. It does not show the boys solving a problem."
      },
      {
       "t": "In the summer of 1938, Carl Stotz played ball with his young nephews, Jimmy and Major Gehron, in Williamsport, Pennsylvania.",
-      "why": "This tells who Stotz played ball with. It does not show the boys doing an important job."
+      "why": "This tells who Stotz played ball with. It does not show the boys helping to solve a problem."
      },
      {
       "t": "So all that summer, the boys helped Stotz test fields of different sizes, playing practice games on each one.",
-      "why": "Yes! The boys helped find the right size for the field, and Little League still uses that size today. That was an important job."
+      "why": "Yes! An adult field was too big for young players. The boys helped find the right size, and Little League still uses that size today."
      },
      {
       "t": "A donation of 30 dollars from each one bought a whole team's uniforms.",
-      "why": "This is true, but it is about money for uniforms. It does not prove that kids can do important jobs."
+      "why": "This is true, but it is about money for uniforms. It does not prove that kids can help solve a problem."
      }
     ],
     "answer": 2
@@ -1929,23 +1929,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Little League is careful about keeping its players safe. Which sentence from the passage best supports this inference?",
+    "stem": "Read this inference. Little League tries to prevent injuries. Which sentence from the passage best supports this inference?",
     "choices": [
      {
       "t": "To advance, a team must win its district, then its state or country, and then its region.",
-      "why": "This is true, but it tells what a team must win to move on. It does not prove that Little League keeps players safe."
+      "why": "This is true, but it tells what a team must win to move on. It does not prove that Little League tries to prevent injuries."
      },
      {
       "t": "They share meals, and many swap souvenir pins with players from other countries.",
-      "why": "This tells what players do at the Grove. It does not prove that Little League keeps them safe."
+      "why": "This tells what players do at the Grove. It does not prove that Little League tries to prevent injuries."
      },
      {
       "t": "A pitcher who throws 66 or more pitches in a day must rest for four days before pitching again.",
-      "why": "Yes! Making pitchers rest protects their arms. That shows Little League is careful about safety."
+      "why": "Yes! Making pitchers rest protects their arms from getting hurt. That shows Little League tries to prevent injuries."
      },
      {
       "t": "In the end, only 20 teams reach the World Series each August: 10 from the United States and 10 from other countries.",
-      "why": "This tells how many teams reach the World Series. It does not prove that Little League is careful about safety."
+      "why": "This tells how many teams reach the World Series. It does not prove that Little League tries to prevent injuries."
      }
     ],
     "answer": 2
@@ -1957,7 +1957,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1938, Carl Stotz wanted boys in Williamsport, Pennsylvania, to play baseball on real teams. That summer, he and his nephews tested fields to find the right size for young players. Two friends agreed to manage teams, and on June 6, 1939, the first Little League game was played. Little League grew quickly, and Williamsport held the first Little League World Series in 1947. Today, only 20 of more than 6,500 all-star teams reach the World Series each August.",
+    "box": "In 1938, Carl Stotz wanted boys in Williamsport, Pennsylvania, to play baseball on real teams. That summer, his nephews helped him test fields of different sizes for young players. The first Little League game was played in 1939, and today 20 teams reach the World Series each August.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -1990,10 +1990,10 @@ window.SETS = {
      "choices": [
       {
        "t": "Carl Stotz started Little League all by himself.",
-       "why": "The passage tells about many people who helped Stotz."
+       "why": "This is not true. Reread the parts about the businesses and Stotz's friends."
       },
       {
-       "t": "It took many people working together to start Little League.",
+       "t": "Carl Stotz got help from many other people.",
        "why": "Yes! Boys, businesses, friends, and their wives all helped. Answer first. Then find the proof."
       },
       {
@@ -2008,19 +2008,19 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "On June 6, 1939, the first Little League game was played on a vacant lot in Williamsport.",
-       "why": "This tells when and where the first game was played. It does not show people working together."
+       "why": "This tells when and where the first game was played. It does not show other people helping Stotz."
       },
       {
        "t": "The three men, their wives, and another couple formed the league's first board, the group that made its big decisions.",
-       "why": "Yes! A whole group of friends joined together to run the league. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! A whole group of friends helped Stotz run the league. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "Lundy Lumber beat Lycoming Dairy, 23 to 8.",
-       "why": "This tells who won the first game. It does not show people working together to start the league."
+       "why": "This tells who won the first game. It does not show other people helping Stotz start the league."
       },
       {
        "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
@@ -2295,7 +2295,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "In 2014, workers built low fences out of old Christmas trees to slow the wind.",
@@ -2323,7 +2323,7 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that Marigold's first year back in the wild was a special accomplishment?",
+    "stem": "Which sentence from the passage best supports the conclusion that Marigold did something impressive in her first year back in the wild?",
     "choices": [
      {
       "t": "On a chilly morning, they transported her to a warm spring where dozens of wild manatees were spending the winter.",
@@ -2331,11 +2331,11 @@ window.SETS = {
      },
      {
       "t": "For the next year, researchers monitored Marigold's tag.",
-      "why": "This is true, but it does not prove Marigold did something special. It tells what the researchers did."
+      "why": "This is true, but it does not prove Marigold did something impressive. It tells what the researchers did."
      },
      {
       "t": "Without a mother to guide her, she had found warm water on her own.",
-      "why": "Yes! A calf usually learns where warm water is from its mother. Marigold found it with no one to show her. That is special."
+      "why": "Yes! A calf usually learns where warm water is from its mother. Marigold found it with no one to show her. That is impressive."
      },
      {
       "t": "She weighed only 65 pounds, and part of her umbilical cord was still attached, so she had been born very recently.",
@@ -2431,7 +2431,7 @@ window.SETS = {
      "answer": 0
     },
     "partB": {
-     "q": "Which quote from Dr. Reed best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"When Marigold arrived, she was so weak that she could barely lift her nostrils above the water to breathe,\" Dr. Reed said.",
@@ -2467,8 +2467,8 @@ window.SETS = {
        "why": "The passage gives reasons for hope. The count of manatees went up, not down."
       },
       {
-       "t": "Rescued calves like Marigold may help the number of manatees grow.",
-       "why": "Yes! Rescued orphans can grow up and have calves of their own. Answer first. Then find the proof."
+       "t": "Rescued calves like Marigold will help the number of manatees grow.",
+       "why": "Yes! Rescued orphans can grow up and have calves of their own, so they will help the number of manatees grow. Answer first. Then find the proof."
       },
       {
        "t": "Manatees will stop needing warm water in winter.",
@@ -2482,7 +2482,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quote from Dr. Reed best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"An orphan has never had a teacher,\" Dr. Reed explained.",
@@ -2510,23 +2510,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text best supports the conclusion that a small stamp could do a big job?",
+    "stem": "Which sentence from the text best supports the conclusion that a small stamp could make a big difference?",
     "choices": [
      {
       "t": "It showed two mallards swooping down toward a marsh.",
-      "why": "This tells what the first stamp looked like. It does not show the stamp doing a big job."
+      "why": "This tells what the first stamp looked like. It does not show the stamp making a big difference."
      },
      {
       "t": "Darling quickly sketched six designs on stiff pieces of cardboard that came back from the laundry with his shirts.",
-      "why": "This tells how the first design was made. It does not show what the stamps were able to do."
+      "why": "This tells how the first design was made. It does not show the stamps making a difference."
      },
      {
       "t": "Since 1934, money from the stamps has helped protect more than six million acres of wetlands.",
-      "why": "Yes! Each stamp is small, but together the stamps have helped protect millions of acres. That is a big job."
+      "why": "Yes! Each stamp is small, but together the stamps have helped protect millions of acres of wetlands. That is a big difference."
      },
      {
       "t": "Each stamp cost one dollar.",
-      "why": "This is true, but it only tells how little a stamp cost. It does not prove that the stamps did a big job."
+      "why": "This is true, but it only tells how little a stamp cost. It does not prove that the stamps made a big difference."
      }
     ],
     "answer": 2
@@ -2632,7 +2632,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In the early 1930s, drained marshes and a severe drought left ducks with fewer places to live. In 1934, a new law created the Duck Stamp to raise money for wetlands. Ding Darling designed the first stamp, and since then the stamps have helped protect millions of acres. Today, students from kindergarten through 12th grade enter the Junior Duck Stamp contest. Each state picks one Best of Show, and those designs go on to a national contest.",
+    "box": "In 1934, a new law created the Duck Stamp to raise money for wetlands that ducks needed. Money from the stamps has helped protect millions of acres of wetlands. Today, students enter the Junior Duck Stamp contest, and each state's Best of Show goes on to a national contest.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -2683,7 +2683,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "In the early 1930s, waterfowl across North America faced a crisis.",
@@ -2812,7 +2812,7 @@ window.SETS = {
       "p": "Scientists estimate that about 16,000 southern sea otters once swam along the coast, but fur hunters killed so many that people feared they were extinct. Then, in 1938, a small group was discovered near Big Sur. Today about 3,000 of them live in California, and they are still listed as a threatened species."
      },
      {
-      "p": "Now other aquariums have begun raising orphans with surrogate mothers, too. Dr. Navarro says, \"That means more pups than ever will get a second chance in the ocean. Each one can help the population keep growing.\""
+      "p": "Now other aquariums have begun raising orphans with surrogate mothers, too. Dr. Navarro says, \"That means more pups than ever will live free along the coast. Each one can help the population keep growing.\""
      }
     ],
     "footnotes": [
@@ -2973,7 +2973,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "Fishermen near the south coast of Iceland were the first to see it.",
@@ -3001,23 +3001,23 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that what Toola did was a special accomplishment?",
+    "stem": "Which sentence from the passage best supports the conclusion that what Toola did made history?",
     "choices": [
      {
       "t": "The otter, named Toola, was pregnant and seriously ill.",
-      "why": "This tells how Toola was when she was found. It does not prove that what she did was special."
+      "why": "This tells how Toola was when she was found. It does not prove that what she did made history."
      },
      {
       "t": "A brain illness caused by a parasite gave her seizures, so she needed medicine twice a day and could never return to the ocean.",
-      "why": "This tells why Toola had to stay at the aquarium. It does not prove that what she did was special."
+      "why": "This tells why Toola had to stay at the aquarium. It does not prove that what she did made history."
      },
      {
       "t": "Toola became the first otter living in an aquarium to ever raise another mother's pup.",
-      "why": "Yes! No otter in an aquarium had ever done this before. Being the first makes it special."
+      "why": "Yes! No otter in an aquarium had ever done this before. Being the very first to do something is how you make history."
      },
      {
       "t": "Since then, adult females that cannot live in the wild have raised dozens of orphans.",
-      "why": "This is true, but it tells about other otters after Toola. It does not prove that what Toola did was special."
+      "why": "This is true, but it tells about other otters after Toola. It does not prove that what Toola did made history."
      }
     ],
     "answer": 2
@@ -3109,7 +3109,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which quotation from Dr. Navarro best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"The pup watches everything she does, and it copies her.\"",
@@ -3141,8 +3141,8 @@ window.SETS = {
      "q": "Which of these conclusions about the future of California's sea otters is supported by the passage?",
      "choices": [
       {
-       "t": "More orphaned pups will be released into the ocean.",
-       "why": "Yes! Other aquariums are now raising orphans with surrogate mothers, so more pups will go back to the ocean. Answer first. Then find the proof."
+       "t": "More orphaned pups will go home to the sea.",
+       "why": "Yes! Other aquariums are now raising orphans with surrogate mothers, so more pups will get to go home to the sea. Answer first. Then find the proof."
       },
       {
        "t": "Sea otters will soon disappear from the California coast.",
@@ -3160,7 +3160,7 @@ window.SETS = {
      "answer": 0
     },
     "partB": {
-     "q": "Which quotation from Dr. Navarro best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"It can't dive, it can't catch food, and it can't even keep its fur clean enough to stay warm.\"",
@@ -3168,15 +3168,15 @@ window.SETS = {
       },
       {
        "t": "\"The pup watches everything she does, and it copies her.\"",
-       "why": "This tells how a pup learns. It does not prove that more pups will go back to the ocean."
+       "why": "This tells how a pup learns. It does not prove that more pups will go home to the sea."
       },
       {
-       "t": "\"That means more pups than ever will get a second chance in the ocean.\"",
-       "why": "Yes! More aquariums are helping, so more pups will go back to the ocean. Part B is your Detail. It proves your Part A answer."
+       "t": "\"That means more pups than ever will live free along the coast.\"",
+       "why": "Yes! More aquariums are helping, so more pups than ever will go home to the sea. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"When we let them go, we want them to swim away from us, not toward us.\"",
-       "why": "This tells what the workers hope for when they let an otter go. It does not prove that more pups will be released in the future."
+       "why": "This tells what the workers hope for when they let an otter go. It does not prove that more pups will go home to the sea in the future."
       }
      ],
      "answer": 2
@@ -3282,23 +3282,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. The people who run the Soap Box Derby are careful about safety. Which sentence from the passage best supports this inference?",
+    "stem": "Read this inference. The people who run the Soap Box Derby take steps to keep racers from getting hurt. Which sentence from the passage best supports this inference?",
     "choices": [
      {
       "t": "Racers still assemble their own vehicles, but today the parts come from kits.",
-      "why": "This tells how the cars are built. It does not prove that the people in charge are careful about safety."
+      "why": "This tells how the cars are built. It does not prove that the people in charge work to keep racers from getting hurt."
      },
      {
       "t": "On race morning, every car is weighed with its driver inside, so no one gets an unfair advantage from extra weight.",
-      "why": "This is true, but the weigh-in is about being fair, not about being safe."
+      "why": "This is true, but the weigh-in is about being fair, not about keeping racers from getting hurt."
      },
      {
       "t": "Before any car can race, officials inspect it and check its steering and brakes.",
-      "why": "Yes! Officials check the parts that steer and stop the car before anyone races. That shows they are careful about safety."
+      "why": "Yes! Officials check the parts that steer and stop the car before anyone races. That shows they take steps to keep racers from getting hurt."
      },
      {
       "t": "After the first run, the two racers trade wheels and switch lanes before racing again.",
-      "why": "This is true, but trading wheels and lanes is about being fair, not about being safe."
+      "why": "This is true, but trading wheels and lanes is about being fair, not about keeping racers from getting hurt."
      }
     ],
     "answer": 2
@@ -3310,7 +3310,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1933, a newspaper photographer named Myron Scott saw boys racing homemade cars down a hill in Dayton, Ohio. He invited more children to a bigger race, and thousands of people came to watch. In 1935, the race moved to Akron, Ohio, where workers later built a racetrack called Derby Downs. Today, more than 300 racers come to Derby Downs each July for the world championship. Each heat between two racers has two runs, and the racer who leads after both runs wins.",
+    "box": "In 1933, a newspaper photographer named Myron Scott saw boys racing homemade cars in Dayton, Ohio. In 1935, the race moved to Akron, where workers later built a racetrack called Derby Downs. Today, more than 300 racers come to Derby Downs each July for the world championship.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -3346,8 +3346,8 @@ window.SETS = {
        "why": "Nothing in the passage says the racers planned the race or paid for it."
       },
       {
-       "t": "It took many people and groups working together.",
-       "why": "Yes! Many different helpers had to do their part to make the race happen. Answer first. Then find the proof."
+       "t": "It depended on help from many different groups.",
+       "why": "Yes! Many different groups had to do their part to make the race happen. Answer first. Then find the proof."
       },
       {
        "t": "It was held at Derby Downs in Akron, Ohio.",
@@ -3361,23 +3361,23 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "The next year, the Derby moved to Akron, Ohio, because the city had suitable hills and a central location.",
-       "why": "This tells where the race moved after the first All-American Derby. It does not show people working together."
+       "why": "This tells where the race moved after the first All-American Derby. It does not show other groups helping."
       },
       {
        "t": "Many early cars were built from the sturdy wooden crates that soap was shipped in.",
-       "why": "This tells what the early cars were made of. It does not show how the race was put together."
+       "why": "This tells what the early cars were made of. It does not show other groups helping to put the race together."
       },
       {
        "t": "He convinced newspapers in other cities to hold local races and send their winners to Dayton.",
-       "why": "Yes! Newspapers in many cities had to hold races and send their winners. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! Scott needed newspapers in many cities to hold races and send their winners. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "The cars had no engines, so gravity did all the work.",
-       "why": "This tells how the cars moved. It does not show people working together."
+       "why": "This tells how the cars moved. It does not show other groups helping."
       }
      ],
      "answer": 2
@@ -3645,7 +3645,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which detail from the passage best supports the inference in Part A?",
+     "q": "Which detail from the passage best supports the inference in part A?",
      "choices": [
       {
        "t": "From 1987 to 2022, the water level dropped more than 20 feet.",
@@ -3673,7 +3673,7 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage best supports the conclusion that catching a live fish was a special accomplishment for Nalu?",
+    "stem": "Which sentence from the passage best supports the conclusion that catching a live fish was a big step forward for Nalu?",
     "choices": [
      {
       "t": "Within a few weeks, she had enough strength to gulp down whole herring tossed into her pool.",
@@ -3685,11 +3685,11 @@ window.SETS = {
      },
      {
       "t": "For the first time in her life, she had caught a meal all by herself.",
-      "why": "Yes! Nalu had never caught her own food before. Doing something for the first time is what makes it special."
+      "why": "Yes! Nalu had never caught her own food before. Catching a meal by herself meant she was getting ready to live on her own. That is a big step forward."
      },
      {
       "t": "By July, after ten months of care, Nalu weighed about 180 pounds, three times as much as when she arrived.",
-      "why": "This is true, but it does not prove catching a fish was special. It is about her weight."
+      "why": "This is true, but it is about her weight. It does not prove that catching a fish was a big step forward."
      }
     ],
     "answer": 2
@@ -3700,25 +3700,25 @@ window.SETS = {
     "p": 1,
     "type": "hottext",
     "skill": "Click the proof: why it happens or matters",
-    "stem": "Select the sentence that best supports why getting used to people can be harmful to a monk seal.",
+    "stem": "Select the sentence that best supports why a monk seal is safer when it keeps away from people.",
     "pick": 1,
     "layout": "list",
     "pieces": [
      {
       "t": "The caregivers were thinking about her future.",
-      "why": "This tells that the caregivers were thinking ahead. It does not tell what the harm is."
+      "why": "This tells that the caregivers were thinking ahead. It does not tell why a seal is safer away from people."
      },
      {
       "t": "They fed and weighed Nalu, but they never petted her or played with her.",
-      "why": "This tells what the caregivers did not do. It does not explain how people could harm a seal."
+      "why": "This tells what the caregivers did not do. It does not tell why a seal is safer away from people."
      },
      {
       "t": "Most of the time, they observed her through one-way glass, so they could see her while she could not see them.",
-      "why": "This tells how the caregivers stayed out of sight. It does not tell what could go wrong for the seal."
+      "why": "This tells how the caregivers stayed out of sight. It does not tell what could go wrong for a seal that comes near people."
      },
      {
       "t": "A monk seal that learns to associate people with food may later approach fishing boats and crowded beaches, where it can get snagged on a hook or be injured.",
-      "why": "Yes! A seal that links people with food may go near boats and beaches, where it can get hooked or hurt. That is why getting used to people is harmful."
+      "why": "Yes! A seal that links people with food may go near boats and beaches, where it can get hooked or hurt. A seal that keeps away from people stays out of that danger."
      }
     ],
     "answer": [
@@ -3781,7 +3781,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which quotation from Dr. Ferreira best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"A pup that thin had less than a one percent chance of surviving on her own.\"",
@@ -3817,8 +3817,8 @@ window.SETS = {
        "why": "The passage says their numbers have been slowly rising, not falling."
       },
       {
-       "t": "Their numbers may keep growing as more pups are rescued.",
-       "why": "Yes! Rescued pups like Nalu can grow up and have pups of their own. Answer first. Then find the proof."
+       "t": "Their numbers will keep growing as more pups are rescued.",
+       "why": "Yes! Rescued pups like Nalu can grow up and have pups of their own, so their numbers will keep growing. Answer first. Then find the proof."
       },
       {
        "t": "They will no longer face any dangers at sea.",
@@ -3832,7 +3832,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which quotation from Dr. Ferreira best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "\"A pup that thin had less than a one percent chance of surviving on her own.\"",
@@ -3914,7 +3914,7 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select two sentences that best support the inference that Anika feels tired during the final rounds.",
+    "stem": "Select two sentences that best support the inference that Anika feels sleepy during the final rounds.",
     "pick": 2,
     "layout": "list",
     "pieces": [
@@ -3928,7 +3928,7 @@ window.SETS = {
      },
      {
       "t": "Anika rubbed her eyes and tried to hide a big yawn.",
-      "why": "Yes! Rubbing her eyes and yawning are clues that Anika is tired. This sentence proves it by itself."
+      "why": "Yes! Rubbing her eyes and yawning are clues that Anika is sleepy. This sentence proves it by itself."
      },
      {
       "t": "Another finalist approached the microphone to spell his word.",
@@ -3936,7 +3936,7 @@ window.SETS = {
      },
      {
       "t": "Her eyelids felt heavy, and she had to blink hard to keep them open.",
-      "why": "Yes! Heavy eyelids that will not stay open are a clue that Anika is tired. This sentence proves it by itself."
+      "why": "Yes! Heavy eyelids that will not stay open are a clue that Anika is sleepy. This sentence proves it by itself."
      },
      {
       "t": "Then the pronouncer called her name, and she rose for her turn.",
@@ -3954,23 +3954,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Many spellers are thorough. Which sentence from the passage best supports this inference?",
+    "stem": "Read this inference. Many spellers are cautious. Which sentence from the passage best supports this inference?",
     "choices": [
      {
       "t": "Contestants must be in eighth grade or below.",
-      "why": "This is a rule about who can enter. It does not show that spellers are thorough."
+      "why": "This is a rule about who can enter. It does not show that spellers are cautious."
      },
      {
       "t": "If a contestant misspells a word, the head judge rings a bell.",
-      "why": "This tells what happens after a mistake. It does not show that spellers are thorough."
+      "why": "This tells what happens after a mistake. It does not show that spellers are cautious."
      },
      {
       "t": "Before spelling, many spellers ask for the word's definition, its part of speech, and its language of origin.",
-      "why": "Yes! They find out three facts about the word before they spell it. Checking every part like that shows they are thorough."
+      "why": "Yes! They do not rush. They find out three facts about the word before they spell it, so they are less likely to make a mistake. That shows they are cautious."
      },
      {
       "t": "In a spell-off, each finalist has 90 seconds alone on the stage to spell as many words as possible.",
-      "why": "This is true, but it tells about the rules of the spell-off. It does not show that spellers are thorough."
+      "why": "This is true, but it tells about the rules of the spell-off. It does not show that spellers are cautious."
      }
     ],
     "answer": 2
@@ -3982,7 +3982,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1925, millions of children entered spelling contests, and nine finalists met in Washington, D.C., for the first National Spelling Bee. Frank Neuhauser, age 11, won by spelling gladiolus. Today, more than 10 million students begin with spelling bees in their classrooms and schools each fall. In recent years, more than 200 spellers have made it to the national bee each spring. A speller who misspells a word is out, and a spell-off may decide the champion.",
+    "box": "In 1925, nine finalists met in Washington, D.C., and Frank Neuhauser won the first National Spelling Bee. Today, more than 10 million students begin with spelling bees in their classrooms and schools. More than 200 spellers reach the national bee, and a misspelled word puts a speller out.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -4018,7 +4018,7 @@ window.SETS = {
        "why": "The passage says the bee was held in Washington, the nation's capital. Louisville is where Frank came from."
       },
       {
-       "t": "It took many people in different places working together.",
+       "t": "It was made possible by people in several cities.",
        "why": "Yes! Newspapers in several cities and millions of children took part. Answer first. Then find the proof."
       },
       {
@@ -4033,23 +4033,23 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the passage best supports your answer in Part A?",
+     "q": "Which sentence from the passage best supports your answer in part A?",
      "choices": [
       {
        "t": "On June 17, 1925, nine nervous children stood on a stage in Washington, D.C.",
-       "why": "This tells where the spellers stood on the day of the bee. It does not show people working together to hold it."
+       "why": "This tells where the spellers stood on the day of the bee. It does not show people in other cities helping to make it happen."
       },
       {
        "t": "After about an hour and a half, only one contestant remained.",
-       "why": "This tells how long the contest lasted. It does not show people working together."
+       "why": "This tells how long the contest lasted. It does not show people in other cities helping."
       },
       {
        "t": "In 1925, eight newspapers in other cities agreed to join the Courier-Journal in a national competition.",
-       "why": "Yes! Newspapers in different cities joined together to make the bee happen. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! Newspapers in different cities joined in, and that made a national bee possible. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "When he returned home, Louisville celebrated with a parade in his honor.",
-       "why": "This tells what happened after the bee was over. It does not show people working together to hold it."
+       "why": "This tells what happened after the bee was over. It does not show people in other cities helping to make it happen."
       }
      ],
      "answer": 2
