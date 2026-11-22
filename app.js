@@ -98,7 +98,8 @@
   const TYPE_LABEL = { mc: 'Multiple choice', ebsr: 'Two parts', ms: 'Choose two' };
   // hot text and choose-two both pick from a list (it.pieces) and are right when every pick is a key
   const multi = it => it.type === 'hottext' || it.type === 'ms';
-  const typeLabel = it => (it.type === 'hottext' ? (it.pick === 2 ? 'Select two sentences' : 'Click one sentence') : TYPE_LABEL[it.type]);
+  // one sentence: the label says the question's own verb, Click or Select, as the two-sentence label does (Proctor 11/21)
+  const typeLabel = it => (it.type === 'hottext' ? (it.pick === 2 ? 'Select two sentences' : /\bClick\b/.test(it.stem) ? 'Click one sentence' : 'Select one sentence') : TYPE_LABEL[it.type]);
   const questionText = it => (it.type === 'ebsr' ? `Part A: ${it.partA.q} Part B: ${it.partB.q}`
     : it.box ? `${it.lead} ${it.box} ${it.stem}` : it.stem);
   function answerText(it, ord = BOOK) {
@@ -161,6 +162,10 @@
   const msHTML = (p, k, pos = k) => `<div class="choice ms-choice" role="checkbox" aria-checked="false" tabindex="0" data-k="${k}" data-read-box>
       <span class="letter">${pos + 1}</span><span class="choice-body">${sayHTML(p.t)}</span>${sayBtn(`Read answer ${pos + 1}`)}</div>`;
 
+  // "Read this inference." on its own line, then the inference, then the question, as the real test sets them (Grade 5
+  // map, Q12 frame; Proctor 11/21). Three lines on the screen; said the same as before (one box, the same sentences).
+  const INFERENCE = /^(Read this inference\.)\s+(.+?)\s+(Which sentence .+)$/;
+  const stemLines = stem => { const m = INFERENCE.exec(stem); return m ? m.slice(1) : [stem]; };
   function stemHTML(it) {
     if (it.type === 'ebsr') {
       const ex = it.excerpt ? ' Read these paragraphs from the passage.' : '';
@@ -170,7 +175,7 @@
       : it.type === 'hottext' ? (it.pick === 2 ? 'Tap 2 sentences. Tap one again to take it back.' : 'Tap 1 sentence.') : '';
     // a summary question: the line before the box, the summary in its box, then the question
     const box = it.box ? `<p class="ask">${sayHTML(it.lead)}</p><div class="sum-box">${sayHTML(it.box)}</div>` : '';
-    return `${box}<p class="ask">${sayHTML(it.stem)}</p>${tip ? `<p class="ht-tip">${sayHTML(tip)}</p>` : ''}`;
+    return `${box}${stemLines(it.stem).map(s => `<p class="ask">${sayHTML(s)}</p>`).join('')}${tip ? `<p class="ht-tip">${sayHTML(tip)}</p>` : ''}`;
   }
   const reminderHTML = it => `${sayBtn('Read the reminder')}<span class="reminder-text"><span aria-hidden="true">💡</span> <b>${wordSpan('Reminder:', 'Reminder:')}</b> ${sayHTML(it.hint)}</span>`;
 
@@ -980,7 +985,7 @@
   };
 
   // the teacher screens (teacher.js) use these
-  window.G5App = { CLASS, SETS, TEACHERS, SET_NAMES, ALL_SETS, levelOf, takeNo, setLabel, itemsOf, itemsFor, passageOrder, choiceOrder, typeLabel, questionText, multi,
+  window.G5App = { CLASS, SETS, TEACHERS, SET_NAMES, ALL_SETS, levelOf, takeNo, setLabel, itemsOf, itemsFor, passageOrder, choiceOrder, typeLabel, stemLines, questionText, multi,
     answerText, isRight, gradeFor, normName, show, renderHome, passageHTML, tryIt };
 
   // Anything a lost connection left in this device's outbox goes now, or when the internet comes back

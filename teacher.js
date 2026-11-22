@@ -420,7 +420,7 @@
     const asked = it.type === 'ebsr'
       ? `<p class="t-qbox-q"><b>Part A:</b> ${cue(it.partA.q)}</p><p class="t-qbox-q"><b>Part B:</b> ${cue(it.partB.q)}</p>`
       : it.box ? `<p class="t-qbox-q">${esc(it.lead)}</p><div class="sum-box t-qbox-sum">${esc(it.box)}</div><p class="t-qbox-q">${cue(it.stem)}</p>`
-      : `<p class="t-qbox-q">${cue(it.stem)}</p>`;
+      : A.stemLines(it.stem).map(s => `<p class="t-qbox-q">${cue(s)}</p>`).join('');   // Q12: three lines, as students see it
     return `<div class="t-qbox-head"><b>Question ${i + 1}</b><span class="kq-skill">${esc(it.skill)}</span>
         <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${heatTotal} right · ${s.pct}%</span>
         <button type="button" class="t-qbox-x" data-qclose aria-label="Close question ${i + 1}">✕</button></div>
@@ -574,7 +574,7 @@
   function keyItemHTML(it) {
     let answer;
     const box = it.box ? `<p class="kq-stem">${esc(it.lead)}</p><div class="sum-box kq-box">${esc(it.box)}</div>` : '';
-    if (it.type === 'mc') answer = `${box}<p class="kq-stem">${cue(it.stem)}</p>${keyChoices(it.choices, it.answer)}`;
+    if (it.type === 'mc') answer = `${box}${A.stemLines(it.stem).map(s => `<p class="kq-stem">${cue(s)}</p>`).join('')}${keyChoices(it.choices, it.answer)}`;
     else if (multi(it)) {
       const right = it.type === 'ms' ? '✓ Correct answer' : '✓ Correct sentence';
       answer = `<p class="kq-stem">${cue(it.stem)}</p><div class="kq-choices${it.type === 'ms' ? ' kq-ms' : ' kq-sents'}">${it.pieces.map((p, k) => `<div class="kq-choice${it.answer.includes(k) ? ' right' : ''}">
