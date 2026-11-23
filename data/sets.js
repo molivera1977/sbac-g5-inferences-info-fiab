@@ -1,7 +1,7 @@
 /* Grade 5 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 tools/check_drafts.py).
-   drafts fingerprint: 47f2266d398b */
+   drafts fingerprint: 1fe37ec2454d */
 window.SETS = {
  "W": {
   "passages": [
@@ -677,60 +677,51 @@ window.SETS = {
  "W2": {
   "passages": [
    {
-    "title": "The Volcano in the Cornfield",
-    "subtitle": "In 1943, a new volcano grew out of a farm in Mexico. Today it sits quiet.",
+    "title": "Cherry Trees in a Hurry",
+    "subtitle": "In Washington, D.C., and in Japan, cherry trees now bloom sooner than they used to.",
     "blocks": [
      {
-      "p": "It was a quiet day on a farm in Mexico. A farmer and his wife were at work in their cornfield. Then the ground in front of them began to rise."
+      "p": "Pink petals float down from the trees. They land on the path. They land on the water. Petals even land in your hair. Spring has come!"
      },
      {
-      "p": "Crack! The earth split open. Gray smoke billowed out. The air hissed, and it smelled like rotten eggs."
+      "p": "These cherry trees grow beside the Tidal Basin in Washington, D.C. In 1912, the city of Tokyo, Japan, sent 3,020 cherry trees to Washington as a gift. On March 27, 1912, the first two trees were planted near the water. Those two trees are still growing there today."
      },
      {
-      "p": "The family fled. They did not know it yet, but a volcano was being born."
+      "p": "Each spring, crowds come to see the trees bloom. But the trees do not wait for the crowds. Now they often bloom sooner than they did long ago."
      },
      {
-      "h": "A Mountain Grows Fast"
+      "p": "\"Cherry trees are like a calendar,\" says Dr. Rosa Holt. She is a scientist who studies plants. \"They tell us when spring starts.\""
      },
      {
-      "p": "The date was February 20, 1943. The farm was near a small town called Parícutin (pah-REE-koo-teen). The new volcano got that name too."
+      "h": "Writings From Long Ago"
      },
      {
-      "p": "For weeks before that day, the ground near the farm had shaken and rumbled. Now hot rocks and ash shot up into the sky. They fell back down and piled up around the hole. The pile grew and grew. In one week, it was about 330 feet tall. In one year, it was more than 1,000 feet tall!"
+      "p": "People have written down when the trees bloom for a very long time. In Kyoto, Japan, monks and nobles wrote about the cherry trees in diaries and other writings. Some of those writings are more than 1,200 years old. For hundreds of years, the trees in Kyoto were in full bloom in the middle of April. But in 2023, they were in full bloom on March 25. That was the earliest date in more than 1,200 years."
      },
      {
-      "p": "Lava¹ came out too. It crept over the land like thick, hot mud. It moved toward two towns. The people packed up and abandoned their homes. Today, only part of one town's stone church still pokes up out of the black rock."
+      "p": "In Washington, park workers have kept track of the bloom since 1921. Each year, they watch for peak bloom¹. Peak bloom now comes about eight days sooner than it did back then. In 2024, peak bloom came on March 17. Dr. Holt sees a clear trend."
      },
      {
-      "p": "The eruption went on for nine years. Then, in 1952, it stopped. By then, the volcano was about 1,400 feet tall."
+      "h": "Why So Soon?"
      },
      {
-      "p": "\"It was the first time scientists could watch a volcano from its birth to its end,\" says Dr. Lucía Herrera. She is a geologist who studies volcanoes."
+      "p": "Cherry buds open when the weather gets warm. Warm days in winter can wake the buds up early. \"Winter here is warmer than it used to be,\" says Dr. Holt. \"That is a big clue.\""
      },
      {
-      "h": "Life Comes Back"
+      "p": "But a bloom that comes too soon can be risky. In 2017, the buds began to open early. Then, in the middle of March, a hard freeze came. About half of the blossoms died."
      },
      {
-      "p": "When the volcano stopped, the land around it was gray and barren. The ash had smothered the trees and the corn. Near the volcano, almost nothing green was left."
+      "p": "\"An early start is not always a good start,\" Dr. Holt says."
      },
      {
-      "p": "Then, little by little, plants came back. In 1957, scientists found just two kinds of plants on the volcano, but by 1977 they found 39 kinds. Many were small shrubs and grasses."
-     },
-     {
-      "p": "\"Plants grow slowly here,\" says Dr. Herrera. \"The ground has very few nutrients for them. But they keep coming.\""
-     },
-     {
-      "p": "Today, most of the volcano is still bare black rock. It is quiet now. But it sits in a place with more than 1,000 old volcanoes. Could a new one rise from a field someday?"
-     },
-     {
-      "p": "\"It could happen,\" Dr. Herrera says. \"But no one knows where or when.\""
+      "p": "So when will the trees bloom next spring? Not even Dr. Holt knows for sure. Park workers can guess only about ten days ahead. \"The trees will tell us,\" says Dr. Holt. \"Every spring brings a new clue.\""
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "lava",
-      "meaning": "hot, melted rock that comes out of a volcano"
+      "word": "peak bloom",
+      "meaning": "the day when most of the blossoms on the trees are open"
      }
     ],
     "credit": "Written for this practice test."
@@ -789,54 +780,42 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "Geography Bees, Then and Now",
+    "title": "A Game Fit for a King",
     "subtitle": "",
     "blocks": [
      {
-      "p": "In 1988, the National Geographic Society had a question. How well did people know the world? A survey¹ asked adults in nine countries to locate places on a blank map. Young Americans ages 18 to 24 came in last out of all nine countries."
+      "p": "Chess is one of the most ancient board games on Earth. About 1,500 years ago, people in South Asia invented a game called chaturanga. Its pieces represented parts of an army, such as foot soldiers, cavalry, and chariots¹. Over time, the foot soldiers became pawns, and the chariots became rooks."
      },
      {
-      "p": "The Society wanted to change that. So in 1989, it launched a contest called the National Geography Bee. It was for students in grades 4 to 8."
+      "p": "Chess traveled west to Persia. There, competitors shouted \"Shah!\" whenever they attacked their opponent's king. *Shah* is the Persian word for \"king.\" When the king was trapped and could not escape, a player said \"Shah mat!\" That phrase means \"the king is helpless.\" Today, players say \"checkmate,\" a word that grew from that Persian phrase."
      },
      {
-      "p": "The word *geography* comes from two ancient Greek words. *Geo* means \"earth,\" and *graphy* means \"writing.\" So geography is writing about the earth."
+      "p": "From Persia, chess spread across the Arab world and then into Europe. By the year 1000, people throughout Europe were playing it."
      },
      {
-      "p": "That first year, about 13,000 schools held bees. The top students advanced to state bees. Then the state winners traveled to Washington, D.C., for the finals on May 19, 1989. The winner was a 15-year-old eighth grader from Kansas. He won by answering tough questions about places all over the world. His prize was a $25,000 college scholarship."
+      "p": "The rules of chess changed along the way. In early chess, the queen could move only one square at a time. She was among the weakest pieces. Then, around 1475, players in Spain granted the queen tremendous new powers. Now she could zoom across the whole board. Games got faster, and the queen became the strongest piece."
      },
      {
-      "p": "Over the years, millions of kids competed. Later, the bee was renamed the GeoBee. The last one was held in 2019. In 2021, the contest ended for good."
+      "h": "Chess Tournaments Today"
      },
      {
-      "h": "Geography Bees Today"
+      "p": "Today, kids around the globe play chess. Many compete in tournaments. At a tournament, every player competes in several chess games, called rounds. A player who loses a round is not knocked out. Everyone keeps playing until the last round. A win earns one point, and a tie earns half a point."
      },
      {
-      "p": "But other groups still hold geography bees for kids. Priya Shah is 12 and lives in Ohio. Every night after dinner, she spends 20 minutes studying an atlas and quizzing herself."
+      "p": "Players follow strict rules. Before each game, opponents shake hands. A chess clock sits beside the board. After each move, a player taps a button on the clock. Then the other player's time starts to tick. Under the touch-move rule, a player who touches one of her own pieces must move it. Many players also record every move on a score sheet."
      },
      {
-      "p": "To qualify for a bee near her home, Priya first had to pass a test. She answered 50 questions in 20 minutes online."
+      "p": "In the last round, ten-year-old Ezra Collins stared at the board. He had only two minutes left on his clock. Then Ezra slid his queen across the board and announced, \"Checkmate.\" Ezra let out a long, slow breath. His shoulders, tight all game, finally relaxed. Ezra shook his opponent's hand."
      },
      {
-      "p": "On the day of the bee, Priya found her seat in a big gym. Other contestants took their seats too. Her palms felt cold and sweaty. She picked up her buzzer. She chewed her lip as the moderator stepped up. The moderator is the person who reads the questions."
-     },
-     {
-      "p": "Each question has a few clues. The first clues are tricky. They get easier as the moderator reads on. Kids can buzz in at any time. But a kid who gives a wrong answer cannot buzz again on that question."
-     },
-     {
-      "p": "In the final round, the moderator began, \"This river flows about 4,000 miles across South America.\" Priya pressed her buzzer."
-     },
-     {
-      "p": "\"The Amazon!\" she said."
-     },
-     {
-      "p": "She was right! By the end of the day, Priya had earned a spot at the national championships."
+      "p": "The next time you hear someone say \"checkmate,\" remember the players in Persia. Centuries ago, they said \"Shah mat!\" when they trapped a king."
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "survey",
-      "meaning": "a set of questions asked to many people to find out what they know or think"
+      "word": "chariots",
+      "meaning": "fast carts with two wheels that soldiers rode into battle"
      }
     ],
     "credit": "Written for this practice test."
@@ -849,27 +828,27 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Which sentence supports an inference",
-    "stem": "The reader can infer that lava covered one of the towns. Which sentence from the passage **best** supports this inference?",
+    "stem": "The reader can infer that a cherry tree can stay alive longer than 100 years. Which sentence from the passage **best** supports this inference?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
-      "t": "For weeks before that day, the ground near the farm had shaken and rumbled.",
-      "why": "This tells what happened before the volcano was born. It does not tell what happened to the towns."
+      "t": "In 1912, the city of Tokyo, Japan, sent 3,020 cherry trees to Washington as a gift.",
+      "why": "This tells when the trees came to Washington. It does not tell whether any of them are still alive."
      },
      {
-      "t": "A farmer and his wife were at work in their cornfield.",
-      "why": "This tells what the farmer was doing the day the volcano was born. It does not show what the lava did to a town."
+      "t": "Those two trees are still growing there today.",
+      "why": "Yes! These two trees were planted in 1912, and they are still growing today. They have lived longer than 100 years, so a cherry tree can stay alive that long."
      },
      {
-      "t": "Today, only part of one town's stone church still pokes up out of the black rock.",
-      "why": "Yes! Only part of the town's church sticks out. The rest of the town must be under the rock. That proves the lava covered it."
+      "t": "Some of those writings are more than 1,200 years old.",
+      "why": "This tells how old the writings are. It is about writings, not about how long a tree can live."
      },
      {
-      "t": "In one week, it was about 330 feet tall.",
-      "why": "This is true, but it does not prove anything about the towns. It tells how fast the volcano grew."
+      "t": "In 2024, peak bloom came on March 17.",
+      "why": "This tells when the trees bloomed in 2024. It does not prove anything about how long a tree can live."
      }
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "W2-02",
@@ -882,23 +861,23 @@ window.SETS = {
     "hint": "A main idea tells about a big part of the passage. Pick two that fit big parts, not small details.",
     "pieces": [
      {
-      "t": "Parícutin grew from a crack in a cornfield into a tall volcano.",
-      "why": "Yes! A big part of the passage tells how the volcano was born and how it grew."
+      "t": "Many cherry trees now bloom sooner than they did long ago.",
+      "why": "Yes! A big part of the passage tells how the trees bloom sooner than they used to."
      },
      {
-      "t": "The air smelled like rotten eggs.",
+      "t": "Tokyo sent 3,020 cherry trees to Washington in 1912.",
       "why": "That is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "Plants are slowly coming back to Parícutin.",
-      "why": "Yes! A big part of the passage tells how plants are returning to the volcano."
+      "t": "People have kept track of when the trees bloom for many years.",
+      "why": "Yes! A big part of the passage tells about the old writings from Kyoto and the years of watching in Washington."
      },
      {
-      "t": "The farm was near a small town called Parícutin.",
+      "t": "A hard freeze hurt many blossoms in 2017.",
       "why": "This is true, but it is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "The volcano stopped erupting in 1952.",
+      "t": "Peak bloom means most of the blossoms are open.",
       "why": "That is one detail. A main idea tells about a big part of the passage."
      }
     ],
@@ -915,23 +894,23 @@ window.SETS = {
     "skill": "What will happen next + proof",
     "hint": "Answer first. Then find the proof. Part B is your Detail. It proves your Part A answer.",
     "partA": {
-     "q": "Which of these inferences about the plants on Parícutin is supported by the passage?",
+     "q": "Which of these inferences about the cherry trees is supported by the passage?",
      "choices": [
       {
-       "t": "Over time, all of the plants will die out.",
-       "why": "Nothing in the passage says the plants will die."
+       "t": "They will lose half of their blossoms every year.",
+       "why": "Half of the blossoms died in 2017, one year with a hard freeze. The passage never says this happens every year."
       },
       {
-       "t": "Over time, more plants will grow on the volcano.",
-       "why": "Yes! Plants keep coming back to the volcano, little by little. Answer first. Then find the proof."
+       "t": "They will bloom early after a warm winter.",
+       "why": "Yes! Warm days in winter wake the buds up, so the trees will bloom early after a warm winter. Answer first. Then find the proof."
       },
       {
-       "t": "Over time, farmers will plant corn on the volcano.",
-       "why": "The passage never says anyone will farm on the volcano."
+       "t": "They will bloom in the fall instead of spring.",
+       "why": "The passage says the trees bloom in the spring, in March and April."
       },
       {
-       "t": "Over time, new lava will cover all of the plants.",
-       "why": "The passage says the volcano stopped in 1952 and is quiet now."
+       "t": "They will stop blooming very soon.",
+       "why": "Nothing in the passage says the trees will stop blooming. Two trees from 1912 are still growing."
       }
      ],
      "answer": 1
@@ -940,20 +919,20 @@ window.SETS = {
      "q": "Which detail from the passage **best** supports the inference in part A?",
      "choices": [
       {
-       "t": "\"It was the first time scientists could watch a volcano from its birth to its end,\" says Dr. Lucía Herrera.",
-       "why": "This tells why the volcano mattered to scientists. It does not show what the plants will do next."
+       "t": "People have written down when the trees bloom for a very long time.",
+       "why": "This tells how long people have watched the trees. It does not show what makes the trees bloom early."
       },
       {
-       "t": "Then, little by little, plants came back.",
-       "why": "Yes! Plants have been coming back little by little, so more will grow over time. Part B is your Detail. It proves your Part A answer."
+       "t": "Warm days in winter can wake the buds up early.",
+       "why": "Yes! Warm winter days make the buds open early, so a warm winter means an early bloom. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "When the volcano stopped, the land around it was gray and barren.",
-       "why": "This tells how the land looked in 1952. It does not show how the plants are changing."
+       "t": "About half of the blossoms died.",
+       "why": "This tells what happened in 2017. It does not show what happens every year, and it does not show what makes the trees bloom early."
       },
       {
-       "t": "Today, most of the volcano is still bare black rock.",
-       "why": "This is true, but it tells about the rock. It does not show plants coming back."
+       "t": "Park workers can guess only about ten days ahead.",
+       "why": "This tells that the bloom is hard to guess. It does not show what makes the trees bloom early."
       }
      ],
      "answer": 1
@@ -1157,27 +1136,27 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text **best** supports the conclusion that winning the bee could help a student's future?",
+    "stem": "Which sentence from the text **best** supports the conclusion that one new rule could change a whole game?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
-      "t": "That first year, about 13,000 schools held bees.",
-      "why": "This tells how many schools took part. It does not show how winning could help a student later."
+      "t": "By the year 1000, people throughout Europe were playing it.",
+      "why": "This tells where people played the game. It does not show a rule changing the game."
      },
      {
-      "t": "It was for students in grades 4 to 8.",
-      "why": "This tells who could enter. It does not show how winning could help a student later."
+      "t": "Games got faster, and the queen became the strongest piece.",
+      "why": "Yes! After the queen got new powers, games got faster and the queen became the strongest piece. One new rule changed the whole game."
      },
      {
-      "t": "His prize was a $25,000 college scholarship.",
-      "why": "Yes! A college scholarship pays for school after high school. Winning gave him help for his future."
+      "t": "At a tournament, every player competes in several chess games, called rounds.",
+      "why": "This tells how a tournament works today. It does not show a rule changing the game."
      },
      {
-      "t": "He won by answering tough questions about places all over the world.",
-      "why": "This tells how he won. It does not show how winning could help him later."
+      "t": "Many players also record every move on a score sheet.",
+      "why": "This tells what many players do. It does not show a rule changing the game."
      }
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "W2-10",
@@ -1189,19 +1168,19 @@ window.SETS = {
     "hint": "The main idea is what the whole passage is about. A detail tells about one part. Pick the choice that fits every part.",
     "choices": [
      {
-      "t": "The National Geographic GeoBee is the biggest contest for kids today.",
-      "why": "This is not true. The passage says that contest ended in 2021."
+      "t": "Chess was invented by kids at a school tournament.",
+      "why": "This is not true. The passage says chess began about 1,500 years ago."
      },
      {
-      "t": "Kids like to play all kinds of games and contests.",
-      "why": "This is too big. The passage is about geography bees, not all kinds of games."
+      "t": "Board games are fun for people of all ages.",
+      "why": "This is too big. The passage is about chess, not about every board game."
      },
      {
-      "t": "A national geography bee ended, but kids can still enter other bees.",
-      "why": "Yes! This fits every part of the passage: the national bee's history and the bees kids enter now."
+      "t": "Chess changed over time, and kids now play it in tournaments.",
+      "why": "Yes! The first part tells how chess changed long ago. The second part tells about kids in tournaments today. This fits every part."
      },
      {
-      "t": "The first winner was a 15-year-old eighth grader from Kansas.",
+      "t": "A player who touches a piece must move it.",
       "why": "That is one detail. The main idea is what the whole passage is about."
      }
     ],
@@ -1213,38 +1192,38 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select **two** sentences that **best** support the inference that Priya feels nervous before the bee begins.",
+    "stem": "Select **two** sentences that **best** support the inference that Ezra feels relieved when the game ends.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two sentences. Each one must prove the idea by itself.",
     "pieces": [
      {
-      "t": "On the day of the bee, Priya found her seat in a big gym.",
-      "why": "This tells where Priya sat. It does not prove she is nervous."
+      "t": "In the last round, ten-year-old Ezra Collins stared at the board.",
+      "why": "This tells where Ezra looked during the game. It does not prove how he feels when it ends."
      },
      {
-      "t": "Other contestants took their seats too.",
-      "why": "This tells what the other kids did. It is not about how Priya feels."
+      "t": "He had only two minutes left on his clock.",
+      "why": "This tells how much time Ezra had. It does not prove how he feels when the game ends."
      },
      {
-      "t": "Her palms felt cold and sweaty.",
-      "why": "Yes! Cold, sweaty palms are a clue that Priya is nervous."
+      "t": "Then Ezra slid his queen across the board and announced, \"Checkmate.\"",
+      "why": "This tells the move that won the game. It does not prove how Ezra feels."
      },
      {
-      "t": "She picked up her buzzer.",
-      "why": "This tells what Priya did. It does not prove she is nervous."
+      "t": "Ezra let out a long, slow breath.",
+      "why": "Yes! A long, slow breath after the game is a clue that Ezra feels relieved."
      },
      {
-      "t": "She chewed her lip as the moderator stepped up.",
-      "why": "Yes! Chewing her lip is a clue that Priya is nervous."
+      "t": "His shoulders, tight all game, finally relaxed.",
+      "why": "Yes! Tight shoulders that finally relax are a clue that Ezra feels relieved."
      },
      {
-      "t": "The moderator is the person who reads the questions.",
-      "why": "This tells what a word means. It does not tell how Priya feels."
+      "t": "Ezra shook his opponent's hand.",
+      "why": "This tells what Ezra did next. It does not prove he feels relieved."
      }
     ],
     "answer": [
-     2,
+     3,
      4
     ]
    },
@@ -1254,27 +1233,27 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Priya works hard to get ready for geography bees. Which sentence from the passage **best** supports this inference?",
+    "stem": "Read this inference. Chess players show good manners. Which sentence from the passage **best** supports this inference?",
     "hint": "Look at what the person does, says and feels. Those are your clues.",
     "choices": [
      {
-      "t": "Priya Shah is 12 and lives in Ohio.",
-      "why": "This tells Priya's age and where she lives. It does not show how she gets ready."
+      "t": "A player who loses a round is not knocked out.",
+      "why": "This tells a rule about losing. It does not show players being polite."
      },
      {
-      "t": "Every night after dinner, she spends 20 minutes studying an atlas and quizzing herself.",
-      "why": "Yes! Priya studies every single night. That proves she works hard to get ready."
+      "t": "A win earns one point, and a tie earns half a point.",
+      "why": "This tells how players earn points. It does not show players being polite."
      },
      {
-      "t": "On the day of the bee, Priya found her seat in a big gym.",
-      "why": "This tells where Priya sat on the day of the bee. It does not show how she gets ready."
+      "t": "Before each game, opponents shake hands.",
+      "why": "Yes! Shaking hands before a game is a polite thing to do. That shows chess players have good manners."
      },
      {
-      "t": "But a kid who gives a wrong answer cannot buzz again on that question.",
-      "why": "This is true, but it does not prove Priya works hard. It tells one rule of the bee."
+      "t": "Many players also record every move on a score sheet.",
+      "why": "This is true, but it tells how players keep track of a game. It does not show players being polite."
      }
     ],
-    "answer": 1
+    "answer": 2
    },
    {
     "id": "W2-13",
@@ -1283,28 +1262,28 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1989, National Geographic started a contest called the National Geography Bee. That bee ended in 2021, but other groups still hold geography bees for kids. Priya passed a test to enter a bee near her home, and she named the Amazon River in the final round.",
+    "box": "About 1,500 years ago, people in South Asia played chaturanga, a game with pieces that stood for an army. The game spread to Persia, where players first said \"Shah mat,\" and later to Europe. Today, kids play in tournaments, where they shake hands, use a clock, and follow the touch-move rule.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "hint": "A summary tells the most important parts. Leave out small details.",
     "choices": [
      {
-      "t": "The moderator is the person who reads the questions.",
-      "why": "This tells what a word means. It is a small detail, and a summary leaves out small details."
+      "t": "Shah is the Persian word for \"king.\"",
+      "why": "This tells what one word means. It is a small detail, and a summary leaves out small details."
      },
      {
-      "t": "To qualify for a bee near her home, Priya first had to pass a test.",
-      "why": "The summary already tells about the test. This detail is not missing."
+      "t": "Then, around 1475, players in Spain granted the queen tremendous new powers.",
+      "why": "Yes! This is how the rules changed and made the game faster. That is an important part, and the summary leaves it out."
      },
      {
-      "t": "By the end of the day, Priya had earned a spot at the national championships.",
-      "why": "Yes! This tells how Priya's bee ended. That is an important part, and the summary leaves it out."
+      "t": "Before each game, opponents shake hands.",
+      "why": "The summary already tells about shaking hands. This detail is not missing."
      },
      {
-      "t": "She picked up her buzzer.",
-      "why": "This is a small detail. A summary leaves out small details."
+      "t": "He had only two minutes left on his clock.",
+      "why": "This is a small detail about one player. A summary leaves out small details."
      }
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "W2-14",
@@ -1314,48 +1293,48 @@ window.SETS = {
     "skill": "A conclusion about the history + proof",
     "hint": "Answer first. Then find the proof. Part B is your Detail. It proves your Part A answer.",
     "partA": {
-     "q": "Which of these conclusions about why the first National Geography Bee was started is supported by the passage?",
+     "q": "Which of these conclusions about the first chess games is supported by the passage?",
      "choices": [
       {
-       "t": "It was started to help fix a real problem.",
-       "why": "Yes! Young people did not know much about the world, and National Geographic wanted to change that. Answer first. Then find the proof."
+       "t": "They were played only by children.",
+       "why": "The passage never says that only children played the first chess games."
       },
       {
-       "t": "It was started only for grown-ups.",
-       "why": "The passage says the bee was for kids in grades 4 to 8."
+       "t": "They were meant to be like a battle.",
+       "why": "Yes! The pieces were foot soldiers, cavalry and chariots, like an army going into battle. Answer first. Then find the proof."
       },
       {
-       "t": "It was started because kids asked for it.",
-       "why": "The passage never says kids asked for the bee."
+       "t": "They had a queen who could cross the board.",
+       "why": "In early chess, the queen could move only one square at a time. She got her long move much later."
       },
       {
-       "t": "It was started to sell maps.",
-       "why": "The passage never says anything about selling maps."
+       "t": "They were first played in Spain.",
+       "why": "The passage says chess began in South Asia. Spain came much later in the story."
       }
      ],
-     "answer": 0
+     "answer": 1
     },
     "partB": {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "The word geography comes from two ancient Greek words.",
-       "why": "This tells where a word comes from. It does not show why the bee was started."
+       "t": "Its pieces represented parts of an army, such as foot soldiers, cavalry, and chariots.",
+       "why": "Yes! The pieces were parts of an army, so the game was like a battle. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "Young Americans ages 18 to 24 came in last out of all nine countries.",
-       "why": "Yes! This shows the problem: young people in the United States did not know the world well. Part B is your Detail. It proves your Part A answer."
+       "t": "By the year 1000, people throughout Europe were playing it.",
+       "why": "This tells how far the game spread. It does not show what the first games were like."
       },
       {
-       "t": "The winner was a 15-year-old eighth grader from Kansas.",
-       "why": "This tells who won the first bee. It does not show why the bee was started."
+       "t": "Now she could zoom across the whole board.",
+       "why": "This tells about the queen after 1475, long after the first games. It does not show what the first games were like."
       },
       {
-       "t": "Then the state winners traveled to Washington, D.C., for the finals on May 19, 1989.",
-       "why": "This tells where the first finals were held. It does not show why the bee was started."
+       "t": "Under the touch-move rule, a player who touches one of her own pieces must move it.",
+       "why": "This is a rule for tournaments today. It does not show what the first games were like."
       }
      ],
-     "answer": 1
+     "answer": 0
     }
    }
   ]
@@ -1472,57 +1451,45 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "From an Empty Lot to the World Series",
+    "title": "Fast Feet on a Floating Log",
     "subtitle": "",
     "blocks": [
      {
-      "p": "In the summer of 1938, Carl Stotz played ball with his young nephews, Jimmy and Major Gehron, in Williamsport, Pennsylvania. Stotz had an idea. He wanted boys to play on organized teams, with uniforms and adults in charge. That way, the games would be fair."
+      "p": "In the 1800s, lumberjacks felled vast forests of pine and hemlock in the Northeast and the upper Midwest. Deep in the woods, a road was hard to find, so rivers became the loggers' highways. Each spring, when melting snow swelled the rivers, crews floated thousands of logs downstream to the sawmills. Each journey was called a log drive."
      },
      {
-      "p": "But an adult baseball field was too large for young players. On a major league field, the bases are 90 feet apart. So all that summer, the boys helped Stotz test fields of different sizes, playing practice games on each one. In the end, they set the bases 60 feet apart, the same distance Little League fields use today."
+      "p": "The men who rode along with the logs were called river drivers, and their work was treacherous. Logs often snagged at bends and in the shallows. They piled up into a tangled logjam¹. To clear the logjam, river drivers leaped from log to log and pried logs loose with a long pike pole. But a round log rotates the instant someone stands on it. The drivers' quick feet kept the log from hurling them into the frigid water."
      },
      {
-      "p": "Next, Stotz needed money for uniforms. He visited one local business after another. Most of them said no. At last, three businesses agreed to sponsor teams: Lycoming Dairy, Lundy Lumber, and Jumbo Pretzel. A donation of 30 dollars from each one bought a whole team's uniforms."
+      "p": "After the drives, the river drivers competed to see who was the most skilled at staying on a spinning log. The first public contest was held in 1888. The first world championship took place in 1898. People called the sport logrolling, or birling, and its athletes birlers. *Birl* is an old Scottish word that means \"to spin.\""
      },
      {
-      "p": "Stotz's friends George and Bert Bebble each agreed to manage a team. Stotz managed the third. The three men, their wives, and another couple formed the league's first board, the group that made its big decisions."
+      "p": "By the early 1900s, most of the great river drives had ended. Logrolling did not disappear, though. Expert birlers passed the tradition down to their sons and daughters."
      },
      {
-      "p": "On June 6, 1939, the first Little League game was played on a vacant lot in Williamsport. Lundy Lumber beat Lycoming Dairy, 23 to 8."
+      "h": "Rolling Today"
      },
      {
-      "p": "The word *league* comes from a Latin word that means \"to tie.\" In a league, teams are bound together by the same rules."
+      "p": "Today, young athletes learn to roll in ponds, rivers, and even swimming pools. In tournaments, birlers compete in age brackets, starting with children seven and under. At amateur events, the cedar logs are wrapped in carpet so feet can grip them."
      },
      {
-      "h": "The Road to Williamsport"
+      "p": "A match begins with two birlers perched at opposite ends of the same floating log. A painted stripe divides the log in half, and a birler who crosses it loses the fall. Opponents may not touch each other. Instead, each one spins the log faster and faster, or halts it suddenly, hoping the other birler will tumble in. A sudden stop is called snubbing. The birler who stays on wins the fall, and the first to win three times wins the match. If time runs out before anyone tumbles in, the birlers move to a smaller log."
      },
      {
-      "p": "Little League expanded quickly. In 1947, Williamsport held the first Little League World Series. Today, about two million boys and girls play Little League in all 50 states and more than 80 countries."
+      "p": "Three judges watch every match. Experienced birlers have advice for beginners: never take your eyes off the other birler's feet."
      },
      {
-      "p": "Qualifying for the World Series is a challenge. Each summer, more than 6,500 all-star teams of players ages 10 to 12 enter the tournament¹. To advance, a team must win its district, then its state or country, and then its region. In the end, only 20 teams reach the World Series each August: 10 from the United States and 10 from other countries."
+      "p": "At a summer tournament in Wisconsin, eleven-year-old Greta Lund stepped onto the log for her match. When the judge called \"Time in,\" her opponent snubbed the log hard. Greta plunged sideways into the water with a tremendous splash. She bobbed to the surface, giggling, and pushed her drenched hair out of her eyes. \"That was awesome!\" she hollered to her coach as she paddled back to the dock. Then Greta climbed onto the log for the next fall."
      },
      {
-      "h": "At the World Series"
-     },
-     {
-      "p": "In South Williamsport, the players live together in dorms at a place called the International Grove. They share meals, and many swap souvenir pins with players from other countries. The outfield fences stand 225 feet from home plate. Admission to every game is free."
-     },
-     {
-      "p": "Pitchers follow a strict rule. A pitcher who throws 66 or more pitches in a day must rest for four days before pitching again."
-     },
-     {
-      "p": "When twelve-year-old Nate Owens headed out for his team's first game, he gazed up at the hill beyond the outfield fence. Thousands of spectators sprawled on blankets on the grassy slope. Nate could hardly wait for the first pitch. He tugged his cap down, waved to his teammates, and jogged to shortstop. He bounced on his toes as he pulled on his glove. Then the umpire bellowed, \"Play ball!\""
-     },
-     {
-      "p": "In the championship game, the top team from the United States faces the top international team. It is a long way from that vacant lot in 1939."
+      "p": "Each summer, skilled birlers gather in Hayward, Wisconsin, for the Lumberjack World Championships, which began in 1960. The logrolling contest is held on a pond where logs once floated while they waited for the sawmill. The river drivers are long gone, but their nimble footwork lives on."
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "tournament",
-      "meaning": "a set of games in which the winners keep moving on until one champion is left"
+      "word": "logjam",
+      "meaning": "a pile of logs stuck together in a river"
      }
     ],
     "credit": "Written for this practice test."
@@ -1835,26 +1802,26 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text **best** supports the conclusion that kids had a say in how far apart the bases are?",
+    "stem": "Which sentence from the text **best** supports the conclusion that river drivers could keep their balance on spinning logs?",
     "choices": [
      {
-      "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
-      "why": "This tells what Stotz wanted for the boys. It does not show the boys having a say in the bases."
+      "t": "Each journey was called a log drive.",
+      "why": "This tells the name of each trip. It does not show the drivers keeping their balance."
      },
      {
-      "t": "In the summer of 1938, Carl Stotz played ball with his young nephews, Jimmy and Major Gehron, in Williamsport, Pennsylvania.",
-      "why": "This tells who Stotz played ball with. It does not show the boys having a say in the bases."
+      "t": "The drivers' quick feet kept the log from hurling them into the frigid water.",
+      "why": "Yes! Quick feet kept the drivers from being thrown off. That shows they could keep their balance on a log that spins."
      },
      {
-      "t": "So all that summer, the boys helped Stotz test fields of different sizes, playing practice games on each one.",
-      "why": "Yes! The boys helped Stotz test fields of different sizes. That is how the bases came to be set 60 feet apart, the distance Little League still uses."
+      "t": "In tournaments, birlers compete in age brackets, starting with children seven and under.",
+      "why": "This tells about the age groups at today's tournaments. It does not show how the river drivers kept their balance."
      },
      {
-      "t": "A donation of 30 dollars from each one bought a whole team's uniforms.",
-      "why": "This is true, but it is about money for uniforms. It does not show the boys having a say in the bases."
+      "t": "At amateur events, the cedar logs are wrapped in carpet so feet can grip them.",
+      "why": "This is true, but it tells about logs at today's events. It does not show what the river drivers could do."
      }
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "R10",
@@ -1865,23 +1832,23 @@ window.SETS = {
     "stem": "Which sentence **best** describes the main idea of the passage?",
     "choices": [
      {
-      "t": "Little League has always been played only in Pennsylvania.",
-      "why": "This is not true. The passage says Little League is played in all 50 states and more than 80 countries."
+      "t": "Logrolling was first played by kids at summer camps.",
+      "why": "This is not true. The passage says logrolling began with the river drivers."
      },
      {
-      "t": "Little League started with a few teams and became a worldwide event.",
-      "why": "Yes! The passage tells how Little League began and how big it has become today. That fits the whole passage."
+      "t": "Every sport takes strong legs and good balance.",
+      "why": "This is too big. The passage is about logrolling, not about every sport."
      },
      {
-      "t": "Baseball is a fun sport for people of all ages.",
-      "why": "This is too big. The passage is about Little League, not about baseball for everyone."
+      "t": "The skill river drivers needed is now a sport for kids.",
+      "why": "Yes! The passage tells how river drivers needed this skill on the log drives and how kids compete in it now. That fits the whole passage."
      },
      {
-      "t": "Players at the World Series swap pins with other kids.",
+      "t": "Three judges watch every match at a tournament.",
       "why": "That is one detail. A main idea tells about a big part of the passage."
      }
     ],
-    "answer": 1
+    "answer": 2
    },
    {
     "id": "R11",
@@ -1889,37 +1856,37 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select **two** sentences that **best** support the inference that Nate is eager for the game to start.",
+    "stem": "Select **two** sentences that **best** support the inference that Greta feels cheerful after her fall.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
-      "t": "When twelve-year-old Nate Owens headed out for his team's first game, he gazed up at the hill beyond the outfield fence.",
-      "why": "This tells where Nate looked. It does not prove how he feels."
+      "t": "At a summer tournament in Wisconsin, eleven-year-old Greta Lund stepped onto the log for her match.",
+      "why": "This tells where Greta was and what she did first. It does not prove how she feels."
      },
      {
-      "t": "Thousands of spectators sprawled on blankets on the grassy slope.",
-      "why": "This tells about the crowd, not about Nate's feelings."
+      "t": "When the judge called \"Time in,\" her opponent snubbed the log hard.",
+      "why": "This tells what the other birler did. It is not about Greta's feelings."
      },
      {
-      "t": "Nate could hardly wait for the first pitch.",
-      "why": "Yes! Nate can hardly wait, so he is eager for the game to start."
+      "t": "Greta plunged sideways into the water with a tremendous splash.",
+      "why": "This tells how Greta fell. It does not show how she feels about falling."
      },
      {
-      "t": "He tugged his cap down, waved to his teammates, and jogged to shortstop.",
-      "why": "This tells what Nate did to get to his spot. It does not prove he is eager."
+      "t": "She bobbed to the surface, giggling, and pushed her drenched hair out of her eyes.",
+      "why": "Yes! Giggling right after a fall is a clue that Greta feels cheerful."
      },
      {
-      "t": "He bounced on his toes as he pulled on his glove.",
-      "why": "Yes! Bouncing on his toes is a clue that Nate is eager to play."
+      "t": "\"That was awesome!\" she hollered to her coach as she paddled back to the dock.",
+      "why": "Yes! Calling her fall awesome is a clue that Greta feels cheerful."
      },
      {
-      "t": "Then the umpire bellowed, \"Play ball!\"",
-      "why": "This tells what the umpire said, not how Nate feels."
+      "t": "Then Greta climbed onto the log for the next fall.",
+      "why": "This tells what Greta did next. It does not prove she feels cheerful."
      }
     ],
     "answer": [
-     2,
+     3,
      4
     ]
    },
@@ -1929,26 +1896,26 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Young athletes at the World Series make friends from faraway places. Which sentence from the passage **best** supports this inference?",
+    "stem": "Read this inference. Skilled birlers pay close attention to their opponent. Which sentence from the passage **best** supports this inference?",
     "choices": [
      {
-      "t": "To advance, a team must win its district, then its state or country, and then its region.",
-      "why": "This is true, but it tells what a team must win to move on. It does not show players making friends."
+      "t": "A match begins with two birlers perched at opposite ends of the same floating log.",
+      "why": "This tells how a match starts. It does not show birlers paying close attention."
      },
      {
-      "t": "They share meals, and many swap souvenir pins with players from other countries.",
-      "why": "Yes! Sharing meals and trading pins with kids from other countries is how players make new friends."
+      "t": "If time runs out before anyone tumbles in, the birlers move to a smaller log.",
+      "why": "This is true, but it is a rule about the logs. It does not show birlers paying close attention."
      },
      {
-      "t": "The outfield fences stand 225 feet from home plate.",
-      "why": "This tells about the field. It does not show players making friends."
+      "t": "Three judges watch every match.",
+      "why": "This tells about the judges, not the birlers. It does not show birlers paying close attention."
      },
      {
-      "t": "Admission to every game is free.",
-      "why": "This tells about the fans. It does not show players making friends."
+      "t": "Experienced birlers have advice for beginners: never take your eyes off the other birler's feet.",
+      "why": "Yes! Good birlers never stop watching the other birler's feet. That shows they pay close attention to their opponent."
      }
     ],
-    "answer": 1
+    "answer": 3
    },
    {
     "id": "R13",
@@ -1957,24 +1924,24 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1938, Carl Stotz wanted boys in Williamsport, Pennsylvania, to play baseball on real teams. That summer, his nephews helped him test fields of different sizes for young players. The first Little League game was played in 1939, and today teams from around the world play in the World Series.",
+    "box": "In the 1800s, river drivers learned to stay on spinning logs while they moved logs down rivers to sawmills. Later, they held contests, and the sport became known as logrolling. Today, kids in age groups compete on floating logs, and two birlers try to make each other fall without touching.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
-      "t": "Lundy Lumber beat Lycoming Dairy, 23 to 8.",
-      "why": "This tells the score of the first game. It is a small detail, not a key one."
-     },
-     {
-      "t": "At last, three businesses agreed to sponsor teams: Lycoming Dairy, Lundy Lumber, and Jumbo Pretzel.",
-      "why": "Yes! Without businesses to pay for uniforms, there would be no teams. The summary leaves out this key step."
-     },
-     {
-      "t": "On a major league field, the bases are 90 feet apart.",
-      "why": "This is a small detail about grown-up fields. It is not a key part of how Little League began."
-     },
-     {
-      "t": "So all that summer, the boys helped Stotz test fields of different sizes, playing practice games on each one.",
+      "t": "Opponents may not touch each other.",
       "why": "The summary already tells this. It is not missing."
+     },
+     {
+      "t": "The birler who stays on wins the fall, and the first to win three times wins the match.",
+      "why": "Yes! This tells how a birler wins. The summary tells how a match is played, but it leaves out how it is won."
+     },
+     {
+      "t": "Greta plunged sideways into the water with a tremendous splash.",
+      "why": "This is a small detail about one birler. A summary leaves out small details."
+     },
+     {
+      "t": "The logrolling contest is held on a pond where logs once floated while they waited for the sawmill.",
+      "why": "This is a small detail about one place. It is not a key part of how logrolling works."
      }
     ],
     "answer": 1
@@ -1986,23 +1953,23 @@ window.SETS = {
     "type": "ebsr",
     "skill": "A conclusion about the history + proof",
     "partA": {
-     "q": "Which of these conclusions about how Little League began is supported by the passage?",
+     "q": "Which of these conclusions about the river drives is supported by the passage?",
      "choices": [
       {
-       "t": "Carl Stotz started Little League all by himself.",
-       "why": "This is not true. Reread the parts about the businesses and Stotz's friends."
+       "t": "They took place in the middle of winter.",
+       "why": "The passage says the logs were floated each spring, when melting snow swelled the rivers."
       },
       {
-       "t": "Paying for the first uniforms took many tries.",
-       "why": "Yes! Stotz went from business to business, and most of them said no. Answer first. Then find the proof."
+       "t": "They were the best way to move logs.",
+       "why": "Yes! A road was hard to find deep in the woods, so the logs went down the rivers. Answer first. Then find the proof."
       },
       {
-       "t": "The first teams played on a field with 90-foot bases.",
-       "why": "The boys helped find a smaller field. The bases were set 60 feet apart."
+       "t": "They were safe work for the river drivers.",
+       "why": "This is not true. The passage says the river drivers' work was treacherous, or dangerous."
       },
       {
-       "t": "The first game was played in a large stadium.",
-       "why": "The passage says the first game was played on a vacant lot, not in a stadium."
+       "t": "They ended because people stopped needing wood.",
+       "why": "The passage says the drives ended, but it never says why."
       }
      ],
      "answer": 1
@@ -2011,23 +1978,23 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "On June 6, 1939, the first Little League game was played on a vacant lot in Williamsport.",
-       "why": "This tells when and where the first game was played. It does not show how hard it was to pay for the teams."
+       "t": "Deep in the woods, a road was hard to find, so rivers became the loggers' highways.",
+       "why": "Yes! With hardly a road deep in the woods, the rivers did the job a road usually does. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "He visited one local business after another.",
-       "why": "Yes! Stotz had to go to one business after another before any said yes. Part B is your Detail. It proves your Part A answer."
+       "t": "The men who rode along with the logs were called river drivers, and their work was treacherous.",
+       "why": "This tells about the workers and their job. It does not show why the logs went down the rivers."
       },
       {
-       "t": "Lundy Lumber beat Lycoming Dairy, 23 to 8.",
-       "why": "This tells who won the first game. It does not show how hard it was to pay for the teams."
+       "t": "The first public contest was held in 1888.",
+       "why": "This tells about the contests that came later. It does not show why the logs went down the rivers."
       },
       {
-       "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
-       "why": "This tells what Stotz wanted. It does not show how hard it was to pay for the teams."
+       "t": "By the early 1900s, most of the great river drives had ended.",
+       "why": "This tells when the drives ended. It does not show why the logs went down the rivers."
       }
      ],
-     "answer": 1
+     "answer": 0
     }
    }
   ]
