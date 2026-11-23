@@ -1,7 +1,7 @@
 /* Grade 5 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 tools/check_drafts.py).
-   drafts fingerprint: f32eeb2799c5 */
+   drafts fingerprint: ec84d182723f */
 window.SETS = {
  "W": {
   "passages": [
@@ -2710,8 +2710,8 @@ window.SETS = {
  "TA": {
   "passages": [
    {
-    "title": "The Island the Ocean Is Taking Back",
-    "subtitle": "A brand-new island rose out of the sea near Iceland. Now the waves are gradually carrying it away.",
+    "title": "Life on a Brand-New Island",
+    "subtitle": "A brand-new island rose out of the sea near Iceland. Scientists have watched living things arrive ever since.",
     "blocks": [
      {
       "p": "The water was boiling. Black plumes of ash shot high into the sky. Red-hot rocks sizzled as they splashed into the cold ocean."
@@ -2729,16 +2729,10 @@ window.SETS = {
       "p": "But the island did not stay that big. The fire was over. Now the water would have its turn."
      },
      {
-      "h": "Smaller Every Year"
-     },
-     {
-      "p": "\"Surtsey is shrinking,\" says Dr. Elín Gunnarsdóttir, a scientist who studies the island. \"Every winter, the ocean takes another bite.\""
+      "h": "Wind and Waves"
      },
      {
       "p": "Fierce storms hurl waves against the island's soft edges. The waves break off chunks of ash and loose rock and wash them out to sea. This slow wearing away is called erosion. To measure it, researchers photograph Surtsey from airplanes. They compare the images year after year. Each new map shows the shoreline creeping inward. By 2012, Surtsey covered only about half a square mile. In about 45 years, the ocean had taken away half of the island."
-     },
-     {
-      "p": "\"Some parts are tougher than others,\" Dr. Gunnarsdóttir explains. \"The hardened rock at the island's core may survive a long time. The loose ash around the edges is eroding much faster.\""
      },
      {
       "h": "Life Comes to a New Land"
@@ -2750,13 +2744,16 @@ window.SETS = {
       "p": "To keep the island untouched, Iceland made Surtsey a nature reserve in 1965. Only a few researchers are allowed to land there. They must be careful not to bring any seeds or plants with them. Everyone else must watch it from a distance, by boat or by plane."
      },
      {
-      "p": "In 1965, scientists found the first plant growing on the black sand. Its seed had floated in on the waves. The scientists recorded every new species they found. The list kept growing. Later, more seeds blew in on the wind. Others rode in on the feet and feathers of birds. Some of the first animals to arrive were tiny insects and spiders. Many of them were carried across the sea by the wind. Seabirds began to build nests on the cliffs. Their droppings enriched the soil. Today, grass and wildflowers cover parts of the island. Insects, spiders, and birds make their homes there."
+      "p": "In 1965, scientists found the first plant growing on the black sand. Its seed had floated in on the waves. The scientists recorded every new species they found, and the list kept growing. Later, more seeds blew in on the wind. Others rode in on the feet and feathers of birds. Some of the first animals to arrive were tiny insects and spiders. Many of them were carried across the sea by the wind. Seabirds began to build nests on the cliffs. Their droppings enriched the soil. Today, grass and wildflowers cover parts of the island. Insects, spiders, and birds make their homes there."
+     },
+     {
+      "p": "Dr. Elín Gunnarsdóttir is a biologist who studies the island. \"Every plant and creature here had to voyage across the ocean,\" she says. \"Some drifted on currents. Some floated on breezes. Some hitched rides on feathers. Each newcomer made the island a better habitat for the settlers that came next.\""
      },
      {
       "p": "\"On every expedition, we discover something new,\" says Dr. Gunnarsdóttir. \"Surtsey shows us how life starts over.\""
      },
      {
-      "p": "So what will happen to Surtsey next? The waves will continue battering its shores. The island will probably keep shrinking. No one knows exactly how long it will survive. \"We will keep watching,\" Dr. Gunnarsdóttir says, \"and we will keep learning.\""
+      "p": "So what will happen to Surtsey next? The waves will keep eroding its fragile edges. No one knows exactly how long the island will endure. But researchers keep returning to observe what has changed. \"We will keep watching,\" Dr. Gunnarsdóttir says, \"and we will keep learning.\""
      }
     ],
     "footnotes": [
@@ -2919,16 +2916,16 @@ window.SETS = {
     "pick": 2,
     "pieces": [
      {
-      "t": "Surtsey is a new island that the ocean is making smaller.",
-      "why": "Yes! A big part of the passage tells how the waves are shrinking the island."
+      "t": "Surtsey is a new island made by an undersea volcano.",
+      "why": "Yes! A big part of the passage tells how the volcano built the island."
      },
      {
       "t": "The first plant on Surtsey was found in 1965.",
       "why": "That is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "Scientists study Surtsey to learn how life comes to new land.",
-      "why": "Yes! A big part of the passage tells how plants and animals came to the island."
+      "t": "Plants and animals crossed the ocean to reach Surtsey.",
+      "why": "Yes! A big part of the passage tells how living things traveled across the sea to the island."
      },
      {
       "t": "Seabirds build nests on the cliffs of Surtsey.",
@@ -2954,23 +2951,23 @@ window.SETS = {
      "q": "Which of these inferences about Surtsey is supported by the passage?",
      "choices": [
       {
-       "t": "It will soon begin to grow bigger again.",
-       "why": "The passage says the island is getting smaller, not bigger."
+       "t": "It will soon disappear beneath the ocean waves.",
+       "why": "The waves are wearing away the edges, but the passage says no one knows how long the island will last. Nothing says it will be gone soon."
       },
       {
-       "t": "It will continue to get smaller over time.",
-       "why": "Yes! The waves keep taking pieces of the island every winter. Answer first. Then find the proof."
-      },
-      {
-       "t": "It will be covered with tall trees soon.",
+       "t": "It will be covered with tall pine trees.",
        "why": "The passage never says trees will grow there."
       },
       {
-       "t": "It will soon be opened to all visitors.",
+       "t": "It will be opened to visitors from everywhere.",
        "why": "The passage says only a few scientists may land there. Nothing says that will change."
+      },
+      {
+       "t": "It will become an easier home for new arrivals.",
+       "why": "Yes! Each living thing that comes makes the island a better home for the next ones. Answer first. Then find the proof."
       }
      ],
-     "answer": 1
+     "answer": 3
     },
     "partB": {
      "q": "Which detail from the passage **best** supports the inference in part A?",
@@ -2980,19 +2977,19 @@ window.SETS = {
        "why": "This tells who saw the island first. It does not show what will happen next."
       },
       {
-       "t": "In about 45 years, the ocean had taken away half of the island.",
-       "why": "Yes! The ocean has been shrinking the island year after year. Part B is your Detail. It proves your Part A answer."
+       "t": "Each new map shows the shoreline creeping inward.",
+       "why": "This shows the island getting smaller. It does not prove the island will soon be gone."
       },
       {
-       "t": "In 1965, scientists found the first plant growing on the black sand.",
-       "why": "This is true, but it is about plants, not the island's size."
+       "t": "The scientists recorded every new species they found, and the list kept growing.",
+       "why": "This shows more kinds of living things arriving. It does not show the island becoming an easier place to live."
       },
       {
-       "t": "Everyone else must watch it from a distance, by boat or by plane.",
-       "why": "This tells how people see the island. It does not prove it will get smaller."
+       "t": "Each newcomer made the island a better habitat for the settlers that came next.",
+       "why": "Yes! Each living thing that came made the island a better home for the next ones. Part B is your Detail. It proves your Part A answer."
       }
      ],
-     "answer": 1
+     "answer": 3
     }
    },
    {
@@ -3389,7 +3386,7 @@ window.SETS = {
   "passages": [
    {
     "title": "The Lake That Needs Its Rivers",
-    "subtitle": "Utah's Great Salt Lake has been shrinking for decades. Scientists want to know what it will take to rescue it.",
+    "subtitle": "Utah's Great Salt Lake is in trouble. Scientists want to know what it will take to make it healthy again.",
     "blocks": [
      {
       "p": "The ground beneath your sneakers is white and crusty. It crunches like old snow. But it is not snow. It is salt. You hike toward the shoreline, but it still seems distant. Not long ago, the spot where you are standing was underwater."
@@ -3595,8 +3592,8 @@ window.SETS = {
       "why": "That is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "The lake is shrinking because people use the river water.",
-      "why": "Yes! A big part of the passage tells why the lake is getting smaller."
+      "t": "People use up river water that the lake needs.",
+      "why": "Yes! A big part of the passage tells where the rivers' water goes and what that does to the lake."
      },
      {
       "t": "Three main rivers carry melted snow into the lake.",
@@ -3630,12 +3627,12 @@ window.SETS = {
        "why": "The passage says the lake has been shrinking since 1987, not growing back."
       },
       {
-       "t": "It will become less salty as it gets smaller.",
-       "why": "The passage says the opposite. When the lake gets smaller, the water gets saltier."
+       "t": "It will soon have more brine shrimp than ever.",
+       "why": "The passage says water that is too salty can kill the shrimp. Nothing says there will be more of them."
       },
       {
-       "t": "It will keep getting lower unless more water reaches it.",
-       "why": "Yes! People keep using the river water, and the lake keeps dropping. Answer first. Then find the proof."
+       "t": "It will get even saltier if less water reaches it.",
+       "why": "Yes! The salt stays behind when the water goes, so less water means saltier water. Answer first. Then find the proof."
       },
       {
        "t": "It will fill up again after one more snowy winter.",
@@ -3648,20 +3645,20 @@ window.SETS = {
      "q": "Which detail from the passage **best** supports the inference in part A?",
      "choices": [
       {
+       "t": "When the water evaporates, the salt stays behind.",
+       "why": "Yes! The salt stays behind when water leaves the lake, so with less water coming in, the lake gets saltier. Part B is your Detail. It proves your Part A answer."
+      },
+      {
        "t": "From 1987 to 2022, the water level dropped more than 20 feet.",
-       "why": "Yes! The lake has been dropping for a long time. Part B is your Detail. It proves your Part A answer."
+       "why": "This shows the lake getting lower. It does not tell what happens to the salt."
       },
       {
        "t": "In 2023, a record-breaking winter of snow raised the lake more than 5 feet, and people celebrated.",
-       "why": "This tells about one year when the lake went up. It does not prove the lake will keep getting lower."
-      },
-      {
-       "t": "Three main rivers, the Bear, the Weber, and the Jordan, carry melted snow from the mountains into the lake.",
-       "why": "This tells where the lake's water comes from. It does not show the lake getting lower."
+       "why": "This tells about one year when the lake went up. It does not tell what happens to the salt."
       },
       {
        "t": "Brine shrimp and brine flies are tiny creatures that thrive in very salty water.",
-       "why": "This is true, but it is about the animals, not the size of the lake."
+       "why": "This is true, but it tells about the animals. It does not show what will happen to the lake's salt."
       }
      ],
      "answer": 0
