@@ -1,7 +1,7 @@
 /* Grade 5 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 tools/check_drafts.py).
-   drafts fingerprint: ec84d182723f */
+   drafts fingerprint: 47f2266d398b */
 window.SETS = {
  "W": {
   "passages": [
@@ -78,7 +78,7 @@ window.SETS = {
       "p": "The hospital had an adult great horned owl that could not survive in the wild because of an old wing injury. She became the owlet's foster mother, and the two shared a quiet enclosure. When caretakers brought chopped mice, they wore masks and never spoke. An owlet that gets used to people may never learn to fear them, and an owl without that fear can easily be harmed by people, cars, or dogs."
      },
      {
-      "p": "By May, the owlet had traded most of her fluffy down for sleek brown flight feathers. Dr. Lee moved her into a flight cage, a long building with mesh walls where young birds practice flying. At first, the owlet only hopped clumsily from perch to perch. Then, one evening in June, she flew the whole length of the cage for the first time."
+      "p": "By May, the owlet had traded most of her fluffy down for sleek brown flight feathers. Dr. Lee moved her into a flight cage, a long building with mesh walls where young birds practice flying. At first, the owlet only hopped clumsily from perch to perch. Then, one evening in June, she flew the whole length of the cage."
      },
      {
       "p": "Next, she had to prove that she could catch her own prey. Great horned owls are nocturnal, so they hunt mostly at night. After dark, caretakers released live mice into the cage. Soon the owlet was snatching them with her sharp talons."
@@ -140,7 +140,7 @@ window.SETS = {
       "p": "At the Holiday Classic, teams compete in divisions by grade. In the compulsory (required) event, every team must perform the same tricks. In the speed event, judges count how many times the jumper's left foot hits the floor in two minutes. In the Fusion event, teams jump to music. They create their own routines. Jada is her team's speed jumper."
      },
      {
-      "p": "When the two minutes ended, Jada stepped out of the ropes. Her legs felt as heavy as bricks. She bent over and gasped for air. Her coach gave her a high five. A judge jotted down her count. Then the team lined up for the Fusion event."
+      "p": "When the two minutes ended, Jada stepped out of the ropes. She grinned and pumped her fist in the air. She knew she had jumped her fastest ever. Her coach gave her a high five. A judge jotted down her count. Then the team lined up for the Fusion event."
      },
      {
       "p": "At the end of the day, Jada's team took home a third-place trophy. \"Next year,\" Jada said with a grin, \"we're going for first.\""
@@ -291,12 +291,12 @@ window.SETS = {
       "why": "This tells where the owlet practiced. It does not prove the flight in June was a turning point for her."
      },
      {
-      "t": "Great horned owls are nocturnal, so they hunt mostly at night.",
-      "why": "This tells when great horned owls hunt. It does not prove the flight in June was a turning point for her."
+      "t": "Great horned owls are not endangered.",
+      "why": "This tells about all great horned owls. It does not prove the flight in June was a turning point for her."
      },
      {
-      "t": "Then, one evening in June, she flew the whole length of the cage for the first time.",
-      "why": "Yes! At first, the owlet only hopped from perch to perch. In June she flew the whole cage for the first time. Things changed for her after that, so it was a turning point."
+      "t": "Then, one evening in June, she flew the whole length of the cage.",
+      "why": "Yes! At first, the owlet only hopped from perch to perch. Then, in June, she flew the whole cage. Things changed for her after that, so it was a turning point."
      }
     ],
     "answer": 3
@@ -307,26 +307,26 @@ window.SETS = {
     "p": 1,
     "type": "hottext",
     "skill": "Click the proof: why it happens or matters",
-    "stem": "Select the sentence that **best** supports why a young owl should learn to fear people.",
+    "stem": "Select the sentence that **best** supports why the rescuers could not return the owlet to her parents.",
     "pick": 1,
     "layout": "list",
     "hint": "Read the idea in the question. Then read each sentence. Click the one that proves it the most.",
     "pieces": [
      {
-      "t": "The hospital had an adult great horned owl that could not survive in the wild because of an old wing injury.",
-      "why": "This tells about the foster mother's old injury. It does not tell why a young owl should fear people."
+      "t": "A fierce storm the night before had shaken her out of her nest.",
+      "why": "This tells how the owlet fell out of her nest. It does not tell why she could not go back to her parents."
      },
      {
-      "t": "She became the owlet's foster mother, and the two shared a quiet enclosure.",
-      "why": "This tells who raised the owlet. It does not tell why a young owl should fear people."
+      "t": "The woman telephoned a wildlife hospital for help.",
+      "why": "This tells what the woman did. It does not tell why the owlet could not go back to her parents."
      },
      {
-      "t": "When caretakers brought chopped mice, they wore masks and never spoke.",
-      "why": "This tells what the caretakers did. It does not tell why a young owl should fear people."
+      "t": "Rescuers from the hospital hoped to reunite the owlet with her parents.",
+      "why": "This tells what the rescuers wanted to do. It does not tell why they could not do it."
      },
      {
-      "t": "An owlet that gets used to people may never learn to fear them, and an owl without that fear can easily be harmed by people, cars, or dogs.",
-      "why": "Yes! An owl that does not fear people can be hurt by people, cars, or dogs. That is why a young owl should learn to fear people."
+      "t": "However, the old nest had collapsed in the wind, and the parents were nowhere in sight.",
+      "why": "Yes! The nest had fallen apart, and the parents were gone. The rescuers had no nest and no parents to bring her back to."
      }
     ],
     "answer": [
@@ -376,8 +376,8 @@ window.SETS = {
        "why": "The passage shows she learned to hunt months later, not when she was found."
       },
       {
-       "t": "She was too young to fly.",
-       "why": "Yes! She was only about three weeks old and could not fly yet. Answer first. Then find the proof."
+       "t": "She was soaking wet and cold.",
+       "why": "Yes! She was drenched from the storm and shivering. Answer first. Then find the proof."
       },
       {
        "t": "She was afraid of the dog.",
@@ -394,23 +394,23 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"An owl that imprints on people can never be released,\" she explained.",
-       "why": "This tells why imprinting is a problem. It does not show how the owlet was when she was found."
+       "t": "Beneath a tall oak tree, she noticed a fluffy gray bird, drenched and shivering.",
+       "why": "Yes! Drenched means soaking wet, and shivering is what a cold body does. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"She was only about three weeks old, so she couldn't fly yet.\"",
-       "why": "Yes! Dr. Lee says the owlet was too young to fly. Part B is your Detail. It proves your Part A answer."
+       "why": "This tells how old the owlet was. It does not show that she was wet and cold."
       },
       {
-       "t": "\"Out in the forest, nobody will deliver her dinner,\" Dr. Lee said.",
-       "why": "This is about later, when the owlet goes back to the woods. It does not show how she was when she was found."
+       "t": "By May, the owlet had traded most of her fluffy down for sleek brown flight feathers.",
+       "why": "This tells how the owlet looked in May. It does not show how she was when she was found."
       },
       {
        "t": "\"In a year or two, she may raise owlets of her own,\" Dr. Lee said.",
        "why": "This is about the future. It does not show how the owlet was when she was found."
       }
      ],
-     "answer": 1
+     "answer": 0
     }
    },
    {
@@ -527,34 +527,34 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select **two** sentences that **best** support the inference that Jada is worn out after the speed event.",
+    "stem": "Select **two** sentences that **best** support the inference that Jada is proud of her speed event.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two sentences. Each one must prove the idea by itself.",
     "pieces": [
      {
       "t": "When the two minutes ended, Jada stepped out of the ropes.",
-      "why": "This tells what Jada did when the time was up. It does not prove she is worn out."
+      "why": "This tells what Jada did when the time was up. It does not prove she is proud."
      },
      {
-      "t": "Her legs felt as heavy as bricks.",
-      "why": "Yes! Legs that feel as heavy as bricks are a clue that Jada is worn out."
+      "t": "She grinned and pumped her fist in the air.",
+      "why": "Yes! Grinning and pumping her fist are clues that Jada is proud."
      },
      {
-      "t": "She bent over and gasped for air.",
-      "why": "Yes! Gasping for air is a clue that Jada is worn out."
+      "t": "She knew she had jumped her fastest ever.",
+      "why": "Yes! Knowing she jumped her fastest ever is a clue that Jada is proud."
      },
      {
       "t": "Her coach gave her a high five.",
-      "why": "This tells what the coach did. It does not prove Jada is worn out."
+      "why": "This tells what the coach did. It does not prove Jada is proud."
      },
      {
       "t": "A judge jotted down her count.",
-      "why": "This tells what the judge did. It does not prove Jada is worn out."
+      "why": "This tells what the judge did. It does not prove Jada is proud."
      },
      {
       "t": "Then the team lined up for the Fusion event.",
-      "why": "This tells what the team did next. It does not prove Jada is worn out."
+      "why": "This tells what the team did next. It does not prove Jada is proud."
      }
     ],
     "answer": [
@@ -678,7 +678,7 @@ window.SETS = {
   "passages": [
    {
     "title": "The Volcano in the Cornfield",
-    "subtitle": "In 1943, a new volcano grew out of a farm in Mexico. Now it is changing again.",
+    "subtitle": "In 1943, a new volcano grew out of a farm in Mexico. Today it sits quiet.",
     "blocks": [
      {
       "p": "It was a quiet day on a farm in Mexico. A farmer and his wife were at work in their cornfield. Then the ground in front of them began to rise."
@@ -764,7 +764,7 @@ window.SETS = {
       "p": "\"The cubs must forage for every meal, just as they would in the wild,\" Dr. Harlan explained."
      },
      {
-      "p": "At first, Clover only scrambled onto low boulders and stumps, because her paw was still weak. In August, she climbed the tallest tree in the enclosure for the first time."
+      "p": "At first, Clover only scrambled onto low boulders and stumps, because her paw was still weak. In August, she climbed to the top of the tallest tree in the enclosure."
      },
      {
       "h": "Back to the Forest"
@@ -817,7 +817,7 @@ window.SETS = {
       "p": "To qualify for a bee near her home, Priya first had to pass a test. She answered 50 questions in 20 minutes online."
      },
      {
-      "p": "On the day of the bee, Priya found her seat in a big gym. Other contestants took their seats too. Her palms felt cold and sweaty. She picked up her buzzer. Her heart thumped as the moderator stepped up. The moderator is the person who reads the questions."
+      "p": "On the day of the bee, Priya found her seat in a big gym. Other contestants took their seats too. Her palms felt cold and sweaty. She picked up her buzzer. She chewed her lip as the moderator stepped up. The moderator is the person who reads the questions."
      },
      {
       "p": "Each question has a few clues. The first clues are tricky. They get easier as the moderator reads on. Kids can buzz in at any time. But a kid who gives a wrong answer cannot buzz again on that question."
@@ -922,8 +922,8 @@ window.SETS = {
        "why": "Nothing in the passage says the plants will die."
       },
       {
-       "t": "Over time, more kinds of plants will grow there.",
-       "why": "Yes! The number of kinds of plants keeps going up. Answer first. Then find the proof."
+       "t": "Over time, more plants will grow on the volcano.",
+       "why": "Yes! Plants keep coming back to the volcano, little by little. Answer first. Then find the proof."
       },
       {
        "t": "Over time, farmers will plant corn on the volcano.",
@@ -944,8 +944,8 @@ window.SETS = {
        "why": "This tells why the volcano mattered to scientists. It does not show what the plants will do next."
       },
       {
-       "t": "In 1957, scientists found just two kinds of plants on the volcano, but by 1977 they found 39 kinds.",
-       "why": "Yes! The number of kinds of plants went way up over time. Part B is your Detail. It proves your Part A answer."
+       "t": "Then, little by little, plants came back.",
+       "why": "Yes! Plants have been coming back little by little, so more will grow over time. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "When the volcano stopped, the land around it was gray and barren.",
@@ -953,7 +953,7 @@ window.SETS = {
       },
       {
        "t": "Today, most of the volcano is still bare black rock.",
-       "why": "This is true, but it tells about the rock. It does not show that more kinds of plants are growing."
+       "why": "This is true, but it tells about the rock. It does not show plants coming back."
       }
      ],
      "answer": 1
@@ -973,8 +973,8 @@ window.SETS = {
       "why": "This tells where the hiker found Clover. It does not prove that climbing the tree was a big victory."
      },
      {
-      "t": "In August, she climbed the tallest tree in the enclosure for the first time.",
-      "why": "Yes! \"For the first time\" is a clue. Clover's hurt paw had kept her on low rocks and stumps. Now she did something she had never done before. That proves it was a big victory."
+      "t": "In August, she climbed to the top of the tallest tree in the enclosure.",
+      "why": "Yes! Clover's hurt paw had kept her on low rocks and stumps. Now she climbed all the way up the tallest tree. That proves it was a big victory."
      },
      {
       "t": "Then she joined three other orphaned cubs in a wooded enclosure.",
@@ -1157,24 +1157,24 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text **best** supports the conclusion that kids can learn a lot about the world?",
+    "stem": "Which sentence from the text **best** supports the conclusion that winning the bee could help a student's future?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
       "t": "That first year, about 13,000 schools held bees.",
-      "why": "This tells how many schools took part. It does not show how much a kid knew."
+      "why": "This tells how many schools took part. It does not show how winning could help a student later."
      },
      {
       "t": "It was for students in grades 4 to 8.",
-      "why": "This tells who could enter. It does not prove kids can learn a lot about the world."
+      "why": "This tells who could enter. It does not show how winning could help a student later."
+     },
+     {
+      "t": "His prize was a $25,000 college scholarship.",
+      "why": "Yes! A college scholarship pays for school after high school. Winning gave him help for his future."
      },
      {
       "t": "He won by answering tough questions about places all over the world.",
-      "why": "Yes! A kid answered tough questions about places all over the world. That proves kids can learn a lot about it."
-     },
-     {
-      "t": "Later, the bee was renamed the GeoBee.",
-      "why": "This is true, but it does not prove what kids can learn. It tells about the bee's name."
+      "why": "This tells how he won. It does not show how winning could help him later."
      }
     ],
     "answer": 2
@@ -1197,8 +1197,8 @@ window.SETS = {
       "why": "This is too big. The passage is about geography bees, not all kinds of games."
      },
      {
-      "t": "A national geography bee began in 1989, and kids still compete today.",
-      "why": "Yes! This fits every part of the passage: how the bees began and how kids compete in them now."
+      "t": "A national geography bee ended, but kids can still enter other bees.",
+      "why": "Yes! This fits every part of the passage: the national bee's history and the bees kids enter now."
      },
      {
       "t": "The first winner was a 15-year-old eighth grader from Kansas.",
@@ -1235,8 +1235,8 @@ window.SETS = {
       "why": "This tells what Priya did. It does not prove she is nervous."
      },
      {
-      "t": "Her heart thumped as the moderator stepped up.",
-      "why": "Yes! A thumping heart is a clue that Priya is nervous."
+      "t": "She chewed her lip as the moderator stepped up.",
+      "why": "Yes! Chewing her lip is a clue that Priya is nervous."
      },
      {
       "t": "The moderator is the person who reads the questions.",
@@ -1364,7 +1364,7 @@ window.SETS = {
   "passages": [
    {
     "title": "The Glacier That Left Its Lake",
-    "subtitle": "A giant river of ice in Alaska is shrinking. Scientists are watching it change.",
+    "subtitle": "A giant river of ice in Alaska is melting. Scientists are watching it closely.",
     "blocks": [
      {
       "p": "Crack! A huge slab of ice split away and plunged into the lake. Waves rolled across the gray water. A brand-new iceberg bobbed and drifted away."
@@ -1379,7 +1379,7 @@ window.SETS = {
       "h": "Pulling Back"
      },
      {
-      "p": "\"The glacier is shrinking,\" says Dr. Nora Whitfield, a scientist who studies glaciers. \"Each summer, more ice melts away than new snow can replace.\""
+      "p": "\"The glacier is melting away,\" says Dr. Nora Whitfield, a scientist who studies glaciers. \"Each summer, more ice melts away than new snow can replace.\""
      },
      {
       "p": "Scientists say the glacier is retreating, or pulling back. Long ago, the ice filled much more of the valley. In 1929, a lake began to form in front of the glacier. It filled the space where the ice had melted away. Since then, the glacier has retreated almost two miles. That is about as long as 30 football fields in a row. Between 2007 and 2011, it retreated about the length of a football field every year."
@@ -1388,7 +1388,7 @@ window.SETS = {
       "p": "Why is it melting? Between 1941 and 2020, the air near the glacier warmed by about two and a half degrees. \"Warmer air means more melting,\" Dr. Whitfield explains."
      },
      {
-      "p": "For a long time, the front of the glacier sat in the lake. Big chunks kept breaking off. They floated away as icebergs. So the glacier shrank even faster. Now that its front sits on land, it may shrink a little more slowly. But it is still shrinking."
+      "p": "For a long time, the front of the glacier sat in the lake. Big chunks kept breaking off. They floated away as icebergs. So the glacier lost ice even faster. Now that its front sits on land, it may melt a little more slowly. But it is still melting."
      },
      {
       "h": "What the Ice Leaves Behind"
@@ -1512,7 +1512,7 @@ window.SETS = {
       "p": "Pitchers follow a strict rule. A pitcher who throws 66 or more pitches in a day must rest for four days before pitching again."
      },
      {
-      "p": "When twelve-year-old Nate Owens sprinted out for his team's first game, he gazed up at the hill beyond the outfield fence. Thousands of spectators sprawled on blankets on the grassy slope. Nate's heart pounded so hard that he could hear it. He tugged his cap down, waved to his teammates, and jogged to shortstop. His hands trembled as he pulled on his glove. Then the umpire bellowed, \"Play ball!\""
+      "p": "When twelve-year-old Nate Owens headed out for his team's first game, he gazed up at the hill beyond the outfield fence. Thousands of spectators sprawled on blankets on the grassy slope. Nate could hardly wait for the first pitch. He tugged his cap down, waved to his teammates, and jogged to shortstop. He bounced on his toes as he pulled on his glove. Then the umpire bellowed, \"Play ball!\""
      },
      {
       "p": "In the championship game, the top team from the United States faces the top international team. It is a long way from that vacant lot in 1939."
@@ -1566,8 +1566,8 @@ window.SETS = {
     "pick": 2,
     "pieces": [
      {
-      "t": "The Mendenhall Glacier is shrinking as the air around it warms.",
-      "why": "Yes! A big part of the passage tells how and why the glacier is shrinking."
+      "t": "Warmer air is the main reason the glacier is melting.",
+      "why": "Yes! A big part of the passage tells why the glacier is melting and pulling back."
      },
      {
       "t": "The Mendenhall Glacier is about 13 miles long.",
@@ -1602,11 +1602,11 @@ window.SETS = {
      "choices": [
       {
        "t": "The glacier will soon start to grow bigger again.",
-       "why": "The passage says the glacier is shrinking, not growing."
+       "why": "The passage says the glacier is melting, not growing."
       },
       {
-       "t": "The glacier will keep shrinking in the years ahead.",
-       "why": "Yes! The glacier has been pulling back for years, and it is still shrinking. Answer first. Then find the proof."
+       "t": "The glacier will no longer drop icebergs into the lake.",
+       "why": "Yes! Icebergs broke off where the ice met the lake. Now the glacier does not reach the lake, so no new icebergs will fall in. Answer first. Then find the proof."
       },
       {
        "t": "The glacier will stop melting during the warm summers.",
@@ -1627,16 +1627,16 @@ window.SETS = {
        "why": "This tells where the glacier begins. It does not show what will happen next."
       },
       {
-       "t": "Between 2007 and 2011, it retreated about the length of a football field every year.",
-       "why": "Yes! The glacier has been getting smaller year after year. Part B is your Detail. It proves your Part A answer."
+       "t": "The glacier did not touch the lake anymore.",
+       "why": "Yes! The icebergs came from ice that broke off into the lake. Now the ice does not reach the lake. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "Soon, moss and tiny plants sprout there.",
-       "why": "This is true, but it is about plants, not the glacier's size."
+       "why": "This is true, but it is about plants, not the icebergs."
       },
       {
        "t": "Some of them are more than 1,000 years old.",
-       "why": "This tells how old the tree stumps are. It does not prove the glacier will keep shrinking."
+       "why": "This tells how old the tree stumps are. It does not show what will happen to the icebergs."
       }
      ],
      "answer": 1
@@ -1717,7 +1717,7 @@ window.SETS = {
       "why": "This tells only the middle. It leaves out how the turtle was found and how it went home."
      },
      {
-      "t": "A cold-stunned turtle is rescued, nursed back to health, and set free in the ocean.",
+      "t": "A cold-stunned turtle is rescued, slowly warmed and treated, and set free in the ocean.",
       "why": "Yes! This tells the beginning, the middle, and the end: the turtle is found, cared for, and set free."
      },
      {
@@ -1737,12 +1737,12 @@ window.SETS = {
      "q": "What conclusion can be drawn about the turtle's behavior when it arrived at the hospital?",
      "choices": [
       {
-       "t": "It was eager to eat squid.",
-       "why": "The passage says the turtle could not eat when it arrived."
+       "t": "It was trying to swim away.",
+       "why": "The passage never says the turtle tried to swim away. It could not swim at all."
       },
       {
-       "t": "It was almost too weak to move.",
-       "why": "Yes! The cold had made the turtle so weak that it could hardly move. Answer first. Then find the proof."
+       "t": "It was not interested in food.",
+       "why": "Yes! For weeks, the turtle hardly wanted to eat. Answer first. Then find the proof."
       },
       {
        "t": "It was trying to bite people.",
@@ -1759,8 +1759,8 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"This one couldn't swim, couldn't eat, and could barely lift its head.\"",
-       "why": "Yes! A turtle that cannot swim and can barely lift its head is almost too weak to move. Part B is your Detail. It proves your Part A answer."
+       "t": "For weeks, the turtle had almost no appetite, but gradually it regained its strength.",
+       "why": "Yes! Having almost no appetite means the turtle did not want to eat. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"The first time it snapped up a piece of squid on its own, the whole staff cheered.\"",
@@ -1792,16 +1792,16 @@ window.SETS = {
        "why": "The passage says the turtles are set free in the ocean."
       },
       {
-       "t": "They will become more common over time.",
-       "why": "Yes! Each turtle that goes home could have young of its own someday. More young turtles means these turtles will become more common over time. Answer first. Then find the proof."
+       "t": "Some will still get trapped by cold water each fall.",
+       "why": "Yes! Young turtles swim north every summer, and Cape Cod can trap them when the water cools. Nothing says that will stop. Answer first. Then find the proof."
       },
       {
        "t": "They will stop swimming north in the summer.",
        "why": "The passage never says the turtles will change where they swim."
       },
       {
-       "t": "They will never get cold-stunned again.",
-       "why": "The passage says turtles get trapped in the cold water every fall. Nothing says that will stop."
+       "t": "They will stop eating crabs off Massachusetts.",
+       "why": "The passage says young turtles swim north to find crabs. Nothing says that will change."
       }
      ],
      "answer": 1
@@ -1810,23 +1810,23 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"Cold-stunned turtles can look lifeless when they arrive, but many of them are still alive.\"",
-       "why": "This tells how the turtles look when they come in. It does not show what will happen later."
+       "t": "It was a sea turtle, and it was motionless.",
+       "why": "This tells how one turtle looked on the beach. It does not show what will happen to the turtles later."
       },
       {
        "t": "\"This one couldn't swim, couldn't eat, and could barely lift its head.\"",
        "why": "This tells how sick this turtle was. It does not show the future of all the turtles."
       },
       {
-       "t": "\"That was when we knew it was going to make it.\"",
-       "why": "This is about one turtle getting better. It does not show the future of all the turtles."
+       "t": "That summer voyage can become a trap.",
+       "why": "Yes! Every summer, young turtles swim north, and when the water cools, Cape Cod can trap them. That will keep happening. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"Each turtle we return to the ocean could grow up and have young of its own.\"",
-       "why": "Yes! More young turtles means Kemp's ridleys can become more common. Part B is your Detail. It proves your Part A answer."
+       "why": "This is about turtles having young someday. It does not show that turtles will still be trapped by the cold."
       }
      ],
-     "answer": 3
+     "answer": 2
     }
    },
    {
@@ -1835,23 +1835,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a conclusion (history)",
-    "stem": "Which sentence from the text **best** supports the conclusion that kids can help adults solve a real problem?",
+    "stem": "Which sentence from the text **best** supports the conclusion that kids had a say in how far apart the bases are?",
     "choices": [
      {
       "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
-      "why": "This tells what Stotz wanted for the boys. It does not show the boys solving a problem."
+      "why": "This tells what Stotz wanted for the boys. It does not show the boys having a say in the bases."
      },
      {
       "t": "In the summer of 1938, Carl Stotz played ball with his young nephews, Jimmy and Major Gehron, in Williamsport, Pennsylvania.",
-      "why": "This tells who Stotz played ball with. It does not show the boys helping to solve a problem."
+      "why": "This tells who Stotz played ball with. It does not show the boys having a say in the bases."
      },
      {
       "t": "So all that summer, the boys helped Stotz test fields of different sizes, playing practice games on each one.",
-      "why": "Yes! An adult field was too big for young players. The boys helped find the right size, and Little League still uses that size today."
+      "why": "Yes! The boys helped Stotz test fields of different sizes. That is how the bases came to be set 60 feet apart, the distance Little League still uses."
      },
      {
       "t": "A donation of 30 dollars from each one bought a whole team's uniforms.",
-      "why": "This is true, but it is about money for uniforms. It does not prove that kids can help solve a problem."
+      "why": "This is true, but it is about money for uniforms. It does not show the boys having a say in the bases."
      }
     ],
     "answer": 2
@@ -1869,7 +1869,7 @@ window.SETS = {
       "why": "This is not true. The passage says Little League is played in all 50 states and more than 80 countries."
      },
      {
-      "t": "Little League grew from one man's idea into a worldwide event.",
+      "t": "Little League started with a few teams and became a worldwide event.",
       "why": "Yes! The passage tells how Little League began and how big it has become today. That fits the whole passage."
      },
      {
@@ -1889,12 +1889,12 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select **two** sentences that **best** support the inference that Nate feels nervous.",
+    "stem": "Select **two** sentences that **best** support the inference that Nate is eager for the game to start.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
-      "t": "When twelve-year-old Nate Owens sprinted out for his team's first game, he gazed up at the hill beyond the outfield fence.",
+      "t": "When twelve-year-old Nate Owens headed out for his team's first game, he gazed up at the hill beyond the outfield fence.",
       "why": "This tells where Nate looked. It does not prove how he feels."
      },
      {
@@ -1902,16 +1902,16 @@ window.SETS = {
       "why": "This tells about the crowd, not about Nate's feelings."
      },
      {
-      "t": "Nate's heart pounded so hard that he could hear it.",
-      "why": "Yes! A pounding heart is a clue that Nate is nervous."
+      "t": "Nate could hardly wait for the first pitch.",
+      "why": "Yes! Nate can hardly wait, so he is eager for the game to start."
      },
      {
       "t": "He tugged his cap down, waved to his teammates, and jogged to shortstop.",
-      "why": "This tells what Nate did. It does not prove he is nervous."
+      "why": "This tells what Nate did to get to his spot. It does not prove he is eager."
      },
      {
-      "t": "His hands trembled as he pulled on his glove.",
-      "why": "Yes! Hands that tremble, or shake, are a clue that Nate is nervous."
+      "t": "He bounced on his toes as he pulled on his glove.",
+      "why": "Yes! Bouncing on his toes is a clue that Nate is eager to play."
      },
      {
       "t": "Then the umpire bellowed, \"Play ball!\"",
@@ -1929,26 +1929,26 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Little League tries to prevent injuries. Which sentence from the passage **best** supports this inference?",
+    "stem": "Read this inference. Young athletes at the World Series make friends from faraway places. Which sentence from the passage **best** supports this inference?",
     "choices": [
      {
       "t": "To advance, a team must win its district, then its state or country, and then its region.",
-      "why": "This is true, but it tells what a team must win to move on. It does not prove that Little League tries to prevent injuries."
+      "why": "This is true, but it tells what a team must win to move on. It does not show players making friends."
      },
      {
       "t": "They share meals, and many swap souvenir pins with players from other countries.",
-      "why": "This tells what players do at the Grove. It does not prove that Little League tries to prevent injuries."
+      "why": "Yes! Sharing meals and trading pins with kids from other countries is how players make new friends."
      },
      {
-      "t": "A pitcher who throws 66 or more pitches in a day must rest for four days before pitching again.",
-      "why": "Yes! Making pitchers rest protects their arms from getting hurt. That shows Little League tries to prevent injuries."
+      "t": "The outfield fences stand 225 feet from home plate.",
+      "why": "This tells about the field. It does not show players making friends."
      },
      {
-      "t": "In the end, only 20 teams reach the World Series each August: 10 from the United States and 10 from other countries.",
-      "why": "This tells how many teams reach the World Series. It does not prove that Little League tries to prevent injuries."
+      "t": "Admission to every game is free.",
+      "why": "This tells about the fans. It does not show players making friends."
      }
     ],
-    "answer": 2
+    "answer": 1
    },
    {
     "id": "R13",
@@ -1957,7 +1957,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1938, Carl Stotz wanted boys in Williamsport, Pennsylvania, to play baseball on real teams. That summer, his nephews helped him test fields of different sizes for young players. The first Little League game was played in 1939, and today 20 teams reach the World Series each August.",
+    "box": "In 1938, Carl Stotz wanted boys in Williamsport, Pennsylvania, to play baseball on real teams. That summer, his nephews helped him test fields of different sizes for young players. The first Little League game was played in 1939, and today teams from around the world play in the World Series.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -1993,12 +1993,12 @@ window.SETS = {
        "why": "This is not true. Reread the parts about the businesses and Stotz's friends."
       },
       {
-       "t": "Carl Stotz got help from many other people.",
-       "why": "Yes! Boys, businesses, friends, and their wives all helped. Answer first. Then find the proof."
+       "t": "Paying for the first uniforms took many tries.",
+       "why": "Yes! Stotz went from business to business, and most of them said no. Answer first. Then find the proof."
       },
       {
-       "t": "Businesses were eager to pay for the first teams.",
-       "why": "Stotz had to visit business after business, and most of them said no."
+       "t": "The first teams played on a field with 90-foot bases.",
+       "why": "The boys helped find a smaller field. The bases were set 60 feet apart."
       },
       {
        "t": "The first game was played in a large stadium.",
@@ -2012,19 +2012,19 @@ window.SETS = {
      "choices": [
       {
        "t": "On June 6, 1939, the first Little League game was played on a vacant lot in Williamsport.",
-       "why": "This tells when and where the first game was played. It does not show other people helping Stotz."
+       "why": "This tells when and where the first game was played. It does not show how hard it was to pay for the teams."
       },
       {
-       "t": "The three men, their wives, and another couple formed the league's first board, the group that made its big decisions.",
-       "why": "Yes! A whole group of friends helped Stotz run the league. Part B is your Detail. It proves your Part A answer."
+       "t": "He visited one local business after another.",
+       "why": "Yes! Stotz had to go to one business after another before any said yes. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "Lundy Lumber beat Lycoming Dairy, 23 to 8.",
-       "why": "This tells who won the first game. It does not show other people helping Stotz start the league."
+       "why": "This tells who won the first game. It does not show how hard it was to pay for the teams."
       },
       {
        "t": "He wanted boys to play on organized teams, with uniforms and adults in charge.",
-       "why": "This tells what Stotz wanted. It does not show other people helping him."
+       "why": "This tells what Stotz wanted. It does not show how hard it was to pay for the teams."
       }
      ],
      "answer": 1
@@ -2104,7 +2104,7 @@ window.SETS = {
       "p": "That afternoon, a rescue crew hoisted the calf into a boat. She weighed only 65 pounds, and part of her umbilical cord¹ was still attached, so she had been born very recently. The rescuers named her Marigold and took her to a marine mammal hospital. There, Dr. Hannah Reed, a veterinarian, examined her."
      },
      {
-      "p": "\"When Marigold arrived, she was so weak that she could barely lift her nostrils above the water to breathe,\" Dr. Reed said. \"Someone had to stay in the pool and gently support her.\""
+      "p": "\"When Marigold arrived, she could barely lift her nostrils above the water to breathe,\" Dr. Reed said. \"Someone had to stay in the pool and gently support her.\""
      },
      {
       "h": "Why Can't a Calf Survive Alone?"
@@ -2280,8 +2280,8 @@ window.SETS = {
        "why": "The passage says the dune has not stopped. Nothing says it will stop soon."
       },
       {
-       "t": "The dune will keep moving farther away from the lake.",
-       "why": "Yes! The wind keeps pushing the dune south, year after year. Answer first. Then find the proof."
+       "t": "The dune will cover more of the parking lot.",
+       "why": "Yes! Sand has already reached the road out of the parking lot, and the dune keeps sliding south. Answer first. Then find the proof."
       },
       {
        "t": "The dune will start moving back toward the lake.",
@@ -2299,15 +2299,15 @@ window.SETS = {
      "choices": [
       {
        "t": "In 2014, workers built low fences out of old Christmas trees to slow the wind.",
-       "why": "This tells how workers try to slow the wind. It does not show which way the dune will move."
+       "why": "This tells how workers try to slow the wind. It does not show what the dune will cover next."
       },
       {
-       "t": "Between 1938 and 2008, Mount Baldy moved 443 feet away from the lake.",
-       "why": "Yes! The dune has been moving away from the lake for many years. Part B is your Detail. It proves your Part A answer."
+       "t": "In 2021, sand began to cover the road that cars used to leave the parking lot.",
+       "why": "Yes! The sand has already reached the parking lot's road. As the dune keeps moving, it will cover more. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "Mount Baldy is in Indiana Dunes National Park, at the south end of Lake Michigan.",
-       "why": "This is true, but it tells where the dune is. It does not show which way it will move."
+       "why": "This is true, but it tells where the dune is. It does not show what the dune will cover next."
       },
       {
        "t": "Their feet trampled the plants that anchored the sand.",
@@ -2412,8 +2412,8 @@ window.SETS = {
      "q": "What conclusion can be drawn about Marigold's behavior when she first arrived at the hospital?",
      "choices": [
       {
-       "t": "She was too weak to swim.",
-       "why": "Yes! She could hardly breathe on her own, and someone had to hold her up. Answer first. Then find the proof."
+       "t": "She was barely able to float.",
+       "why": "Yes! She could hardly keep her nostrils above the water, and someone had to hold her up. Answer first. Then find the proof."
       },
       {
        "t": "She was ready to go free.",
@@ -2434,8 +2434,8 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"When Marigold arrived, she was so weak that she could barely lift her nostrils above the water to breathe,\" Dr. Reed said.",
-       "why": "Yes! Marigold was too weak even to breathe well on her own. Part B is your Detail. It proves your Part A answer."
+       "t": "\"Someone had to stay in the pool and gently support her.\"",
+       "why": "Yes! Marigold could not stay up in the water unless a person held her. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"We gave her the time she would have spent with her mother,\" Dr. Reed said.",
@@ -2467,16 +2467,16 @@ window.SETS = {
        "why": "The passage gives reasons for hope. The count of manatees went up, not down."
       },
       {
-       "t": "Rescued calves like Marigold will help the number of manatees grow.",
-       "why": "Yes! Rescued orphans can grow up and have calves of their own, so they will help the number of manatees grow. Answer first. Then find the proof."
+       "t": "Orphaned calves will still need help from people.",
+       "why": "Yes! An orphan has no mother to teach it, so orphans found later on will need people to care for them. Answer first. Then find the proof."
       },
       {
        "t": "Manatees will stop needing warm water in winter.",
        "why": "The passage says manatees cannot live long in cold water. Nothing says that will change."
       },
       {
-       "t": "Orphaned calves will soon be able to live without any help from people.",
-       "why": "The passage shows that orphans need a lot of help. Nothing says that will change."
+       "t": "Manatees will move north to colder seas.",
+       "why": "The passage says manatees cannot live long in cold water. Nothing says they will move north."
       }
      ],
      "answer": 1
@@ -2486,22 +2486,22 @@ window.SETS = {
      "choices": [
       {
        "t": "\"An orphan has never had a teacher,\" Dr. Reed explained.",
-       "why": "This tells why orphans need help. It does not tell about the future."
+       "why": "Yes! Without a mother to teach it, an orphan cannot learn where to find food or warm water, so orphans will still need people's help. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "\"We gave her the time she would have spent with her mother,\" Dr. Reed said.",
-       "why": "This is about Marigold's care. It does not tell what will happen to manatees later."
+       "why": "This tells about one calf, Marigold, and the care she got. It does not show why every orphan needs help from people."
       },
       {
-       "t": "\"Some orphans we raised years ago have been spotted with calves of their own,\" Dr. Reed said.",
-       "why": "Yes! Rescued orphans are growing up and having babies. More babies mean more manatees. Part B is your Detail. It proves your Part A answer."
+       "t": "In 2017, the same kind of survey found 6,620.",
+       "why": "This tells how many manatees were counted. It does not show that orphans need help."
       },
       {
        "t": "\"Watching her glide off with the other manatees was the moment we had worked toward for nearly three years,\" Dr. Reed said.",
        "why": "This tells how Dr. Reed felt on the day Marigold went free. It does not tell about the future."
       }
      ],
-     "answer": 2
+     "answer": 0
     }
    },
    {
@@ -2753,7 +2753,7 @@ window.SETS = {
       "p": "\"On every expedition, we discover something new,\" says Dr. Gunnarsdóttir. \"Surtsey shows us how life starts over.\""
      },
      {
-      "p": "So what will happen to Surtsey next? The waves will keep eroding its fragile edges. No one knows exactly how long the island will endure. But researchers keep returning to observe what has changed. \"We will keep watching,\" Dr. Gunnarsdóttir says, \"and we will keep learning.\""
+      "p": "So what will happen to Surtsey next? The waves are still eroding its fragile edges. No one knows exactly how long the island will endure. But researchers keep returning to observe what has changed. \"We will keep watching,\" Dr. Gunnarsdóttir says, \"and we will keep learning.\""
      }
     ],
     "footnotes": [
@@ -2785,7 +2785,7 @@ window.SETS = {
       "p": "When the aquarium opened in 1984, its workers raised orphaned pups by hand. They fed the pups around the clock, groomed them, and even swam with them. But when those pups were released, many of them struggled. They had bonded with people, so they swam up to divers and kayakers instead of keeping their distance."
      },
      {
-      "p": "On July 21, 2001, rescuers found an adult female otter stranded on Pismo Beach. The otter, named Toola, was pregnant and seriously ill. A brain illness caused by a parasite gave her seizures, so she needed medicine twice a day and could never return to the ocean. Shortly after her rescue, her own pup was stillborn. Then the aquarium received a two-week-old orphan, and workers introduced him to Toola. She adopted him and cared for him as if he were her own. Toola became the first otter living in an aquarium to ever raise another mother's pup."
+      "p": "On July 21, 2001, rescuers found an adult female otter stranded on Pismo Beach. The otter, named Toola, was pregnant and seriously ill. A brain illness caused by a parasite gave her seizures, so she needed medicine twice a day and could never return to the ocean. Shortly after her rescue, her own pup was stillborn. Then the aquarium received a two-week-old orphan, and workers introduced him to Toola. She adopted him and cared for him as if he were her own."
      },
      {
       "p": "Since then, adult females that cannot live in the wild have raised dozens of orphans. To keep the pups wild, workers stay out of sight as much as possible. When they must come close, they wear black ponchos and welder's helmets, so a pup never sees a human face."
@@ -2916,8 +2916,8 @@ window.SETS = {
     "pick": 2,
     "pieces": [
      {
-      "t": "Surtsey is a new island made by an undersea volcano.",
-      "why": "Yes! A big part of the passage tells how the volcano built the island."
+      "t": "Surtsey is kept untouched so scientists can study it.",
+      "why": "Yes! A big part of the passage tells how the island is protected and how scientists keep coming back to study it."
      },
      {
       "t": "The first plant on Surtsey was found in 1965.",
@@ -2932,7 +2932,7 @@ window.SETS = {
       "why": "That is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "Only a few scientists are allowed to land on Surtsey.",
+      "t": "The name Surtsey comes from a fire giant in old legends.",
       "why": "This is true, but it is one detail. A main idea tells about a big part of the passage."
      }
     ],
@@ -2998,26 +2998,26 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence supports a conclusion",
-    "stem": "Which sentence from the passage **best** supports the conclusion that what Toola did made history?",
+    "stem": "Which sentence from the passage **best** supports the conclusion that what Toola did led to a new way of caring for rescued pups?",
     "choices": [
      {
       "t": "The otter, named Toola, was pregnant and seriously ill.",
-      "why": "This tells how Toola was when she was found. It does not prove that what she did made history."
+      "why": "This tells how Toola was when she was found. It does not show that what she did led to a new way of caring for pups."
      },
      {
       "t": "A brain illness caused by a parasite gave her seizures, so she needed medicine twice a day and could never return to the ocean.",
-      "why": "This tells why Toola had to stay at the aquarium. It does not prove that what she did made history."
+      "why": "This tells why Toola had to stay at the aquarium. It does not show that what she did led to a new way of caring for pups."
      },
      {
-      "t": "Toola became the first otter living in an aquarium to ever raise another mother's pup.",
-      "why": "Yes! No otter in an aquarium had ever done this before. Being the very first to do something is how you make history."
+      "t": "She adopted him and cared for him as if he were her own.",
+      "why": "This shows Toola caring for one orphan. It does not show what happened after that."
      },
      {
       "t": "Since then, adult females that cannot live in the wild have raised dozens of orphans.",
-      "why": "This is true, but it tells about other otters after Toola. It does not prove that what Toola did made history."
+      "why": "Yes! After Toola, other otters that could not live in the wild raised dozens of orphans. What she did led to a new way of caring for rescued pups."
      }
     ],
-    "answer": 2
+    "answer": 3
    },
    {
     "id": "TA05",
@@ -3025,29 +3025,29 @@ window.SETS = {
     "p": 1,
     "type": "hottext",
     "skill": "Click the proof: why it happens or matters",
-    "stem": "Select the sentence that **best** supports why many hand-raised pups struggled after they were released.",
+    "stem": "Select the sentence that **best** supports why grooming is so important for a sea otter.",
     "pick": 1,
     "layout": "list",
     "pieces": [
      {
-      "t": "When the aquarium opened in 1984, its workers raised orphaned pups by hand.",
-      "why": "This tells when the workers started raising pups. It does not tell why the pups struggled."
+      "t": "Unlike seals and whales, sea otters have no thick layer of blubber to insulate them from the frigid water.",
+      "why": "This tells what otters do not have. It does not tell why grooming matters so much."
      },
      {
-      "t": "They fed the pups around the clock, groomed them, and even swam with them.",
-      "why": "This tells how the workers cared for the pups. It does not tell why the pups struggled after they were released."
+      "t": "Instead, they depend on the densest fur of any animal, with as many as one million hairs in a single square inch.",
+      "why": "This tells how thick an otter's fur is. It does not tell why grooming matters so much."
      },
      {
-      "t": "But when those pups were released, many of them struggled.",
-      "why": "This shows that the pups had trouble. It does not tell why they had trouble."
+      "t": "That fur traps a layer of air that keeps an otter warm, but only when it is clean and fluffy.",
+      "why": "Yes! The fur keeps an otter warm only when it is clean and fluffy. Grooming keeps it clean, so grooming is very important."
      },
      {
-      "t": "They had bonded with people, so they swam up to divers and kayakers instead of keeping their distance.",
-      "why": "Yes! The pups had bonded with people, so they swam toward divers and kayakers instead of staying wild. That is why the hand-raised pups struggled."
+      "t": "That is why a wild mother grooms her pup constantly.",
+      "why": "This tells that a mother grooms her pup. It does not tell why grooming is so important."
      }
     ],
     "answer": [
-     3
+     2
     ]
    },
    {
@@ -3138,8 +3138,8 @@ window.SETS = {
      "q": "Which of these conclusions about the future of California's sea otters is supported by the passage?",
      "choices": [
       {
-       "t": "More orphaned pups will go home to the sea.",
-       "why": "Yes! Other aquariums are now raising orphans with surrogate mothers, so more pups will get to go home to the sea. Answer first. Then find the proof."
+       "t": "They will keep helping eelgrass grow back.",
+       "why": "Yes! Released otters eat crabs, and that lets eelgrass grow back. Otters that live free will keep doing that. Answer first. Then find the proof."
       },
       {
        "t": "Sea otters will soon disappear from the California coast.",
@@ -3165,15 +3165,15 @@ window.SETS = {
       },
       {
        "t": "\"The pup watches everything she does, and it copies her.\"",
-       "why": "This tells how a pup learns. It does not prove that more pups will go home to the sea."
+       "why": "This tells how a pup learns. It does not show what otters do for the plants around them."
       },
       {
-       "t": "\"That means more pups than ever will live free along the coast.\"",
-       "why": "Yes! More aquariums are helping, so more pups than ever will go home to the sea. Part B is your Detail. It proves your Part A answer."
+       "t": "By eating crabs, the otters allowed eelgrass, an underwater plant where young fish hide, to recover.",
+       "why": "Yes! The otters' crab hunting let the eelgrass grow back. Otters that live free will keep doing that. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "\"When we let them go, we want them to swim away from us, not toward us.\"",
-       "why": "This tells what the workers hope for when they let an otter go. It does not prove that more pups will go home to the sea in the future."
+       "t": "Today about 3,000 of them live in California, and they are still listed as a threatened species.",
+       "why": "This tells how many sea otters live in California today. It does not show what otters do for the plants around them."
       }
      ],
      "answer": 2
@@ -3279,26 +3279,26 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. The people who run the Soap Box Derby take steps to keep racers from getting hurt. Which sentence from the passage **best** supports this inference?",
+    "stem": "Read this inference. The people who run the Soap Box Derby work to make every race fair. Which sentence from the passage **best** supports this inference?",
     "choices": [
      {
       "t": "Racers still assemble their own vehicles, but today the parts come from kits.",
-      "why": "This tells how the cars are built. It does not prove that the people in charge work to keep racers from getting hurt."
-     },
-     {
-      "t": "On race morning, every car is weighed with its driver inside, so no one gets an unfair advantage from extra weight.",
-      "why": "This is true, but the weigh-in is about being fair, not about keeping racers from getting hurt."
+      "why": "This tells how the cars are built. It does not show the people in charge making the races fair."
      },
      {
       "t": "Before any car can race, officials inspect it and check its steering and brakes.",
-      "why": "Yes! Officials check the parts that steer and stop the car before anyone races. That shows they take steps to keep racers from getting hurt."
+      "why": "This is true, but checking the steering and brakes is about safety, not about making the races fair."
+     },
+     {
+      "t": "Gravity alone propels them down a track 989 feet long in less than 30 seconds.",
+      "why": "This tells how the cars move and how fast. It does not show the people in charge making the races fair."
      },
      {
       "t": "After the first run, the two racers trade wheels and switch lanes before racing again.",
-      "why": "This is true, but trading wheels and lanes is about being fair, not about keeping racers from getting hurt."
+      "why": "Yes! Trading wheels and lanes means a faster lane or luckier wheels can't decide who wins. That shows the people in charge work to make every race fair."
      }
     ],
-    "answer": 2
+    "answer": 3
    },
    {
     "id": "TA13",
@@ -3339,12 +3339,12 @@ window.SETS = {
      "q": "Which of these conclusions about the first All-American Soap Box Derby is supported by the passage?",
      "choices": [
       {
-       "t": "It was planned and paid for by the racers themselves.",
-       "why": "Nothing in the passage says the racers planned the race or paid for it."
+       "t": "It was raced in cars with small engines.",
+       "why": "The passage says the cars had no engines. Gravity did all the work."
       },
       {
-       "t": "It depended on help from many different groups.",
-       "why": "Yes! Many different groups had to do their part to make the race happen. Answer first. Then find the proof."
+       "t": "It grew out of Myron Scott's plan.",
+       "why": "Yes! Scott had the idea, and he got newspapers in other cities to hold races. Answer first. Then find the proof."
       },
       {
        "t": "It was held at Derby Downs in Akron, Ohio.",
@@ -3362,19 +3362,19 @@ window.SETS = {
      "choices": [
       {
        "t": "The next year, the Derby moved to Akron, Ohio, because the city had suitable hills and a central location.",
-       "why": "This tells where the race moved after the first All-American Derby. It does not show other groups helping."
+       "why": "This tells where the race moved after the first All-American Derby. It does not show whose plan the race was."
       },
       {
        "t": "Many early cars were built from the sturdy wooden crates that soap was shipped in.",
-       "why": "This tells what the early cars were made of. It does not show other groups helping to put the race together."
+       "why": "This tells what the early cars were made of. It does not show whose plan the race was."
       },
       {
        "t": "He convinced newspapers in other cities to hold local races and send their winners to Dayton.",
-       "why": "Yes! Scott needed newspapers in many cities to hold races and send their winners. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! Scott talked newspapers into holding races and sending their winners. The race grew out of his plan. Part B is your Detail. It proves your Part A answer."
       },
       {
        "t": "The cars had no engines, so gravity did all the work.",
-       "why": "This tells how the cars moved. It does not show other groups helping."
+       "why": "This tells how the cars moved. It does not show whose plan the race was."
       }
      ],
      "answer": 2
@@ -3389,10 +3389,10 @@ window.SETS = {
     "subtitle": "Utah's Great Salt Lake is in trouble. Scientists want to know what it will take to make it healthy again.",
     "blocks": [
      {
-      "p": "The ground beneath your sneakers is white and crusty. It crunches like old snow. But it is not snow. It is salt. You hike toward the shoreline, but it still seems distant. Not long ago, the spot where you are standing was underwater."
+      "p": "The ground beneath your sneakers is white and crusty. It crunches like spilled sugar. But it is not sugar. It is salt. You hike toward the shoreline, but it still seems distant. Not long ago, the spot where you are standing was underwater."
      },
      {
-      "p": "This is Utah's Great Salt Lake, the biggest saltwater lake in the United States. It is all that is left of Lake Bonneville, an enormous lake that covered a large part of Utah during the last Ice Age."
+      "p": "This is Utah's Great Salt Lake, a saltwater lake far from any ocean. It is all that is left of Lake Bonneville, an enormous lake that covered a large part of Utah during the last Ice Age."
      },
      {
       "p": "Three main rivers, the Bear, the Weber, and the Jordan, carry melted snow from the mountains into the lake. But no river flows out of it. Water escapes only by evaporation¹. When the water evaporates, the salt stays behind. That is why the lake is so salty."
@@ -3407,7 +3407,7 @@ window.SETS = {
       "p": "\"Think of the lake as a bathtub,\" says Dr. Tessa Sandoval. She is a hydrologist, a scientist who studies water. \"The sun is constantly pulling water out. If the faucet only trickles, the tub gets emptier and emptier.\""
      },
      {
-      "p": "The rivers are the faucet. Scientists say the lake is shrinking mainly because people use much of the river water before it reaches the lake. Most of that water is used to irrigate, or water, farm fields. Much of it grows alfalfa, a kind of hay that feeds cattle. Cities and homes use water, too. Droughts and hot summers make the problem worse."
+      "p": "The rivers are the faucet. Scientists say the lake is dwindling mainly because people use much of the river water before it reaches the lake. Most of that water is used to irrigate, or water, farm fields. Much of it grows alfalfa, a kind of hay that feeds cattle. Cities and homes use water, too. Droughts and hot summers make the problem worse."
      },
      {
       "p": "In 2023, a record-breaking winter of snow raised the lake more than 5 feet, and people celebrated. But one snowy winter was not enough. Soon the lake began to drop again. By early 2026, during a very dry winter, it was close to its record low once more."
@@ -3416,16 +3416,16 @@ window.SETS = {
       "p": "\"One good winter can't fix years of drought,\" Dr. Sandoval says."
      },
      {
-      "h": "Why a Smaller Lake Matters"
+      "h": "Why Low Water Matters"
      },
      {
-      "p": "When the lake shrinks, its salt does not disappear. The same salt is packed into less water, so the water gets saltier. In 2022, the southern part of the lake grew about five times saltier than the ocean."
+      "p": "When the lake dwindles, its salt does not disappear. The same salt is packed into less water, so the water gets saltier. In 2022, the southern part of the lake grew about five times saltier than the ocean."
      },
      {
       "p": "Brine shrimp and brine flies are tiny creatures that thrive in very salty water. Millions of migrating birds stop at the lake each year to feast on them. But if the water gets too salty, even the shrimp and flies perish. Then the birds go hungry."
      },
      {
-      "p": "A shrinking lake creates another hazard, too. Fierce winds lift dust from the exposed lakebed into huge brown clouds. The dust contains arsenic, a poison found in the lake's mud. About two and a half million people live in the cities and towns near the lake."
+      "p": "A dwindling lake creates another hazard, too. Fierce winds lift dust from the exposed lakebed into huge brown clouds. The dust contains arsenic, a poison found in the lake's mud. About two and a half million people live in the cities and towns near the lake."
      },
      {
       "p": "Utah lawmakers have passed new laws to help more water reach the lake. Experts say a healthy lake should sit at least 4,198 feet above sea level. That is several feet higher than it has been in recent years."
@@ -3501,13 +3501,13 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "On June 17, 1925, nine nervous children stood on a stage in Washington, D.C. They had traveled from distant parts of the country. Now they would compete in the first National Spelling Bee."
+      "p": "One June day a century ago, nine nervous children stood on a stage in Washington, D.C. They had traveled from distant parts of the country. Now they would compete in the first National Spelling Bee."
      },
      {
       "p": "Why is a contest like this called a bee? Here, the word bee does not refer to a buzzing insect. It means a gathering of people who cooperate on a project or compete."
      },
      {
-      "p": "The idea came from the Courier-Journal, a newspaper in Louisville, Kentucky. It already organized a spelling bee for schoolchildren in that state. In 1925, eight newspapers in other cities agreed to join the Courier-Journal in a national competition. More than two million schoolchildren entered spelling contests in their own communities. By June, only nine finalists were left, one for each newspaper."
+      "p": "The idea came from the Courier-Journal, a newspaper in Louisville, Kentucky. It already organized a spelling bee for schoolchildren in that state. Then eight newspapers in other cities agreed to join the Courier-Journal in a national competition. More than two million schoolchildren entered spelling contests in their own communities. By June, only nine finalists were left, one for each newspaper."
      },
      {
       "p": "During their visit, the nine finalists met President Calvin Coolidge. Then, in the auditorium¹ of the National Museum, the competition began. One by one, contestants misspelled words and were eliminated. After about an hour and a half, only one contestant remained. An 11-year-old boy from Louisville named Frank Neuhauser won by spelling gladiolus correctly."
@@ -3516,7 +3516,7 @@ window.SETS = {
       "p": "A gladiolus is a tall flower. Its name comes from the Latin word gladius, which means \"sword.\" Ancient Roman soldiers carried a short sword called a gladius. Gladiolus means \"little sword.\" The plant's long, pointed leaves resemble swords."
      },
      {
-      "p": "Frank won $500 in gold coins, a generous prize in 1925. When he returned home, Louisville celebrated with a parade in his honor. His classmates and school gave him a bicycle."
+      "p": "Frank won $500 in gold coins, a generous prize at the time. When he returned home, Louisville celebrated with a parade in his honor. His classmates and school gave him a bicycle."
      },
      {
       "h": "The Bee Today"
@@ -3531,7 +3531,7 @@ window.SETS = {
       "p": "Each speller walks alone to the microphone at the front of the stage. The pronouncer, the official who reads the words aloud, announces the word the contestant must spell. Before spelling, many spellers ask for the word's definition, its part of speech, and its language of origin. A word's language of origin can reveal important clues about how it is spelled. If a contestant misspells a word, the head judge rings a bell. That speller is eliminated."
      },
      {
-      "p": "During the final rounds, Anika Rao, age 13, sat in a row of chairs on the stage. Bright spotlights glared down, and the audience grew quiet. Anika rubbed her eyes and tried to hide a big yawn. Another finalist approached the microphone to spell his word. Her eyelids felt heavy, and she had to blink hard to keep them open. Then the pronouncer called her name, and she rose for her turn."
+      "p": "During the final rounds, Anika Rao, age 13, sat in a row of chairs on the stage. Bright spotlights glared down, and the audience grew quiet. Anika looked relaxed and smiled to herself. Another finalist approached the microphone to spell his word. She felt certain she could spell any word. Then the pronouncer called her name, and she rose for her turn."
      },
      {
       "p": "If the finals run long, the judges may declare a spell-off. In a spell-off, each finalist has 90 seconds alone on the stage to spell as many words as possible. The competitor who spells the most words correctly wins. The champion takes home the Scripps Cup trophy and a substantial cash prize."
@@ -3557,7 +3557,7 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Which sentence supports an inference",
-    "stem": "The reader can infer that the shrinking lake could harm the health of people who live near it. Which sentence from the passage **best** supports this inference?",
+    "stem": "The reader can infer that the lake's low water could harm the health of people who live near it. Which sentence from the passage **best** supports this inference?",
     "choices": [
      {
       "t": "In late 2022, the lake sank to the lowest level ever measured.",
@@ -3573,7 +3573,7 @@ window.SETS = {
      },
      {
       "t": "The dust contains arsenic, a poison found in the lake's mud.",
-      "why": "Yes! The dust from the dry lakebed carries a poison. A poison can make people sick, so the shrinking lake could harm the people who live nearby."
+      "why": "Yes! The dust from the dry lakebed carries a poison. A poison can make people sick, so the lake's low water could harm the people who live nearby."
      }
     ],
     "answer": 3
@@ -3604,8 +3604,8 @@ window.SETS = {
       "why": "This is true, but it is one detail. A main idea tells about a big part of the passage."
      },
      {
-      "t": "A smaller, saltier lake harms wildlife and people nearby.",
-      "why": "Yes! A big part of the passage tells how the shrinking lake hurts the shrimp, the birds, and the people near it."
+      "t": "Saltier water and blowing dust harm wildlife and people.",
+      "why": "Yes! A big part of the passage tells how the low water hurts the shrimp, the birds, and the people near it."
      }
     ],
     "answer": [
@@ -3624,7 +3624,7 @@ window.SETS = {
      "choices": [
       {
        "t": "It will soon grow back to its 1987 size.",
-       "why": "The passage says the lake has been shrinking since 1987, not growing back."
+       "why": "The passage says the lake has been dropping since 1987, not growing back."
       },
       {
        "t": "It will soon have more brine shrimp than ever.",
@@ -3677,8 +3677,8 @@ window.SETS = {
       "why": "This shows Nalu eating fish that were tossed to her. It does not show her catching a live fish."
      },
      {
-      "t": "In the wild, monk seals prey on fish, octopus, and eels among the rocks and coral reefs of the seafloor.",
-      "why": "This tells what wild monk seals eat. It does not tell about anything Nalu did."
+      "t": "Then a research ship transported her back across the Pacific to Midway Atoll.",
+      "why": "This tells how Nalu got back to Midway. It does not prove that catching a fish was a big step forward."
      },
      {
       "t": "For the first time in her life, she had caught a meal all by herself.",
@@ -3697,29 +3697,29 @@ window.SETS = {
     "p": 1,
     "type": "hottext",
     "skill": "Click the proof: why it happens or matters",
-    "stem": "Select the sentence that **best** supports why a monk seal is safer when it keeps away from people.",
+    "stem": "Select the sentence that **best** supports why Nalu needed to practice catching live fish.",
     "pick": 1,
     "layout": "list",
     "pieces": [
      {
-      "t": "The caregivers were thinking about her future.",
-      "why": "This tells that the caregivers were thinking ahead. It does not tell why a seal is safer away from people."
+      "t": "In the wild, monk seals prey on fish, octopus, and eels among the rocks and coral reefs of the seafloor.",
+      "why": "Yes! Wild monk seals must catch moving prey on the seafloor. To live in the wild, Nalu had to learn to catch live fish."
      },
      {
-      "t": "They fed and weighed Nalu, but they never petted her or played with her.",
-      "why": "This tells what the caregivers did not do. It does not tell why a seal is safer away from people."
+      "t": "To prepare Nalu, the staff began releasing live fish into her pool.",
+      "why": "This tells what the staff did. It does not tell why catching live fish mattered for Nalu."
      },
      {
-      "t": "Most of the time, they observed her through one-way glass, so they could see her while she could not see them.",
-      "why": "This tells how the caregivers stayed out of sight. It does not tell what could go wrong for a seal that comes near people."
+      "t": "They also submerged crates to imitate the coral where fish hide.",
+      "why": "This tells how the staff made the pool look like a reef. It does not tell why Nalu needed to catch live fish."
      },
      {
-      "t": "A monk seal that learns to associate people with food may later approach fishing boats and crowded beaches, where it can get snagged on a hook or be injured.",
-      "why": "Yes! A seal that links people with food may go near boats and beaches, where it can get hooked or hurt. A seal that keeps away from people stays out of that danger."
+      "t": "One morning in January, Nalu chased down a darting fish and swallowed it.",
+      "why": "This tells what Nalu did one morning. It does not tell why she needed to learn it."
      }
     ],
     "answer": [
-     3
+     0
     ]
    },
    {
@@ -3763,8 +3763,8 @@ window.SETS = {
        "why": "The passage says the pup was not lost. Her mother had gone back to the sea, as monk seal mothers do."
       },
       {
-       "t": "She was hiding from a shark.",
-       "why": "The passage names sharks as a danger to monk seals, but it never says a shark was near Nalu."
+       "t": "She was resting after swimming.",
+       "why": "The passage never says Nalu had been swimming. It says she was much too thin."
       },
       {
        "t": "She was unable to survive alone.",
@@ -3814,7 +3814,7 @@ window.SETS = {
        "why": "The passage says their numbers have been slowly rising, not falling."
       },
       {
-       "t": "Their numbers will keep growing as more pups are rescued.",
+       "t": "Their numbers will keep growing in the years ahead.",
        "why": "Yes! Rescued pups like Nalu can grow up and have pups of their own, so their numbers will keep growing. Answer first. Then find the proof."
       },
       {
@@ -3887,7 +3887,7 @@ window.SETS = {
     "stem": "Which sentence **best** describes the main idea of the passage?",
     "choices": [
      {
-      "t": "The spelling bee's rules have not changed at all since 1925.",
+      "t": "The spelling bee's rules have not changed at all since it began.",
       "why": "This is not true. The passage shows things that changed, like the spell-off and the much bigger contest."
      },
      {
@@ -3899,7 +3899,7 @@ window.SETS = {
       "why": "The passage never says this. This idea is too big. The passage is about one contest."
      },
      {
-      "t": "The spelling bee began in 1925 and still challenges kids today.",
+      "t": "The spelling bee began long ago and is still held every year.",
       "why": "Yes! The passage tells how the bee started and what it is like today."
      }
     ],
@@ -3911,7 +3911,7 @@ window.SETS = {
     "p": 2,
     "type": "hottext",
     "skill": "Select two: proof of a feeling",
-    "stem": "Select **two** sentences that **best** support the inference that Anika feels sleepy during the final rounds.",
+    "stem": "Select **two** sentences that **best** support the inference that Anika feels confident during the final rounds.",
     "pick": 2,
     "layout": "list",
     "pieces": [
@@ -3924,16 +3924,16 @@ window.SETS = {
       "why": "This tells about the lights and the audience. It does not tell how Anika feels."
      },
      {
-      "t": "Anika rubbed her eyes and tried to hide a big yawn.",
-      "why": "Yes! Rubbing her eyes and yawning are clues that Anika is sleepy. This sentence proves it by itself."
+      "t": "Anika looked relaxed and smiled to herself.",
+      "why": "Yes! Looking relaxed and smiling in the final rounds are clues that Anika feels confident. This sentence proves it by itself."
      },
      {
       "t": "Another finalist approached the microphone to spell his word.",
       "why": "This tells what another speller does. It does not show Anika's feelings."
      },
      {
-      "t": "Her eyelids felt heavy, and she had to blink hard to keep them open.",
-      "why": "Yes! Heavy eyelids that will not stay open are a clue that Anika is sleepy. This sentence proves it by itself."
+      "t": "She felt certain she could spell any word.",
+      "why": "Yes! Feeling certain she can spell any word is a clue that Anika feels confident. This sentence proves it by itself."
      },
      {
       "t": "Then the pronouncer called her name, and she rose for her turn.",
@@ -3951,23 +3951,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a trait",
-    "stem": "Read this inference. Many spellers are cautious. Which sentence from the passage **best** supports this inference?",
+    "stem": "Read this inference. Contestants look for hints that can help them. Which sentence from the passage **best** supports this inference?",
     "choices": [
      {
       "t": "Contestants must be in eighth grade or below.",
-      "why": "This is a rule about who can enter. It does not show that spellers are cautious."
+      "why": "This is a rule about who can enter. It does not show contestants looking for hints."
      },
      {
       "t": "If a contestant misspells a word, the head judge rings a bell.",
-      "why": "This tells what happens after a mistake. It does not show that spellers are cautious."
+      "why": "This tells what happens after a mistake. It does not show contestants looking for hints."
      },
      {
       "t": "Before spelling, many spellers ask for the word's definition, its part of speech, and its language of origin.",
-      "why": "Yes! They do not rush. They find out three facts about the word before they spell it, so they are less likely to make a mistake. That shows they are cautious."
+      "why": "Yes! The definition, the part of speech, and the language of origin are all hints about a word. Spellers ask for them before they spell. That shows they look for hints that can help them."
      },
      {
       "t": "In a spell-off, each finalist has 90 seconds alone on the stage to spell as many words as possible.",
-      "why": "This is true, but it tells about the rules of the spell-off. It does not show that spellers are cautious."
+      "why": "This is true, but it tells about the rules of the spell-off. It does not show contestants looking for hints."
      }
     ],
     "answer": 2
@@ -3979,7 +3979,7 @@ window.SETS = {
     "type": "mc",
     "skill": "The key detail missing from a summary",
     "lead": "Read this summary.",
-    "box": "In 1925, nine finalists met in Washington, D.C., and Frank Neuhauser won the first National Spelling Bee. Today, more than 10 million students begin with spelling bees in their classrooms and schools. More than 200 spellers reach the national bee, and a misspelled word puts a speller out.",
+    "box": "Long ago, nine finalists met in Washington, D.C., and Frank Neuhauser won the first National Spelling Bee. Today, more than 10 million students begin with spelling bees in their classrooms and schools. More than 200 spellers reach the national bee, and a misspelled word puts a speller out.",
     "stem": "Which key detail from the passage is missing from the summary?",
     "choices": [
      {
@@ -4015,16 +4015,16 @@ window.SETS = {
        "why": "The passage says the bee was held in Washington, the nation's capital. Louisville is where Frank came from."
       },
       {
-       "t": "It was made possible by people in several cities.",
-       "why": "Yes! Newspapers in several cities and millions of children took part. Answer first. Then find the proof."
+       "t": "It was treated as a very important event.",
+       "why": "Yes! The finalists even met the President. That does not happen at a small contest. Answer first. Then find the proof."
       },
       {
        "t": "Only children from the state of Kentucky could enter.",
        "why": "The passage says the spellers came from different parts of the country."
       },
       {
-       "t": "Few people in 1925 cared who won the contest.",
-       "why": "Louisville held a parade for Frank. That shows people cared."
+       "t": "It was won by a speller from Washington.",
+       "why": "The winner, Frank Neuhauser, came from Louisville, Kentucky."
       }
      ],
      "answer": 1
@@ -4033,20 +4033,20 @@ window.SETS = {
      "q": "Which sentence from the passage **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "On June 17, 1925, nine nervous children stood on a stage in Washington, D.C.",
-       "why": "This tells where the spellers stood on the day of the bee. It does not show people in other cities helping to make it happen."
+       "t": "One June day a century ago, nine nervous children stood on a stage in Washington, D.C.",
+       "why": "This tells where the spellers stood on the day of the bee. It does not show how important the event was."
       },
       {
        "t": "After about an hour and a half, only one contestant remained.",
-       "why": "This tells how long the contest lasted. It does not show people in other cities helping."
+       "why": "This tells how long the contest lasted. It does not show how important the event was."
       },
       {
-       "t": "In 1925, eight newspapers in other cities agreed to join the Courier-Journal in a national competition.",
-       "why": "Yes! Newspapers in different cities joined in, and that made a national bee possible. Part B is your Detail. It proves your Part A answer."
+       "t": "During their visit, the nine finalists met President Calvin Coolidge.",
+       "why": "Yes! Meeting the President shows how important people thought the bee was. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "When he returned home, Louisville celebrated with a parade in his honor.",
-       "why": "This tells what happened after the bee was over. It does not show people in other cities helping to make it happen."
+       "t": "The idea came from the Courier-Journal, a newspaper in Louisville, Kentucky.",
+       "why": "This tells where the idea came from. It does not show how important the event was."
       }
      ],
      "answer": 2
